@@ -75,11 +75,8 @@ ReputationGT(Player1,14)
 Global("C#Ajantis_ImoenRomBanter","GLOBAL",0)~ THEN ~BIMOEN2~ ajantisimoen_rom
 @15 DO ~SetGlobal("C#Ajantis_ImoenRomBanter","GLOBAL",1)~
 == C#AjanB @16
-== BIMOEN2 @17
-== C#AjanB @18
-== BIMOEN2 @19
-== C#AjanB @20
-EXIT
+END
+IF ~~ THEN EXTERN BIMOEN2 ajantisimoen_rom_02
 
 //committed PC - Ajantis romance, married
 CHAIN
@@ -94,10 +91,15 @@ Global("C#AjantisRomanceActive","GLOBAL",2)
 	Global("C#AjantisEngagedMatch","GLOBAL",1)
 	Global("C#AjantisEngaged","GLOBAL",1)
 Global("C#AjantisPCMarriage","GLOBAL",1) //married
-Global("C#Ajantis_ImoenRomBanter","GLOBAL",0)~ THEN ~BIMOEN2~ ajantisimoen_rom
+Global("C#Ajantis_ImoenRomBanter","GLOBAL",0)~ THEN ~BIMOEN2~ ajantisimoen_rom_01
 @21 DO ~SetGlobal("C#Ajantis_ImoenRomBanter","GLOBAL",1)~
 == C#AjanB @22
-== BIMOEN2 @17
+END
+IF ~~ THEN EXTERN BIMOEN2 ajantisimoen_rom_02
+
+CHAIN
+IF ~~ THEN BIMOEN2 ajantisimoen_rom_02
+@17
 == C#AjanB @18
 == BIMOEN2 @19
 == C#AjanB @20

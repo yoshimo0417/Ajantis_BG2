@@ -2,7 +2,7 @@
                            jastey's Sir Ajantis NPC for BGII Modification
 			for original BGII+ToB, BGT, BGII:EE, and EET
                              
-                                         Version 20
+
 
 ABOUT
 
@@ -188,7 +188,7 @@ Mods that are fully compatible although they sound like they could be conflictin
 
 - Skip Chateau Irenicus (from Argent77)
 
-- Questpack (PPG) (with reganrds to components 'Revised Hell Trials', 'Improved Oasis II', 'Miscellaneous Enhancements': "dispel the illusion from the initial encounter in the Windspear Hills".)
+- Questpack (PPG) (with regards to components 'Revised Hell Trials', 'Improved Oasis II', 'Miscellaneous Enhancements': "dispel the illusion from the initial encounter in the Windspear Hills".)
 
 
 
@@ -252,6 +252,7 @@ Knight: making of spell effects and items.
 Krenn: main part of translation German -> English
 Kulyok: proof reading ToB (English)
 Laelia: beta testing, proof reading
+Lauriel: proof reading (English)
 Linguist in Training: beta testing
 Linn: beta testing
 MissBehave: alpha tester ToB part
@@ -313,6 +314,21 @@ Spellhold Studios	http://www.spellholdstudios.net/
 
 
 HISTORY
+
+Version 21:
+-ToB: Ajantis' interjection into SARCNT01.dlg state 14 should not block Mirnielle Santele's turning hostile.
+-Wedding should really not happen before Underdark belt is removed.
+-Restructured interaction with lab table to coat invisible rune; rune can be coated either with 2. note in inventory or after going through the portal with the invisble rune once.
+-improved compatibility with Transitions Mod
+-(German version) PC should not refer to the witness being dead if they stayed alive.
+-Compatibility with I4E: fixed small glitches.
+-Reenabled choice of 1h dialogue timer in timer component (is default in main component).
+-Ajantis' cre files: set CRE flags bit 22 to ignore Nightmare Mode (to prevent party-joinable NPC from getting a hefty HP and level bonus in LoB (Legacy of Bhaal) mode).
+-Added LABEL to support PI's memory feature.
+-Changed backslashes to slashes in tp2.
+-Changed sound references to lower case.
+-Correction of EE item description syntax, by Cahir.
+-More proofereadings, by Lauriel.
 
 Version 20:
 -fixed Ajantis-Hexxat conflict stutter

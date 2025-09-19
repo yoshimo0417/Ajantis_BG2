@@ -68,7 +68,7 @@ TakePartyItem("c#ajshl2")
      DestroyItem("c#ajshl2")
      DestroyItem("SHLD29")
 DestroyGold(5000)~ GOTO 11
-+ ~PartyGoldLT(5000)~ + @4 + MovingRightAlong
++ ~PartyGoldLT(5000)~ + @4 + 10
 ++ @5 GOTO MovingRightAlong
 END
 
@@ -114,7 +114,7 @@ TakePartyItem("C#AJ0012")
      DestroyItem("SCRL1E")
      DestroyItem("SW1H02")
 DestroyGold(5000)~ GOTO 11
-+ ~PartyGoldLT(5000)~ + @4 + MovingRightAlongSword
++ ~PartyGoldLT(5000)~ + @4 + 10
 ++ @5 GOTO MovingRightAlongSword
 END
 
@@ -144,7 +144,7 @@ TakePartyItem("C#AJ012A")
      DestroyItem("SCRL1E")
      DestroyItem("SW1H02")
 DestroyGold(5000)~ GOTO 11
-+ ~PartyGoldLT(5000)~ + @4 + MovingRightAlongSword
++ ~PartyGoldLT(5000)~ + @4 + 10
 ++ @5 GOTO MovingRightAlongSword
 END
 

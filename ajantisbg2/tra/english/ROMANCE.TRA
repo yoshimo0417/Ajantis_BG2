@@ -1,0 +1,1207 @@
+@0    = ~<CHARNAME>, we are together again, at last! I have yearned for this so eagerly these past months, and finally, finally, it's come true. You are here, by my side.~ [c#ablank]
+@1    = ~...I lack the words to properly describe the joy I am feeling. I am so happy you are here.~
+@2    = ~I am happy to have you back, too, Ajantis!~
+@3    = ~Yes, it's good we are together again.~
+@4    = ~Ajantis, your desire to be with me couldn't have been too great, considering you preferred to march through the mountains instead of search for me.~
+@5    = ~Yes, but let us move on and talk at another time, Ajantis.~
+@6    = ~Ajantis... I am no longer your beloved.~
+@7    = ~You wrong me with these words, beloved. I hope I can convince you otherwise.~
+@8    = ~I am relieved to hear that.~
+@9    = ~You... do you mean this seriously?~
+@10   = ~Yes, let us end the engagement.~
+@11   = ~No, what am I saying? Everything is all right, Ajantis, my betrothed.~
+@12   = ~Are... are you still my beloved?~
+@13   = ~Yes, Ajantis, my betrothed.~
+@14   = ~No, I am not. I want us to end the engagement.~
+@15   = ~Let us continue together, side by side, and search for your enemy.~
+@16   = ~It-it is nice to see you united. How terrible the time of your separation must have been!~
+@17   = ~Not all of our... friends were as fortunate as we. Maybe you should not feel too troubled you were not there with <CHARNAME>, Ajantis.~
+@18   = ~Minsc and Boo greet their old friend! It is nice to see that nothing happened to him, is it not, Boo?~
+@19   = ~Minsc greets his old friend! Minsc is desperate, because Boo was stolen from him. Now my old friend will help me find him, yes?~
+@20   = ~Humph, stop fussing, will ya?~
+@21   = ~Yes, yes, it is very nice to see you again, etcetera, etcetera (this ape goes too far with his courtly behavior.)~
+@22   = ~What a wonderful reunion. I hear bells ring and soft voices sing. Let us join this joyous melody!~
+@23   = ~Greetings, Sir Ajantis. I hope you will use your prolonged life span and do good, as you have sworn.~
+@24   = ~Yes, your joy is written on your face.~
+@25   = ~Now he is back, your long-lost knight. I hope he can control himself, if only around me.~
+@26   = ~It is always a good thing to meet friends again.~
+@27   = ~Greetings, Sir knight. I am looking forward to uniting our forces.~
+@28   = ~You surely seem to be happy, but you haven't found your balance in nature yet.~
+@29   = ~Oh, yes, this reunion reminds me of the one with aunt Berti... Is anyone listening?~
+@30   = ~How nice to see you again, Ajantis. <CHARNAME> missed you, that is for sure.~
+@31   = ~What a joy to see you back unharmed, comrade.~
+@32   = ~Here you are, shining brightly in you knightly honors. Disgusting.~
+@33   = ~Ah, it warms my old soul to see you two so happy.~ 
+@34   = ~But enough interruption. We shall be silent and step aside, so as not to disturb the two lovers.~
+@35   = ~But enough interruption. I shall be silent and step aside, so as not to disturb the two lovers.~
+@36   = ~I can hardly believe my luck. I will stay close to you, <CHARNAME>, and support you with the best of my abilities.~
+@37   = ~By Helm! That is grim news, beloved!~ [c#ajan19]
+@38   = ~The powerful mage, Irenicus, took you captive and tortured you?! What a gruesome deed! Just... just the thought makes me tremble with helpless anger!~
+@39   = ~And now our friend Imoen, who has also suffered horrible torments, was abducted by the Cowled Wizards along with him?~
+@40   = ~Yes, that is how it went. I need you to win this fight, Ajantis.~
+@41   = ~Well, now you know what will await you.~
+@42   = ~Do we have to talk about it? I don't like being reminded of it.~
+@43   = ~You have my full support, <CHARNAME>.~
+@44   = ~That I understand very well. I wish I could have helped you.~
+@45   = ~The thought of what happened to you is nearly unbearable. I... I... (inhales) I will not rest until this villain is found and your tortures are avenged!~
+@46   = ~And now our friend Imoen, who has also suffered horrible torments, was abducted by the Cowled Wizards along with him... and you were approached for help by the Shadow Thieves?!~
+@47   = ~Yes, that is how it is. I need you to win this fight, Ajantis.~
+@48   = ~Do we have to talk about it? I don't like being reminded of what happened.~
+@49   = ~And that is not all! He stole your soul, without which you will lose yourself to your dark side. The thought makes me furious!~
+@50   = ~Now I have a great desire to tell you what has happened to me since our separation.~
+@51   = ~I have read your letters, Ajantis.~
+@52   = ~Yes, please do, Ajantis.~
+@53   = ~That is not necessary, because I have read your letters.~
+@54   = ~Does it have to be now?~
+@55   = ~Then they finally reached you, and before I did, after all... Well, then you know already that I did not reach my parents in Waterdeep, before I was recalled by the Order. The tensions on the Sword Coast and the threat of war with Amn made many missions for the Order necessary.~
+@56   = ~Please, go on.~
+@57   = ~Ajantis, I know the rest.~
+@58   = ~I see that you have found my letters. They finally reached you, and before I did, after all... Well, then you know already that I did not reach my parents in Waterdeep, before I was recalled by the Order. The tensions on the Sword Coast and the threat of war with Amn made many missions for the Order necessary.~
+@59   = ~I already know the rest, I think.~
+@60   = ~Let me briefly outline the most important parts, <CHARNAME>. I wrote you letters, which I then stored at the Order since they could not reach you... I did not meet my parents in Waterdeep, as we had agreed upon. I was recalled by the Order, since the tensions on the Sword Coast and the threatening war with Amn made many missions for the Order necessary.~
+/* @813 from C#AjanJ_PID.tra :*/
+@61   = ~...And you've been inducted into the knighthood. I know that already.~ 
+/* @814 from C#AjanJ_PID.tra */
+@62   = ~...Where you were knighted. I know that already.~ 
+@63   = ~I wrote you letters, which I then stored at the Order since they could not reach you... I did not meet my parents in Waterdeep, as we had agreed upon. I was recalled by the Order, since the tensions on the Sword Coast and the threatening war with Amn made many missions for the Order necessary.~
+@64   = ~...And you've been inducted into the knighthood.~
+@65   = ~...Where you were knighted.~
+/* @815 from C#AjanJ_PID.tra */
+@66   = ~So it is, <CHARNAME>. I see you have already received information about me. Believe me, it was not easy on that day, missing you as I did. But I had to take that step.~
+/* @800 from C#AjanJ_PID.tra */
+@67   = ~Of course. I understand your motivation, although I wish I could have been there.~
+/* @801 from C#AjanJ_PID.tra */
+@68   = ~I am disappointed that you were knighted without me, Ajantis.~
+@69   = ~Well, then we know what's most important.~
+/* @816 from C#AjanJ_PID.tra */
+@70   = ~So it is, <CHARNAME>. We already talked about that.~
+/* @798 from C#AjanJ_PID.tra */
+@71   = ~I arrived here and the Order gave me its blessing for our wedding, if your path continues toward what is good and righteous, <CHARNAME>.~ 
+/* @803 from C#AjanJ_PID.tra */
+@72   = ~Besides... I was found worthy by the Order to be elevated to knighthood. Believe me, it was not easy for me on that day, missing you as I did. But I had to take that step.~
+/* @800 from C#AjanJ_PID.tra */
+@73   = ~Of course. I understand your motivation, although I wish I could have been there.~
+/*@804 from C#AjanJ_PID.tra */
+@74   = ~Also my knighting took place here, as you already know.~ 
+/*@799 from C#AjanJ_PID.tra */
+@75   = ~Yes, you do, if you read my letters. I wrote the last one shortly before my departure to the Windspear Hills. Believe me, it was not easy for me to see you missing on the day of my knighting. But I had to take that step.~
+@76   = ~Then they finally reached you, and before me after all... With them you know the most important details, because I wrote the last one shortly before my departure to the Windspear Hills.~
+@77   = ~Believe me, it was not easy on that day, missing you as I did. But I had to take that step.~
+@78   = ~Now you know the most important details. I am so glad to stand again by your side, <CHARNAME>, beloved.~
+@79   = ~As am I. I love you, Ajantis.~
+@80   = ~I am glad as well.~
+@81   = ~Yes, let us continue.~
+@82   = ~I am so glad to stand again by your side, <CHARNAME>, beloved.~
+@83   = ~Let us face the dangers together, side by side.~
+@84   = ~You sound out of sorts, and I am sorry. I hope you can one day see my reasons, <CHARNAME>. Let us meet the dangers together.~
+@85   = ~You *do* sound out of sorts, and I am sorry. I hope you can one day see my reasons, <CHARNAME>. Let us meet the dangers together.~
+/*@818 from C#AjanJ_PID.tra */
+@86   = ~I am relieved that you understand. I love you, <CHARNAME>. How gladly I would have shared that day with you.~
+@87   = ~And I, with you. I love you, Ajantis.~
+/*@820 from C#AjanJ_PID.tra */
+@88   = ~Yes, it would have been nice.~
+/*@821 from C#AjanJ_PID.tra */
+@89   = ~Well, let us continue.~
+/*@822 from C#AjanJ_PID.tra */
+@90   = ~I understand, but you must also understand me. My time as a squire was over and the Order found me worthy. I could no longer hesitate.~
+/*@823 from C#AjanJ_PID.tra */
+@91   = ~I love you, <CHARNAME>. How gladly I would have shared that day with you.~
+/*@824 from C#AjanJ_PID.tra */
+@92   = ~Yes, it would have been nice, but now it's too late.~
+@93   = ~So it is. I am so glad to stand again by your side, <CHARNAME>, beloved.~
+@94   = ~I see the fragments of your engagement ring, beloved... What crime, even to so small an item! May I take it, <CHARNAME>? I will have a new ring forged from it, so that it may once again adorn your graceful finger.~ [c#ablank]
+/*@838 from C#AjanJ_PID.tra */
+@95   = ~Yes, please take them, Ajantis.~
+/*@839 from C#AjanJ_PID.tra */
+@96   = ~I have been hoping that could be done, to be honest. Anything else would not feel right.~
+/*@840 from C#AjanJ_PID.tra */
+@97   = ~No, I don't want this.~
+@98   = ~I miss the engagement ring on your hand, beloved... Was it taken with your equipment during your imprisonment?~ [c#ablank]
+@99   = ~I hold its fragments in my hand. It was destroyed, and the stone was removed.~
+@100  = ~Yes, I lost all of my equipment, as well as the ring.~
+@101  = ~What else? I would hardly have thrown it away.~
+@102  = ~It is all right... I do not put much value in symbolic objects like that anyway.~
+@103  = ~For the flower pendant that I gave you on the Sword Coast, there is probably no hope of rescue, as it was for the ring.~
+@104  = ~Give me a kiss, Ajantis, now and every day! I need no other gift.~
+@105  = ~I look forward to it.~
+@106  = ~Don't worry, it's all right.~
+@107  = ~Let me stow them away so that they do not waste space... I will send them to a goldsmith at the earliest opportunity.~
+@108  = ~What do you mean by that?~
+@109  = ~I would not like for the pieces to be forged into a 'second' engagement ring, Ajantis. The former ring was destroyed by evil beings and... stained by the memories of that horrible place. I want an entirely new engagement ring.~
+/*@845 from C#AjanJ_PID.tra */
+@110  = ~Well, you must not forge a ring, because I want to separate from you.~
+/*@846 from C#AjanJ_PID.tra */
+@111  = ~No, I have changed my mind. Take the pieces, Ajantis. It is a beautiful idea to repair the engagement ring from them.~
+/*@847 from C#AjanJ_PID.tra */
+@112  = ~No, I changed my mind. It is a beautiful idea to repair the engagement ring from the fragments. I still know where to find them and will get them for you.~
+@113  = ~Give me the pieces when you have them again. I will forge you a new ring, which may once again adorn your delicate finger.~
+/*@849 from C#AjanJ_PID.tra */
+@114  = ~That sounds nice. I still know where to find them and will give them to you.~
+/*@850 from C#AjanJ_PID.tra */
+@115  = ~Unfortunately, I do not remember where they are, Ajantis.~
+/*@851 from C#AjanJ_PID.tra */
+@116  = ~Do not worry, beloved. I will forge a new ring for you, one without stain!~
+/*@852 from C#AjanJ_PID.tra */
+@117  = ~Since the ring will require a new jewel, it need not be a luck-bringing turquoise, as it once was. Have you another desire, perhaps?~
+/*@853 from C#AjanJ_PID.tra */
+@118  = ~No, I want the engagement ring to look like it originally did, with a light blue stone.~
+/*@854 from C#AjanJ_PID.tra */ 
+@119  = ~Yes, I would prefer a green stone in the ring.~
+/*@855 from C#AjanJ_PID.tra */ 
+@120  = ~Well, I would like a red colored gemstone better.~
+/*@856 from C#AjanJ_PID.tra */  
+@121  = ~A yellow gemstone would please me best, Ajantis.~
+/*@857 from C#AjanJ_PID.tra */  
+@122  = ~I would prefer a colorless jewel in the ring.~
+/*@858 from C#AjanJ_PID.tra */  
+@123  = ~Let the gemstone be gone, it is lost. Forge me a plain, stoneless ring from the fragments.~
+/*@859 from C#AjanJ_PID.tra */  
+@124  = ~I would like to have some time to consider this.~
+/*@860 from C#AjanJ_PID.tra */  
+@125  = ~The ring was a former heirloom of my family, so you had no choice in what it looked like. I apologize if I forge a similar ring, but I wish for the new ring to be like the original. The precious stone that adorns it need not be the same. Will you choose the color of gemstone used? Should it be another luck-bringing turquoise?~
+/*@861 from C#AjanJ_PID.tra */  
+@126  = ~Yes, I want the engagement ring to look like it originally did, with a light blue stone.~
+/*@862 from C#AjanJ_PID.tra */  
+@127  = ~No, I would prefer a green stone in the ring.~
+/*@863 from C#AjanJ_PID.tra */  
+@128  = ~I would like to have a plain ring, without a gemstone.~
+/*@864 from C#AjanJ_PID.tra */  
+@129  = ~As you say. I would be happy to fulfill this wish for you!~
+/*@866 from C#AjanJ_PID.tra */
+@130  = ~Are you sure? A colorless star sapphire traditionally adorns the ring of a married woman, <CHARNAME>.~
+/*@867 from C#AjanJ_PID.tra */
+@131  = ~Well, then I want the engagement ring to look like it originally did, with a light blue stone.~
+/*@868 from C#AjanJ_PID.tra */
+@132  = ~Well, then I would prefer a green stone in the ring.~
+/*@869 from C#AjanJ_PID.tra */
+@133  = ~If so, I would like red as the color of the gemstone.~
+/*@870 from C#AjanJ_PID.tra */
+@134  = ~Under these circumstances, I would like a yellow gemstone best, Ajantis.~
+/*@871 from C#AjanJ_PID.tra */
+@135  = ~Then I would like a plain ring, without a gemstone.~
+/*@872 from C#AjanJ_PID.tra */
+@136  = ~I do not care for these traditions. Give my engagement ring such a jewel.~
+/*@859 from C#AjanJ_PID.tra */
+@137  = ~I would like to have some time to consider this.~
+/*@865 from C#AjanJ_PID.tra */
+@138  = ~Then think about it in peace, but please do not take too much time. I would like to give you the ring before our wedding. If necessary, I will simply have it forged in such a way as to match the original.~
+@139  = ~You will not keep me from making the engagement ring. Although, of course I leave it to you whether you choose to carry it...~
+/*@873 from C#AjanJ_PID.tra */  
+@140  = ~Excellent! Let me know when you have them.~
+/*@874 from C#AjanJ_PID.tra */ 
+@141  = ~You... What?!~
+/*@875 from C#AjanJ_PID.tra */ 
+@142 = ~Yes, I no longer see you as my betrothed. Let us end the engagement.~
+/*@876 from C#AjanJ_PID.tra */ 
+@143 = ~No, what am I saying? All is well, Ajantis.~
+/*@896 from C#AjanJ_PID.tra */
+@144  = ~You have sworn an oath, <CHARNAME>. Let me remind you of your duties as my bride!~
+/*@897 from C#AjanJ_PID.tra */ 
+@145  = ~Ajantis, I'm really sorry, but it would not make any sense. Please, accept the decision and let me go.~
+/*@898 from C#AjanJ_PID.tra */ 
+@146  = ~This is one of the reasons why a marriage with you is no longer viable, Ajantis. Would you not prefer to see me happy?~
+/*@899 from C#AjanJ_PID.tra */ 
+@147  = ~You are threatening me with the law? An engagement is by far not as binding as a marriage, Ajantis. And we are not yet married!~
+@148  = ~I know... I know that it makes no sense. You are very strong-willed. No, I do not threaten you with the law. There is no reason, if the betrothed agree. You... you are free. I release you from your duties as my betrothed, beloved.~
+/*@877 from C#AjanJ_PID.tra */ 
+@149  = ~Beloved, please... do not frighten me so!~
+/*@878 from C#AjanJ_PID.tra */
+@150  = ~I would not like for the pieces to be processed into a 'second' engagement ring, Ajantis. The former ring was destroyed by evil beings and... stained by the memories of that horrible place. I want an entirely new engagement ring.~
+/*@879 from C#AjanJ_PID.tra */
+@151  = ~Take the pieces, Ajantis. It is a beautiful idea to repair the engagement ring from them.~
+/*@880 from C#AjanJ_PID.tra */
+@152  = ~Actually, it's a nice idea to make the engagement ring from the pieces again. I still know where to find them and will give them to you.~
+@153  = ~You know that I would be delighted to grant you this wish without restrictions. Unfortunately, it may not always be possible, with our lives so full of danger. (smile) However, now I will not deny it to you, dearest of all women.~
+@154  = ~(Ajantis takes you tenderly into his arms and gives you a kiss.)~
+@155  = ~And, nevertheless, I will think of a present for you, <CHARNAME>. Hmm, let me see...~
+@156  = ~I will think of a present for you, <CHARNAME>. Hmmm, let me see...~
+@157  = ~No, you would not want to undermine this flight of romanticism!~
+@158  = ~I see the fragments of the engagement ring in your luggage. Should I take them now?~ [c#ablank]
+@159  = ~Yes, take them and forge the new engagement ring from them, Ajantis.~
+@160  = ~No, I would not like for the fragments to be used for the new engagement ring.~
+/*@881 from C#AjanJ_PID.tra */
+@161  = ~Excellent! Let me stow them away so that they do not waste space... I will send them to a goldsmith at the earliest opportunity.~
+/*@883 from C#AjanJ_PID.tra */ 
+@162  = ~As you wish! I will have a new, unstained ring forged for you.~
+/*@884 from C#AjanJ_PID.tra */ 
+@163  = ~Have you decided which color of stone to have?~
+/*@885 from C#AjanJ_PID.tra */ 
+@164  = ~I want the engagement ring to look like it originally did, with a light blue stone.~
+/*@886 from C#AjanJ_PID.tra */ 
+@165  = ~I would prefer a green stone in the ring.~
+/*@887 from C#AjanJ_PID.tra */ 
+@166  = ~It remains my choice. I would prefer a colorless jewel in the ring.~
+@167  = ~I have no opinion, Ajantis.~
+@168  = ~As you say. I will fulfill your wish with pleasure! I will send a message to the goldsmith as soon as possible.~
+@169  = ~Then I will have him forge it so that it resembles the original, <CHARNAME>.~
+@170  = ~I do not see the fragments of the engagement ring in your luggage. You had time to get them, but have not done so. I will have a new ring forged for you. If you can still find the fragments, please give them to me. Perhaps it will be soon enough for the goldsmith to use them for the new ring.~
+@171  = ~What this rogue Aran said has made me pensive, <CHARNAME>... It seems that the Shadow Thieves knew about your kidnapping, while we knights were in the dark.~ [c#ablank]
+/*
+@172  = ~You have not said anything directly, and for that I thank you, because I would not like to hear that reproach. However, what I have found out about this rogue Aran has made me pensive, <CHARNAME>... It seems that the Shadow Thieves knew about your kidnapping, while we knights were in the dark.~ [c#ajan23]
+*/
+@173  = ~What I have learned about this rogue Aran has made me pensive, <CHARNAME>... It seems that the Shadow Thieves knew about your kidnapping, while we knights were in the dark.~ [c#ablank]
+@174  = ~I do not suggest that I should have gone to them. The thought of a knight seeking help from the Shadow Thieves is absurd.~
+@175  = ~Nevertheless... To know that they could have delivered crucial information...~
+@176  = ~This does not need to worry you. A knight cannot go and beg from the Shadow Thieves.~
+@177  = ~Don't agonize over it. You would not have received the information, at least not on conditions satisfactory to you.~
+@178  = ~Don't worry. It is over.~
+@179  = ~A knight would do well to cooperate with 'rogues' occasionally.~
+@180  = ~I thank you. I would also not have gone 'begging,' if I had gone to them.~
+@181  = ~There, you may have the right of it. Perhaps my Order companions will still go to them.~
+@182  = ~Your kidnapping, yes. And I am glad that you are now here by my side. Nevertheless, it was a thought that has occupied me. Although, as I said, it is absurd that a knight should beg from the Shadow Thieves. Perhaps my order brethren will soon pay them a 'visit.'~
+@183  = ~You refer to our current situation, I believe? As a paladin, I cannot negotiate with these murderers and bandits! This is different, because they have come to us... and at the moment, we are walking on the edge of what my duty will allow me to do. To go to them with a request for information would be inconceivable.~
+@184  = ~I could have gone there with my companions and the strength of the Order if this had occurred to me. Perhaps my order brethren will soon do this.~
+@185  = ~You cannot imagine... I tried everything to find you. I searched for you every free moment, <CHARNAME>... The thought that you were *here* all that time, under Athkatla...~ [c#ablank]
+@186  = ~Who can say. There were many portals in Irenicus' dungeons. I could have been located somewhere else entirely.~
+@187  = ~I thank you. Do not grieve yourself any more, now that we are together.~
+@188  = ~It is astonishing that you did not find me, with all the help you had!~
+@189  = ~Hmm, that is possible, of course... That does not make my failure any less inexcusable, however.~
+@190  = ~Why do you call it a failure? I believe that you tried everything, but Irenicus is a very mighty mage, and not easily defeated. He likely had many defenses set aside to thwart any rescue attempts.~
+@191  = ~The Shadow Thieves found Irenicus' hiding place, Ajantis. Why did the Order not?~
+@192  = ~It does not matter. What is important is that we are together again.~
+@193  = ~Your words are very merciful, and they bring light to my heart. I thank you.~
+@194  = ~Nevertheless, it is a thought worth considering. Why the Shadow Thieves found Irenicus' hiding place, but the Order did not.~
+@195  = ~Nevertheless... It is surprising that the power of the Order should not be sufficient to penetrate Irenicus' shielding.~
+@196  = ~I think that you asked the wrong people for help. There is always someone who knows something, but you would have had to search where a paladin does not usually go to *talk*. If they would have spoken to you at all.~
+@197  = ~The Shadow Thieves knew about my kidnapping... As Aran Linvail told us.~
+@198  = ~I am glad that it is over now.~
+@199  = ~I don't want to talk about this, Ajantis.~
+@200  = ~We... did not search for an evil mage, beloved, but for you. Maybe that was my error, but I simply did not know where to search!~
+@201  = ~I believe that you tried everything, but Irenicus is a very mighty mage, and not easily defeated. Doubtless he knows how to guard his labyrinth against any who would find me.~
+@202  = ~I believe that you did try everything within your power. Irenicus is simply a very mighty mage, and not easily defeated.~
+@203  = ~The Order is mighty, but it is not omnipotent, <CHARNAME>. It gave me enough pain to learn of the boundaries of its power.~
+@204  = ~This must have been terrible for you. I believe you did try everything you could, but Irenicus is a very mighty mage, and not easily defeated. He likely had many defenses set aside to thwart any rescue attempts.~
+@205  = ~This must have been terrible for you. I believe that you did try everything within your power, but Irenicus *is* a very powerful mage, and not easily defeated.~
+@206  = ~You mean, there were rogues who knew the answer and had knowledge of my search without helping me? What a crime! However, the thought is not wrong. There is enough rabble for whom a paladin in distress would be a happy sight.~
+@207  = ~The search must have been terrible for you. I do believe that you tried everything, but Irenicus is a very powerful mage, and not easily defeated. I am sure that he knew how to guard his labyrinth so that I could not be found.~
+@208  = ~The search must have been terrible for you. I do believe that you tried everything within your power, but Irenicus is a truly powerful mage, and not easily defeated.~
+@209  = ~Well, you obviously lacked the wisdom to cooperate with the *right* people on this matter, Ajantis!~
+@210  = ~(taken aback) These rogues knew about it?! Is... is that true? Well, it does not surprise me that I found nothing, then. There is enough rabble for whom a paladin in distress would be a happy sight!~
+@211  = ~Rather than wait for the information to come to you, you could have just gone to them!~
+@212  = ~We are indeed, and I am grateful for it.~
+@213  = ~I do believe that you tried everything, but Irenicus is a very mighty mage, and not easily defeated.~
+@214  = ~I owe you, for saying that. I do greatly reproach myself.~
+@215  = ~There is no reason why you should feel guilty; I believe that you did try everything, but Irenicus is a very mighty mage. I am sure that he knew how to guard his hiding place so that I could not be found.~
+@216  = ~Let us talk some other time.~
+@217  = ~What did you say?! I would have had to betray my principles to request help from these people... I could not do that!~
+@218  = ~<CHARNAME>, the path on which a paladin walks is sometimes very narrow. A wrong step and he falls... Some have been overcome by their own feelings, influenced in their actions, and it became their downfall. There are no 'compromises', no 'arrangements' with evil beings for a paladin. Not even when it is to our own advantage. Such behavior would be inexcusable! You must understand this.~
+@219  = ~Forgive me, you are right. It was naive of me to think that.~
+@220  = ~No, I see this as a weak spot. Your influence and creativity could be so much greater if you used *all* available resources, Ajantis!~
+@221  = ~I understand that I have been blind, but this has opened my eyes. I would not like to be with a man who does not undertake everything to save me simply because it might offend his 'guidelines'. I would like to separate myself from you, Ajantis.~
+@222  = ~But... No, beloved, please! Have you not understood what I have said?~
+@223  = ~You are right, I have spoken in haste. I am sorry.~
+@224  = ~Yes, and I say it once again: I would like to separate myself from you, Ajantis.~
+@225  = ~Then I am glad.~
+@226  = ~The time of fear and fruitless search must have been terrible for you. I believe that you tried everything, and Irenicus is a mighty mage. I am sure he knew just how to guard his labyrinth so I would not be found.~
+@227  = ~The time of fear and fruitless search must have been terrible for you. I believe that you tried everything in your power, but Irenicus is a truly powerful mage, and not easily defeated.~
+@228  = ~Let us continue some other time.~
+@229  = ~You do not mean this seriously? You walk a very dangerous path, <CHARNAME>. Do not allow your judgment to be obscured by selfish thoughts!~
+@230  = ~Then I will be quiet, but be assured that I am happy to have you with me once more.~
+@231  = ~As am I. Be assured that I am filled with both joy and relief to have you with me again, beloved.~
+@232  = ~<CHARNAME>, you told me a little of what happened before my release from Firkraag's enclave... but I would like to know more. Could you elaborate?~ [c#ablank]
+@233  = ~Firkraag created an illusion to make us believe we had slain you and your comrades. Luckily, Garren Windspear saw the fight and vouched for us. Later, one of Firkraag's minions gave us a golden globe, which turned out to be the portal that brought us to the enclave. You already know the rest.~
+@234  = ~You probably already know the Order's version? Garren had to vouch for us, because Firkraag's illusion caused it to appear as if we had killed you and the other knights in the Windspear Hills.~
+@235  = ~Firkraag not only produced your supposed death, so that we were hunted by the Order, he also kidnapped Garren's child while he was testifying of our innocence!~
+@236  = ~Firkraag challenged me and I stood up to him. There is no more to say.~
+@237  = ~Ask around at the Order, if you want to know more.~
+@238  = ~I thank you for this information. I am glad that you could thwart Firkraag's plan with Garren's help and your bravery.~
+@239  = ~This monster knew what would hurt you... I admire your courage, beloved. If I had to avenge you in a similar situation, I would have despaired from grief.~
+@240  = ~You would never have neglected your duties, Ajantis. I would not want you to even think such a thing because of me.~
+@241  = ~I saw an illusion of your distorted dead body lying before me, Ajantis! It was dreadful!~
+@242  = ~Something was strange in the situation, Ajantis. I had a notion that it was not entirely right.~
+@243  = ~As I said, the situation did not seem real to me, not enough to really fear for you.~
+@244  = ~Why courage? Perhaps I just don't love you enough?~
+@245  = ~Yes, very well. Let us continue some other time.~
+@246  = ~I thank you. Yes, certainly I would have found strength in Helm, as I do now, but... the light would have disappeared from my life.~
+@247  = ~For a moment that was also the case for me, when I saw your supposed corpse before me!~
+@248  = ~I already know the Order's version. I know that Firkraag involved you in a deception, which could be cleared only by the recommendation of Lord Windspear. I had hoped you would tell me more about the experience that finally led you to the enclave, but it doesn't seem you are willing.~
+@249  = ~A succinct response, but I had hoped that you would tell me more about the experiences that finally led you to the enclave. I already know the version from the Order. I know that Firkraag involved you in a deception, which could be cleared only by the recommendation of Lord Windspear.~
+@250  = ~Ah well. In any case, I am glad that you could thwart Firkraag's plan with Garren's help and your bravery. This monster knew what could harm you... I admire your courage, beloved. If I had to avenge you in a similar situation, I would have despaired from grief.~
+@251  = ~This was cruel. I am grateful that you have not lost your faith, beloved, and I admire your strength. I do not know whether I could have endured seeing your supposed dead body before me, in addition to the knowledge that I had slain my beloved myself! How could you endure those feelings?~
+@252  = ~I was beside myself when I believed I recognized you on the ground of the Windspear Hills... Had I truly slain you after all of my hoping and searching?~
+@253  = ~I was filled with despair. Luckily things soon developed in such a way that we could believe that perhaps we had not yet lost you after all.~
+@254  = ~Well, now all is well again.~
+@255  = ~Yes, such a deception could not remain concealed before your keen senses. Nevertheless, I think that the first moments after the fight must have been a shock for you. Indeed, you might have been suspicious, but my supposed body lay before you. You had to assume you had slain your betrothed. I admire your strength: I do not know whether I could have endured the sight of your dead body before me.~
+@256  = ~I believe you, beloved. It is quite difficult enough to know a friend has fallen. How awful your torment must have been when you were forced to believe that you had killed me, your betrothed! I pray that I never have to endure such an awful experience.~
+@257  = ~I believe you, beloved!~
+@258  = ~It is, indeed. Nevertheless, it was certainly not easy for you, beloved. It is difficult enough to know that a friend is dead. How awful your torment must have been when you were forced to believe you had killed me, your betrothed! I pray that I never have to endure such an awful experience.~
+@259  = ~Yes, with your keen senses, such a deception could not remain concealed. Nevertheless, I think that the first moments after the fight must have been quite a shock for you.~
+@260  = ~Then I am glad, beloved, because this has certainly saved you from a great deal of torment.~
+@261  = ~You have placed great dangers and grief upon yourself in order to find and save me, and for that I sincerely thank you.~
+@262  = ~You would have done the same for me.~
+@263  = ~I would do it again at any time for you, Ajantis, my beloved.~
+@264  = ~Speaking honestly, I did not know that you were on the other side of the portal. Firkraag's henchman gave me the key, and I used it.~
+@265  = ~Yes, and now other great dangers wait for us. We should turn to them.~
+@266  = ~As you say. I would still like to say this to you: you have taken great danger upon yourself to find and save me, and for that I sincerely thank you.~
+@267  = ~<CHARNAME>, how... how do you mean this question? Is this a thought that concerns you?~
+@268  = ~No, do not be worried, Ajantis. I love you sincerely and was beside myself with fury and grief when I had to assume I had killed you.~
+@269  = ~Well, speaking honestly, yes. Your supposed death left me astonishingly cold.~
+@270  = ~And what... should happen now, in your opinion?~
+@271  = ~Nothing. It is not that I do not love you, Ajantis. Maybe I just felt that the situation in the Windspear Hills was wrong somehow.~
+@272  = ~Since we have spoken of this now, it is probably only logical that we should dissolve our engagement.~
+@273  = ~Any time and without hesitation, <CHARNAME>, my beloved.~
+@274  = ~I know this, and it makes me both proud and glad, <CHARNAME>.~
+@275  = ~This does not alter the fact that it was a dangerous undertaking. You surely would have done even more, if you had known of my presence.~
+@276  = ~That we will do, side by side.~
+@277  = ~You... you want to dissolve our betrothal?~
+@278  = ~I am relieved to hear you say this, <CHARNAME>.~
+@279  = ~Do you want to know what exactly happened before you released us from Firkraag's enclave?~ [c#ablank]
+@280  = ~Yes, please tell me how Firkraag was able to take you into his power.~
+@281  = ~I already know that the Order was asked by Firkraag to send knights to the Windspear Hills. What happened then?~
+@282  = ~I have already learned that the Order was asked by Firkraag to send knights to the Windspear Hills, and I think that I can make sense of the rest. You do not need to tell me more.~
+@283  = ~I would not like to hear this in so much detail, Ajantis.~
+@284  = ~This may not happen! We paladins sense evil and it is our duty to fight against it. We should see through hallucinations, otherwise we cannot fulfill our tasks for the benefit of all!~
+@285  = ~'Hallucination' indeed. You were imprisoned!~
+@286  = ~Don't worry, Ajantis. It was the magic of an evil red wyrm that deceived you.~
+@287  = ~Well, you paladins take yourselves far too seriously. This incident should give you something to think about.~
+@288  = ~Well, then let it be a lesson to you.~
+@289  = ~Ajantis, I don't want to speak about that.~
+@290  = ~That I did not, and it is also not my intention to give that impression.~
+@291  = ~What exactly disturbs you concerning the deception? It is not the first time when enemies have made our lives difficult.~
+@292  = ~Even you can be deceived at some point, Ajantis. It is only natural.~
+@293  = ~It was a trap, and it was well laid.~
+@294  = ~As you certainly already know, 'Lord Jierdan' sent a message to the Order. It was a request for aid against a supposed orc band that made the Windspear Hills unsafe. Indeed, Lord Jierdan is not liked because of his machination against our friend, but he is counted as an approved Lord, and of course the Order does not let such a cry for help fade away unanswered. So I was sent under the direction of Sir Eleiana to explore the place and to fight the monsters, if necessary.~
+@295  = ~Go on.~
+@296  = ~Who or what is Sir Eleiana? She seemed to be giving you orders.~
+@297  = ~Why were you in a group of four *female* knights, by the way?~
+@298  = ~I don't want to hear this in so much detail, Ajantis.~
+@299  = ~I must think over and over again about how it could happen that we knights of the Order could be deceived, like we were by this Firkraag. The idea of it, that the supposed cry for help Firkraag sent to the Order was only a rotten trick to lure you into a trap!~
+@300  = ~What exactly disturbs you about this? It is not the first time when enemies have made our lives difficult.~
+@301  = ~Are you reproaching me for the disagreeable situation you have been in?~
+@302  = ~I would not like to speak about that, Ajantis. Deal with it yourself.~
+@303  = ~Perhaps that is just as well for me. I feel it as a disgrace and would prefer to hide the incident. But I think you have a right to know what happened. Maybe... maybe it will save us from a similar experience at a later time.~
+@304  = ~We had hardly entered the Windspear Hills when the area darkened strangely. We fought against monsters... however, it was like a dream, a nightmare from which we awoke only when you stood before us. I do not know how long we were trapped in this imprisonment. I can calculate the days, of course, but the time there passed... differently.~
+@305  = ~I feel it as a disgrace and would prefer to hide the incident. But I think you have a right to know what happened. Maybe... maybe it will save us from a similar experience at a later time.~
+@306  = ~This saddens me, <CHARNAME>, because this incident concerns me greatly. Such a thing must not happen! We paladins sense evil, and it is our duty to fight against it. We should see through hallucinations, or we cannot fulfill our obligations for the benefit of all!~
+@307  = ~Ajantis, I don't want to speak about that!~
+@308  = ~Then... then I will keep my thoughts to myself. Rest assured: I will do everything possible so that I am never again misled so easily!~
+@309  = ~This saddens me, <CHARNAME>, because this incident concerns me greatly. Then... then I will keep my thoughts to myself. Be assured: I will do everything possible so that I am never again misled so easily!~
+@310  = ~Sir Eleiana is a sworn knight of the Order, and was my leader on this mission.~
+@311  = ~Well, continue then.~
+@312  = ~I would not like to hear of your experiences in such detail after all, Ajantis.~
+@313  = ~What... what do you mean, beloved? In the struggle for good, men and women are equal.~
+@314  = ~Of course.~
+@315  = ~It just surprised me, that's all. You missed your betrothed, but went running off with four women through the mountains...~
+@316  = ~It's all right, Ajantis.~
+@317  = ~This is the second time when you have brought this up! What about it disturbs you so much? As I already said, men are the same in the fight against evil as women. You know that best of all!~
+@318  = ~And what do you believe we did there?! It was an uncertain and dangerous mission, and we were on the move as comrades in arms, nothing else! I assure you that the gender distribution of the troop was a coincidence.~
+@319  = ~I only wanted to tease you a bit. Don't make such a fuss!~
+@320  = ~Well, somebody made the decision, but not you.~
+@321  = ~I still think the gender arrangement was inappropriate, in light of your private situation at that time, but whatever.~
+@322  = ~There is nothing that you would need to worry about. It was an uncertain and dangerous mission, and we were on the move as comrades in arms. I assure you that the gender distribution of the troop was a coincidence. There... there is only one comrade in arms who has stirred special feelings in me. You are and remain that one, <CHARNAME>, beloved.~
+@323  = ~I understand. Please continue.~
+@324  = ~Whatever. I don't want to hear of your experiences in such detail after all, Ajantis.~
+@325  = ~You must believe me when I say that I have never looked at my companions in the Order as anything other than comrades in arms.~
+@326  = ~(softly) There ... there is only one comrade in arms who has stirred special feelings in me. You are and remain that one, <CHARNAME>, beloved.~
+@327  = ~Whatever. I don't want to hear of your experiences in such detail after all, Ajantis.~
+@328  = ~Well, it began with hallucinations, which only ended when I saw you before me.~
+@329  = ~Maybe you are right... I thank you.  This conversation has quieted my restless thoughts. Be assured: I will do everything I can so that I am never again misled so easily!~
+@330  = ~He does that! I was just speaking about that with you! (angrily) What do you mean by 'take themselves too seriously'?!~
+@331  = ~Let us end this conversation. I had hoped to receive consolation and support from you, but perhaps it should not be so. Be assured: I will do everything I can so that I am never again misled so easily!~
+@332  = ~It is a lesson to me, <CHARNAME>, which is the reason for my desire to speak with you about it. Well, I am feeling a little better now, thank you. Be assured: I will do everything so that I am never again misled so easily!~
+@333  = ~I am sometimes glad that Firkraag imprisoned me and my companions... If he had not done so, we may have confronted and, under the influence of illusions, killed one another in the Windspear Hills.~ [c#ablank]
+@334  = ~That would have been terrible. The situation was gruesome enough as it was.~
+@335  = ~I would rather not dwell on it. I am glad that Firkraag had to prove his power with the illusion in the illusion, so that we weren't truly confronted with each other.~
+@336  = ~(sarcastically) Thank you, my love. That was just what I needed to feel better.~
+@337  = ~Well, it could have saved us effort if it had gone a different way. Say, if we had recognized the illusion earlier.~
+@338  = ~So what? Some revival and healing magic after the fight and it would have been over.~
+@339  = ~You speak very casually about mighty magic, <CHARNAME>. It is not always possible to wake the deceased. The risk that one of us would have been irrevocably lost would have been very high.~
+@340  = ~I doubt that it would have been so simple.~
+@341  = ~Think of the illusion of the Silver Lady... It also was too powerful to be seen through.~
+@342  = ~I believe you gladly. The thought just worried me.~
+@343  = ~The deception of a red wyrm is not so easy to see through, <CHARNAME>... I know this from my own painful experiences.~
+@344  = ~Another facet of it is that if my companions and I had killed you, an innocent, we would have lost our paladin honor! That thought makes me shiver as well.~
+@345  = ~You would have fallen? Why? You would not have done it intentionally.~
+@346  = ~Well, Lord Windspear would have spoken for you, as he did for me.~
+@347  = ~It may be so. I would not like to talk about it further, Ajantis.~
+@348  = ~Another aspect of it is that you, my companions and I could have lost our paladin honor if we had killed each other! That thought makes me shiver as well.~
+@349  = ~I know that I would have fallen if I had truly killed a knight. I am very glad that I did not have to struggle with it. Basically, that was another reason the situation in the Windspear Hills seemed so strange to me.~
+@350  = ~Well, we would never have done it intentionally, anyway.~
+@351  = ~Lord Windspear would have spoken for you, as he did for me.~
+@352  = ~Committing an evil action under the influence of an evil power also takes the honor from a paladin. I fell when I stood under the influence of that creature of death, and your fight in the Windspear Hills would have been a similar situation... Now, best we do not speak of it any more. We can hope that it was the last deception of this nature we will be involved in.~
+@353  = ~A paladin does evil if he kills an innocent. This also counts if he was deceived.~
+@354  = ~That is not fair. He did not, as I said, act intentionally! Is there no difference between the deliberate and the accidental falling of a paladin?~
+@355  = ~Ah, I did not know that. Good that it has not happened, after all.~
+@356  = ~I know, and I am really glad that I did not have to struggle with it. Basically that was another reason why the situation in the Windspear Hills seemed so strange to me.~
+@357  = ~Luckily we need not struggle with it, because it has not happened.~
+@358  = ~How true. Let us hope that it was the last deception of this kind in which we will be involved.~
+@359  = ~It is also idle to speak about it, because it is past. Let us hope that it was the last deception of this nature in which we will be involved.~
+@360  = ~In contrast to a fallen paladin who betrays his principles and his god and turned to the dark side, a deceived paladin is able to regain the favor of his god. But it is not simple... A paladin may not err, <CHARNAME>.~
+@361  = ~It would have needed more words than that to return a fallen paladin to the favor of his god again. A paladin does evil if he kills an innocent. This also counts if he was deceived.~
+@362  = ~Forgive me, beloved, if my words were a little insensitive. The thought just... bothers me.~
+@363  = ~(sigh)~ [c#ablank]
+@364  = ~Forgive me, <CHARNAME>... I by no means wished to lament. Naturally, we have to give everything to fight the dangers we are confronted with. (Ajantis touches his shoulder with his hand.) It is only that I have this scar, which hurts me still now and again...~
+@365  = ~You mean the long one?~
+@366  = ~Show me the scar, Ajantis. I would like to make sure that it has not become inflamed!~
+@367  = ~Well, we all probably have one spot or another that reminds us too painfully of past battles.~
+@368  = ~Ah. Let us continue.~
+@369  = ~Yes, it begins at the scapula and goes down my whole back.~
+@370  = ~That is only too true. Forgive me if I sounded maudlin.~
+@371  = ~All right. Let us continue.~
+@372  = ~I assure you that my concentration and fighting prowess are unimpaired by the wound.~
+@373  = ~I cannot show it to you, <CHARNAME>. After all, I would have to expose my upper torso!~
+@374  = ~Ajantis, I would like to make sure! You can perhaps merely loosen your clothes.~
+@375  = ~<CHARNAME>, we stand here in the middle of...~
+@376  = ~Please, Ajantis, you are not very sensitive to pain. If you are noticing the wound, it may really be inflamed and we have to take care of it.~
+@377  = ~Hmph, well if you insist on it... at least let us step aside a little bit...~
+@378  = ~Well, I have loosened my armor and shirt now... Can you see anything?~
+@379  = ~Ajantis, that is a long scar! I have obviously not looked at your back often enough... (You run your finger down the scar, beginning at the upper end.)~
+@380  = ~Let me have a look... (You run your finger down the scar, beginning at the upper end.)~
+@381  = ~No, it seems all is well, Ajantis.~
+@382  = ~Then I am glad. Thank you. As I said, I did not want to create the impression that I am despondent. But the wound will probably hurt for a while, until it has healed completely. Let me quickly fasten my buckles, then we can continue on. I assure you that my concentration and fighting prowess are unimpaired!~
+@383  = ~(Ajantis winces from the soft touch; however, says nothing. Now your finger is on the middle of his back.)~
+@384  = ~Hmm, no, I see nothing. It seems to be all right.~
+@385  = ~(You continue running your finger down the scar.)~
+@386  = ~(You are now at the level of Ajantis's hip. You notice that your betrothed has become nervous.) <CHARNAME>...~
+@387  = ~Keep still, Ajantis, I would like to make absolutely sure. (You run your finger further down the scar.)~
+@388  = ~(Your finger has now reached Ajantis's belt. The scar goes even further...)~
+@389  = ~(You run your finger further down the scar, reaching into Ajantis's trousers...)~
+@390  = ~(Ajantis stifles a gasp and pulls your hand out of his clothes.) With that... you have examined the whole scar. Thank you for looking at it. It seems that everything is probably all right... (cough)~
+@391  = ~Let me quickly fasten my buckles, then we can continue on. I assure you that my fighting prowess is unimpaired by the wound!~
+@392  = ~I am so happy to have you with me again, beloved. Yet at the same time, my heart bleeds with the thought of what this Irenicus did to you, while I was unable to do anything at all.~ [c#ablank]
+@393  = ~You aren't responsible for what happened, Ajantis, do not reproach yourself.~
+@394  = ~I am just glad to have you with me again, Ajantis.~
+@395  = ~You said that you would always be there for me when I needed you... Where were you when Irenicus did these cruel things to me?~
+@396  = ~Exactly that... I have asked myself that very thing, beloved. Nevertheless, I think you know that I gave you this promise as what I am: a human, with all the restrictions that accompany my existence as a mortal.~
+@397  = ~Sometimes I think, if only I had not left you... It was too selfish of me to want to travel as fast as possible to my family. I should have remained with you.~
+@398  = ~No guilt rests on you, Ajantis, really!~
+@399  = ~It was fate, Ajantis. Irenicus could have overpowered me just as easily at an earlier or later time.~
+@400  = ~And then what? You could not have struck Irenicus either. He came too well prepared.~
+@401  = ~Stop feeling sorry for yourself, this is not bearable. I am the one who was damaged.~
+@402  = ~You are certainly right, but... (hesitates, conscience-stricken)~
+@403  = ~Grieve not, Ajantis. Now everything is well, and that is the only thing that counts.~
+@404  = ~My goodness, you are having quite an attack of self-centeredness. As if Irenicus would have waited for *you*.~
+@405  = ~I am thankful for your dear words. You are right; the fact that now all is well is what counts. Nevertheless, I feel guilty. I was not there when you needed me. I will give all my strength and vigilance, so that such a thing does not occur again, beloved.~
+@406  = ~I know what you mean, but, nevertheless, I feel guilty. I was not there when you needed me.~
+@407  = ~(sigh) I will give all my strength and watchfulness, so that such a thing does not occur again, beloved.~
+@408  = ~Do I sound so to you? I feel guilty. I was not there when you needed me. (sigh) I will give all my strength and watchfulness, so that such a thing does not occur again, beloved.~
+@409  = ~The time when my parents will be in Athkatla again slowly approaches... They will send me a message as soon as they are here.~ [c#ablank]
+@410  = ~Ah, finally. Yes, let me know when you receive a message from them.~
+@411  = ~You sound nervous, or did I imagine that?~
+@412  = ~Well, no messenger is likely to reach us *here*, right?~
+@413  = ~I am fed up with this waiting, Ajantis.~
+@414  = ~That's nice.~
+@415  = ~We have already talked about this. Yes, I am nervous, but it is pointless to speak about that now. We can do nothing else than wait for their response.~
+@416  = ~Let me know when you get a message from them.~
+@417  = ~They reacted so strangely when I told them about you. (hesitates) I must be honest, <CHARNAME>: I await the response of my parents with great concern. But it is pointless to speak about that now. We can do nothing else, but wait for their response.~
+@418  = ~I will, <CHARNAME>, you may be certain of that!~
+@419  = ~I am sorry for this, beloved. As I said, it won't be much longer now until they will be in Athkatla again, where we will meet them.~
+@420  = ~I will let you know immediately, <CHARNAME>, you may be certain of that.~
+@421  = ~The messenger will find us in the city. I assume that we will be returning there soon.~
+@422  = ~However, the messenger will only find us if we are in urban regions. We will see when we return there.~
+@423  = ~Yes, this is true. The messenger will only find us if we are in urban regions. We will see when we return there.~
+@424  = ~Beloved, please... let us soon go to the Mithrest Inn, where my parents are waiting. I would like to finally be certain whether they favor our engagement or not!~ [c#ablank]
+@425  = ~Well, we are far away from Athkatla where my parents were waiting. I wrote a letter to them shortly before our departure and informed them that obligations kept us away. We will see whether we can meet them after our return. This subject worries me so much; we would do better not to speak of it until then. It would only serve as idle talking, anyway.~ [c#ablank]
+@426  = ~Sir Ajantis? Forgive me, my lord.~
+@427  = ~Douglas! Did you bring word of my parents?~
+@428  = ~Yes, Sir Ajantis. Lord and Lady Ilvastarr are staying in Athkatla again and call you to them, to give you the response that they promised.~
+@429  = ~Finally! Where can I find them?~
+@430  = ~They are to be found in their usual accommodation in the Mithrest Inn, my lord.~
+@431  = ~I thank you, Douglas.~
+@432  = ~Finally, my parents are in Athkatla again, <CHARNAME>. I would certainly like to see them, together with you. Let us go as quickly as possible to the Mithrest Inn!~
+@433  = ~That would please me very much. Where in Athkatla is this inn?~
+@434  = ~Ajantis, I do not believe that my attendance would help much. Go on your own.~
+@435  = ~We cannot go now, Ajantis.~
+@436  = ~I would rather not, <CHARNAME>. I would like to have you with me. The response from my parents concerns us both.~
+@437  = ~That is true. Where must we go?~
+@438  = ~Then it will have to wait.~
+@439  = ~The Mithrest Inn is in Waukeen's Promenade. We can ask the landlord there in which room my parents are quartered.~
+@440  = ~Well... I'm not there yet, either. The refusal of your parents hurt me quite a bit, too.~
+@441  = ~I know that we have very urgent things to do. However, please let us go soon to my parents. I would like to finally hear their response!~
+@442  = ~Like I already said, it will have to wait.~
+@443  = ~Not for too long, <CHARNAME>, please!~
+@444  = ~I would like to use this opportunity and question you once more about the new engagement ring, <CHARNAME>.~
+@445  = ~(sigh) Well, then we will probably not meet my parents after all. I see that our search is more important than our private matters.~
+@446  = ~Love, our wedding rings are forged and with my religious brethren. As soon as Imoen is freed, we can go to celebrate our wedding!~ [c#ablank]
+
+@447  = ~I understand. But, love... we do not know how long it will take, and... and what will have happened to her in the meantime. It could mean postponing our wedding for an unknown timespan. I would... I would so much like to marry you as soon as possible, to know us united against the evil of this world.~
+@448  = ~And I understand your notion, but we will wait.~
+
+@449  = ~Sir... Sir Ajantis?! What lucky coincidence! I have been searching for you.~
+@450  = ~Douglas! What a favorable meeting! Tell me... my parents, are they still...?~
+@451  = ~Yes, Sir Ajantis. Lord and Lady Ilvastarr are staying in Athkatla again, and hope to see you. They still owe you a response.~
+@452  = ~How much this message pleases me! Are they in their usual accommodations in the Mithrest Inn?~
+@453  = ~They expect you there, my lord. If you want to see them, however, you would do well to follow me immediately.~
+@454  = ~<CHARNAME>?...~
+@455  = ~We will come immediately. Lead us there.~
+@456  = ~No, we do not have the time now.~
+@457  = ~Lord and Lady Ilvastarr can wait no longer, Sir Ajantis. If you do not want to come with me immediately, you will have to be content with a written message.~
+@458  = ~Very well, we will come immediately. Lead us there.~
+@459  = ~Then give us the message. We really cannot go there now.~
+@460  = ~As you wish. Follow me, please.~
+@461  = ~It is like <CHARNAME> says, Douglas... (sigh)~
+@462  = ~As you wish, my lord. Here is the message from your parents. I will inform them that you will not come.~
+@463  = ~I thank you. Let me see...~
+@464  = ~'If you read this, then you have decided not to come to us. Hence, we give you in writing the response that we still owe to you.'~
+@465  = ~'Concerning your engagement, we are not able to...' (groan)~
+@466  = ~Please read what it says, Ajantis!~
+@467  = ~'Not...' What?~
+@468  = ~Just tell me what they wrote, Ajantis.~
+@469  = ~They reject our engagement, <CHARNAME>! They...~
+@470  = ~It says: 'Concerning your engagement, we are not able to approve of it. <CHARNAME> is no adequate wife for a born Ilvastarr. We will not give our consent to this marriage and demand that you dissolve the engagement at once.'~
+@471  = ~'If you celebrate this marriage, you have to be aware of the consequences you will face as our son...'~
+@472  = ~(groan) Why could they not see past your inheritance and perceive that you move on the path of the righteous? You *are* a worthy wife for their fourth-born son!~
+@473  = ~They do not seem to share this opinion.~
+@474  = ~This refusal hurts me deeply, Ajantis. They don't even know me.~
+@475  = ~Maybe it is better like this. We will find our own way.~
+@476  = ~Ah, well. At least this is finally settled.~
+@477  = ~Yes, but I do not understand it!...~
+@478  = ~I can understand you only too well.~
+@479  = ~No, I cannot accept it so easily!~
+@480  = ~Ah! I see my parents, <CHARNAME>. Follow me, I will lead you to them.~ [c#ablank]
+@481  = ~Mother, father! It is nice to see you.~
+@482  = ~I am glad to finally meet the parents of my betrothed.~
+@483  = ~Finally, we get an answer. Now, what is your response?~
+@484  = ~These are your parents, Ajantis?~
+@485  = ~(You wait in silence to see how the conversation will develop.)~
+@486  = ~What ill-bred behavior! Well, it matters not.~
+@487  = ~Mother, father, may I introduce <CHARNAME>, my...~
+@488  = ~Speak no further, Ajantis. The situation would become even more unpleasant.~
+@489  = ~You mean...~
+@490  = ~We have come to inform you of our decision, as you have requested. We cannot agree to your engagement, my son.~
+@491  = ~This... You cannot be serious!~
+@492  = ~Yes, it is so. She is no adequate choice.~
+@493  = ~Why can you not see past her hidden inheritance? <CHARNAME> moves on the path of righteousness! She is a worthy wife for your fourth-born son!~
+@494  = ~No, she is not, and her appearance does not interest us. There are principles that must be kept without compromise. You, paladin and knight, should know this best of all.~
+@495  = ~Of course I know this! But I do not see these principles being questioned by my choice of a bride.~
+@496  = ~But they are. If you cannot see this, you have already gone far away from us.~
+@497  = ~Your words hurt me. More than you can imagine!~
+@498  = ~You hurt us by affronting us with this immoderate choice. We will not give our approval to this marriage, Ajantis. We demand that you dissolve the engagement at once.~
+@499  = ~I will not do this.~
+@500  = ~Then you should be aware of the consequences that await you if you choose to celebrate this wedding, my son.~
+@501  = ~I... I understand. I am thankful that you came to inform me of your decision. Farewell.~
+@502  = ~Ajantis...~
+@503  = ~Let it be, Ulguth, it makes no sense. Let us go.~
+@504  = ~(sigh) Farewell, Ajantis.~
+@505  = ~I cannot believe that my parents refuse to give their approval to our wedding! Your flawlessly good actions on the Sword Coast helped me to overcome my doubts and convince me that our relationship would not run against my duties as a paladin. Now I find that my parents are afraid of the involvements it could lead the family into!~ [c#ablank]
+@506  = ~Do you share their feelings? Do you think that the problems my heritage could cause to your family may become too much?~
+@507  = ~And what do we do now?~
+@508  = ~Ajantis, with all due respect for your feelings to your parents, I would like to eventually leave this subject behind.~
+@509  = ~Ajantis, I am fed up to always have to consider the opinion of your parents. They reject me, and we should see that we gain distance from them as quickly as possible.~
+@510  = ~<CHARNAME>, forgive me, but I... I must first understand what has just happened.~
+@511  = ~The consequences of which my parents spoke... it would mean my expulsion from the Ilvastarr family. I... I am not able to speak about this now. It hurts too much.~
+@512  = ~Forgive me, beloved, for being so quiet lately. But I... I need time.~ [c#ablank]
+@513  = ~Please talk to me, Ajantis. I can feel your torment, but I do not know what I can do to help!~
+@514  = ~The answer from your parents, I suppose?~
+@515  = ~(sigh) Yes.~
+@516  = ~Now you suddenly speak to me?~
+@517  = ~Whatever, I don't want to hear it.~
+@518  = ~I thank you. How good it is for me to hear you say this.~
+@519  = ~You are helping now by listening to me and otherwise bearing my reticence...~
+@520  = ~I am sorry that I put your patience to the test.~
+@521  = ~Yes, this and nothing else.~
+@522  = ~I... I need a little bit more time to understand the decision of my parents. Forgive me, beloved, I cannot speak further about it now.~
+
+@523  = ~I am very sorry, Ajantis.~
+@524  = ~Yes, but what exactly are you weighing? Are you doubting our love? Are you afraid it is not strong enough?~
+
+@525  = ~I see.~
+
+@526  = ~(scoffs) That was helpful!~
+@527  = ~My... my feelings are difficult to specify. I feel like I am torn apart inside.~
+@528  = ~(Ajantis sighs, obviously in thought.)~
+
+@529  = ~Ajantis, do not trouble yourself any further. I... I love you from the bottom of my heart, but this is too much. I release you from your vow. You are free to chose a wife appropriate to a noble son who loves his family as much as you do.~
+
+@530  = ~Is there really nothing we can do to change their mind?~
+@531  = ~I am quite sure I know what troubles you - the refusal of your parents. What I don't know is what thoughts you are turning in your heart right now.~
+
+@532  = ~As hard as it is, you will have to overcome it, if you chose me.~
+
+@533  = ~You have to make sure you don't neglect your paladin duties over this. You seem very distracted lately.~
+
+@534  = ~Did you really expect anything else? I didn't. Not from a pompous noble family.~
+
+@535  = ~Your sharpness is not appropriate. Serious thoughts occupy me, which also concern you!~
+@536  = ~Forgive me, Ajantis. I did not want to reject you. I just felt that I cannot truly help you with this.~
+@537  = ~Then speak with me. I can feel your torment, but I do not know what I can do to help!~
+@538  = ~Since your parents have informed us of their decision, I have heard only grunts from you. Now you suddenly want to talk and are sour that I am not ready to listen. Is what *I* feel of no interest to you?~
+@539  = ~Ajantis, you are a knight and an adult man. I don't want to hear excuses!~
+@540  = ~Deal with it in silence, Ajantis.~
+@541  = ~But... No, this is not true. I admit that my thoughts have tended to occupy me very much, but your feelings are by no means unimportant to me, <CHARNAME>.~
+@542  = ~I... I am not making 'excuses'! Serious thoughts move me! Do you not want to hear them?~
+@543  = ~No, I don't. Deal with it in silence, Ajantis.~
+@544  = ~In silence... Thus it shall be! Let us continue.~
+
+
+@545  = ~ You... you should consider whether you really want to be married to a have-not, beloved.~
+
+@546  = ~Please, do not believe that I doubt our love. I know they are wrong, and their refusal pains me tremendously. But you know what my family means to me...~
+
+@547  = ~What? <CHARNAME>, do not doubt your worthiness! Yes, I love my family, but they... they *hurt* me so much with refusing you. And the thought of losing you... it scares me even more! It feels like chopping off a leg to save an arm! It does not make any sense!~
+
+@548  = ~Is it not obvious? I am trying to understand that for marrying the woman I love, I will have to abandon the family I love.~
+@549  = ~It's good that you mention this. Quite honestly, Ajantis, I saw myself as a prospective 'Lady Ilvastarr'. If you cannot offer this to me, I would not like to marry you.~
+@550  = ~I don't want to talk about it!~
+@551  = ~If my parents disown me, I cannot offer you the social position that I assumed up to now.~
+@552  = ~Will... will it suffice to you to be married to a poor knight, <CHARNAME>?~
+@553  = ~Ajantis, you earn your living by the Order, and this is sufficient for me.~
+@554  = ~As long as it is you, yes. In my eyes, you remain what you have always been: a knight and my hero.~
+@555  = ~Well, honestly, I would have liked to be in the position of a lady, but what cannot be, cannot be.~
+@556  = ~What should I answer? 'No, it does not?'~
+@557  = ~Your words make me so glad... and sad at the same time, beloved. I wanted to offer more to my wife.~
+@558  = ~You offer to me what you are. I could not wish for more.~
+@559  = ~Well, one cannot have everything.~
+@560  = ~Ajantis, what is really bothering you is the question of whether I am important enough for *you*, is it not?!~
+@561  = ~I would doubt our love? How can you say such a thing?! Can you not see how much I am tormented by my parents' decision?~
+@562  = ~Again you repulse me if I wish to speak with you. Are my thoughts of so little worth to you?!~
+@563  = ~Of course not.~
+@564  = ~Um, I meant a bit more specific.~
+
+@565  = ~Honestly said, yes.~
+@566  = ~But I would like to speak with you about it! Do you not see that it is important to me? Are my thoughts of so little worth to you?!~
+@567  = ~This is only too true...~
+@568  = ~If... if it is so, then indeed, it is best if we end our engagement, <CHARNAME>.~
+@569  = ~On the other hand, however, I would not like to lose you, Ajantis.~
+@570  = ~You agree so easily? Then maybe it is really for the best! Our engagement is over.~
+@571  = ~You must be aware of what this signifies, <CHARNAME>. Maybe you have more need of reflection than you thought.~
+@572  = ~Your outlook is refreshingly pure. I hope that it is your honest opinion, because it will happen.~
+@573  = ~If... those are your thoughts, then yes, say them.~
+
+@574  = ~As long as it is you, Ajantis, I'll take the poor knight. In my eyes, you remain what you have always been: a proud knight and my hero.~
+@575  = ~Honestly, Ajantis, I had already seen myself as a prospective 'Lady Ilvastarr'. If you cannot offer this to me, I would not like to marry you.~
+@576  = ~I thank you for your answers, <CHARNAME>. I need some more time to ponder. Let us continue on.~
+@577  = ~What... what has happened with you? Why do you refuse me your attention, now, when I need it so urgently?!~
+@578  = ~Forgive me, I was irritated. Please, tell me about the thoughts that concern you.~
+@579  = ~(sigh) Well, then speak.~
+@580  = ~Because I think it is for the best if we end our engagement.~
+@581  = ~Your unfriendly attitude pains me, <CHARNAME>.~
+@582  = ~Ajantis, you are a strong man, and until recently, also a good catch. Right now, you are getting on my nerves, however.~
+@583  = ~I have had enough, Ajantis. Let us end our relationship.~
+@584  = ~(relieved) I thank you.~
+@585  = ~'Good catch'? Is that all you value about me?~
+@586  = ~Of course not. I love you and do not wish to lose you. Please, tell me about your thoughts.~
+@587  = ~Lately, not even that any more. Your parents have made it clear enough.~
+@588  = ~Enough! I cannot believe we are talking like this. If it is so, then let us end the engagement!~
+@589  = ~I'm sorry, Ajantis. Of course not. I love you and do not want to lose you. Tell me what is on your mind, please.~
+@590  = ~So shall it be.~
+
+@591  = ~Take all the time you want and need, Ajantis. The last thing I want is a decision made upon the feeling of duty. It is not your duty to fulfil your vow of marriage, Ajantis. Not under these conditions.~
+
+@592  = ~Well, maybe we were too naive to expect anything else.~
+
+@593  = ~We'll have to live with it, Ajantis. Let's get on with things.~
+
+@594  = ~(scoffs unhappily) No... No, my mother knows her mind. And if it is set... it is set. They did not see the good in you, after all I told and showed them. There is nothing we can do.~
+
+@595  = ~You want to end our engagement? After all that we have been through?~
+@596  = ~You have spoken of immortal love, Ajantis. And now everything comes to this?~
+
+@597  = ~My capabilities as a paladin are not endangered, I assure you that. It is a well spoken warning, though.~
+
+@598  = ~Yes! I know!~
+@599  = ~I made the vow because I love you, <CHARNAME>. That I made it with the expectation of my family's approval is true, but...~
+
+@600  = ~You... you are ready to sacrifice your love for what you think is a higher goal. I appreciate your selflessness, <CHARNAME>. (He smiles, sadness and pain showing in his face.) And with this, you have once again proven that you *are* a worthy wife for an Ilvastarr noble.~
+
+@601  = ~I am sorry I am as occupied as I am. You must be hurting, love! (He reaches out for you, his arms ready for a comforting embrace.)~
+
+@602  = ~(You hug him back, letting the comfort ease your own pain a little.)~
+
+@603  = ~(You let him proceed, although you don't feel a need for it.)~
+
+@604  = ~(You signal that you do not wish to be hugged.)~
+
+@605  = ~(Ajantis holds you, a tiny bit longer than expected. You hear him breath into your hair.)~
+
+@606  = ~This is not how we expected this to go, is it?~
+
+@607  = ~(scoff) No, not really.~
+
+@608  = ~We can't change their decision, Ajantis.~
+
+@609  = ~Naive? My parents' reaction was not predictable, not for me. If only they would listen...~
+
+@610  = ~(Ajantis looks at you. His face is stern and there is a troubled frown on his forehead. But when your eyes meet, you also see that they are full of love and appreciation.)~ [c#ablank]
+
+@611  = ~(Upon realizing your attention, he clears his throat, but lets a moment pass before he speaks to you.) Are you doubting our love is strong enough? I ask without reproach, love. But I... I need to know.~
+
+@612  = ~Does this mean you came to terms with your parents' refusal?~
+
+@613  = ~No, I don't question our love. I love you, Ajantis, and there is no doubt.~
+
+@614  = ~Honest answer?~
+
+@615  = ~Forgive my reticence in recent times, beloved. I... I had an inner struggle to resolve.~
+
+
+@616  = ~Yes, I do.~
+@617  = ~Our love has yet again been put to the test. I asked myself in the last few days whether... (he hesitates and coughs to himself) whether it is a good idea to marry you.~
+
+@618  = ~(exhales) I feared as much. What do we do now?~
+
+@619  = ~Let me explain what I mean before you misunderstand me. The considerations I faced were these.~
+@620  = ~I do love you, Ajantis, and I know I want to be with you, whatever the future holds for our love.~
+@621  = ~Maybe it is best if we end our relationship.~
+
+@622  = ~There is still a lot to think through, love, but I reached a point where the following steps do not depend on my feelings alone.~
+
+@623  = ~Do not worry about mine. But did your feelings change because of my parents' refusal?~
+
+@624  = ~Those... those were the thoughts that I had, <CHARNAME>.~
+
+@625  = ~From what I can tell you now as the mortal that I am, I know that I love you and want to be with you, Ajantis.~
+
+@626  = ~Ajantis, that was a beautiful declaration of love. I thank you deeply and am very glad that you have decided in favor of me.~
+
+@627  = ~Good, it seems you have come to terms with your feelings then.~
+@628  = ~Logically thought out, as always. And a bit like the cross-examination you put me through when my divine descent was revealed.~
+
+@629  = ~<CHARNAME>, I love you and wish to remain with you. You are the pride of my life and I want to marry you.~
+
+@630  = ~<CHARNAME>, I love you and thought you to be the pride of my life.~
+
+@631  = ~I am sorry if I offended you. But I needed time to deal with my feelings and get them straight.~
+@632  = ~Then I am glad that this happened and you decided in favor of me.~
+@633  = ~Too late, Ajantis. I want to end our engagement.~
+
+
+@634  = ~I once said I wanted to marry you only as a knight, and in the company of my family. Now, my family will not come, and my elevation to the knighthood has already taken place.~
+@635  = ~There is no reason to postpone the wedding. On the contrary, recent developments have shown me that we should not lose any more time.~
+@636  = ~I would like to once again propose to you in all solemnity, Lady <CHARNAME>. Will you still marry me, even under these circumstances?~
+@637  = ~Yes, I will!~
+@638  = ~No, it is too late. Let us end the engagement.~
+@639  = ~I am glad as well, my lady, because I love you.~
+@640  = ~You make me very happy with this answer!~
+@641  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring, and the stone color and shape are the same as the original.~
+@642  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring and decorated with a green stone, as you wished.~
+@643  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring and decorated with a colorless stone, as you wished.~
+@644  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring and decorated with a red stone, as you wished.~
+@645  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring and decorated with a yellow stone, as you wished.~
+@646  = ~Here, take this ring, which I had made for you. It was forged from the fragments of the original ring and decorated with no gem, as you wished.~
+@647  = ~Here, take this ring, which I had made for you. Its stone color and shape are the same as the original.~
+@648  = ~Here, take this ring, which I had made for you. It is decorated with a green stone, as you wished.~
+@649  = ~Here, take this ring, which I had made for you. It is decorated with a colorless stone, as you wished.~
+@650  = ~Here, take this ring, which I had made for you. It is decorated with a red stone, as you wished.~
+@651  = ~Here, take this ring, which I had made for you. It is decorated with a yellow stone, as you wished.~
+@652  = ~Here, take this ring, which I had made for you. It is unadorned by any stone, as you wished.~
+@653  = ~I asked that it be enchanted, <CHARNAME>... so that it will protect you from evil, as if I were always with you.~
+@654  = ~It is beautiful! Thank you, Ajantis!~
+@655  = ~Yes, thank you.~
+@656  = ~Oh, you had the new ring already here?~
+@657  = ~Yes, it appears very similar to the old ring.~
+@658  = ~I hope you like it, wonderful <CHARNAME>, because it is once more a sign of my love for you.~
+@659  = ~Ajantis, you have chosen me over your family, and you honor me greatly. I understand that with your obligations in the fight for good, I must share you with the Order, but I see you are serious. I thank you with all my heart. I love you, Ajantis.~
+@660  = ~Honestly, I have concerns... You would give up your family for me. It honors me greatly, but how long would it last? Soon, once the first joy is gone, you will hate me for this. I love you too much to want that.~
+@661  = ~Let us finally begin our wedding plans, Ajantis.~
+@662  = ~<CHARNAME>, I want to create a new family with you. Please believe that your proximity and security will be enough for me. So far, I drew strength from my family to continue in my fight for good. In the future, you will be the source of my strength.~
+@663  = ~Then I accept gladly, and thank you. I love you, Ajantis.~
+@664  = ~Ah, that's good. Let us finally begin our wedding plans, Ajantis.~
+
+@665  = ~And I love you, from the bottom of my heart!~
+@666  = ~I am filled with the joy your answer gave me... And I sense the others observing us. I would very much like to plan our wedding now, beloved, but we spent enough time talking for now, I fear? Let us travel on, and let us wait for a quiet moment. Unless you want to discuss this as soon as possible - I am ready.~
+@667  = ~Are... are you serious?~
+@668  = ~No, of course not. I will marry you, Ajantis.~
+@669  = ~Yes, as I said, I would like to end our engagement.~
+@670  = ~I am immensely relieved to hear that, <CHARNAME>.~
+@671  = ~The wedding rings are ordered and should be finished in two days, beloved. I have just sent the message. Once the rings are completed, we can go to the temple and marry. How much I am looking forward to it!~ [c#ablank]
+@672  = ~I have spoken with master Surianko. The wedding rings are ordered and should be finished in two days, beloved. Once they are completed, we can go to the temple and marry. How much I am looking forward to it!~ [c#ablank]
+
+@673  = ~I did not mean to put you off when ending our conversation about our wedding, beloved. I would have been happy to discuss wedding preparations immediately with you, but I wanted to delay us no longer with talking.~ [c#ablank]
+@674  = ~Yes, please.~
+@675  = ~If you think this moment is appropriate, Ajantis...~
+
+@676  = ~(hesitates) I hope that you understand when I say that I want to be married by a priest of Helm...~
+@677  = ~(smile) Anything else would probably not be appropriate.~
+@678  = ~If you insist...~
+@679  = ~Do I have any choice?~
+@680  = ~I am a priestess of Lathander, Ajantis.~
+@681  = ~Well... Since I am out of sorts with my own church, there is probably no other choice.~
+@682  = ~As 'appropriate' as many other moments that we share, I am afraid...~
+@683  = ~I thank you. Let me contact the temple of Helm in Athkatla.~
+@684  = ~I do, but I hope you will like the ceremony. Let me contact the temple of Helm in Athkatla.~
+@685  = ~Well, for me no priest of another divinity is applicable. Can you accept that idea?~
+@686  = ~(smile) Of course.~
+@687  = ~Since I know your stubbornness, I know that I have no other choice.~
+@688  = ~This I know. Your faith does not prevent you from being married by a priest of another god.~
+@689  = ~That is true. I therefore agree.~
+@690  = ~I thank you and hope you will like the ceremony. Let me contact the temple of Helm in Athkatla.~
+@691  = ~Am I correct in the assumption that you would like to choose your wedding ring, beloved?~
+@692  = ~My suggestion is clear. Master Goldsmith Surianko in Waukeen's Promenade forges the most artistic wedding rings. In addition, aside from some rare occasions, he is the only goldsmith I have found in Athkatla who does not sell junk.~
+@693  = ~Fortunately he now offers his jewelry in the Mithrest Inn, since his forge was destroyed.~
+@694  = ~You mean we should ask him about wedding rings?~
+@695  = ~Is there no other possibility?~
+@696  = ~There is a very nice shop... (blushes) I speak of master goldsmith Surianko's smithy, <CHARNAME>. I was once in his shop and asked myself if there would be anything to your taste...~
+@697  = ~It was in Waukeen's Promenade, but the forge was probably destroyed in the collapse. I was very pleased to hear that master Surianko survived the explosion and now sells his excellent jewelry in the Mithrest Inn.~
+@698  = ~You have been looking at jewelry for me? That is so sweet of you, Ajantis!~
+@699  = ~Yes, I have already met him there.~
+@700  = ~You suggest that we should choose the wedding rings there, then?~
+@701  = ~Indeed! Then you already know of him. I would not be surprised if you did not see any wedding rings while you were there. You likely must ask directly to see them.~
+@702  = ~You have already selected one from master Surianko. Does it remain your choice?~
+@703  = ~Yes, it does.~
+@704  = ~Actually, I would like to see the rings again.~
+@705  = ~No. I think master Surianko's rings are not nice enough. Is there no other way?~
+@706  = ~I will give our answer to master Surianko as soon as possible then. We will receive a message when the rings are forged and everything else is prepared. I will let you know as soon as we do.~
+@707  = ~I suggest that we peruse master Surianko's selection and choose a ring that suits your taste, love.~
+@708  = ~Well, so it shall be. We will go as soon as possible to the Mithrest Inn in Waukeen's Promenade.~
+@709  = ~However, we do not have time to go there now, Ajantis.~
+@710  = ~Don't make this sound as if it is a choice between you and Imoen! We will wait for her.~
+@711  = ~You are right, and I think she wouldn't mind. Let us marry as soon as possible, then.~
+
+@712  = ~How convenient that we are already here.~
+@713  = ~(shy smile) I have not dared to buy another present without you, beloved.~
+@714  = ~I already met master Surianko there.~
+@715  = ~Is there no other way to obtain wedding rings?~
+@716  = ~If our duty should prevent us from going there, there is also the possibility of having sample rings sent, <CHARNAME>. Tell me if you prefer this alternative.~
+@717  = ~I do not know of any, <CHARNAME>, but I am happy to provide the wedding rings from elsewhere if you have another proposal.~
+@718  = ~No, I know of no other goldsmith.~
+@719  = ~Well, then it will probably remain master Surianko's wares.~
+@720  = ~How am I to know a goldsmith in Amn?~
+@721  = ~You are already widely traveled. Have you met no other goldsmith on your journeys?~
+@722  = ~Well, it will probably remain master Surianko's wares.~
+@723  = ~I can assure you, <CHARNAME>: Master Surianko's rings are of high quality and his artful forging is known far beyond the borders of Amn.~
+@724  = ~Then it remains the ring which I have already chosen, Ajantis.~
+@725  = ~Now I need only measure your very delicate finger, beloved, so that the ring will fit perfectly. Would you give me your hand?...~
+@726  = ~(smile) Here, please, Ajantis.~
+@727  = ~Gladly.~
+@728  = ~(sigh) If need be...~
+@729  = ~That is not a problem. There is the possibility of having sample rings sent for us to inspect. I will send master Surianko a message as soon as possible, telling him that we wish this. If our obligations should leave us the time to stop by his shop, then we can gladly do so.~
+@730  = ~I thank you. Let me quickly take measurements with this piece of string...~
+@731  = ~I am sorry if it is uncomfortable for you, but I do not want to risk mistakes. I thank you. Let me quickly take measurements with this piece of string...~
+@732  = ~It is a miracle, how tender and nevertheless strong your finger is, <CHARNAME>... what beautiful, fine fingers you have. These extremely delicate joints...~
+@733  = ~(embarrassed coughing) I... I should perhaps let go of your hand again.~
+@734  = ~Not without a kiss for me from my very charming admirer.~
+@735  = ~It's fine, Ajantis.~
+@736  = ~Indeed.~
+@737  = ~Then all of it is resolved. I am immensely looking forward to our wedding, beloved!~
+@738  = ~I do not want to harass, love...~
+@739  = ~I will do so gladly! The quiet moment we have chosen to speak allows it.  Everything else has been said. I am immensely looking forward to our wedding, beloved! It is so close now!~
+@740  = ~And now you get your kiss. (softly) How much I enjoy these moments with you, my beloved...~
+//
+@741  = ~<CHARNAME>, look what arrived this morning. As agreed, I have requested samples from Master Surianko's wedding rings. Look into the gem bag that I carry with me, and you will see the most precious wedding rings to be had in Amn.~ [c#ablank]
+@742  = ~Don't worry about the prices, they are not the real ones, just samples. Forgive me if I do not give you the bag, I must send it back in its current state when we are finished. Please, beloved, select a ring for yourself and tell me which you have chosen.~
+@743  = ~Well, then it is time to go on. Beloved, for the sake of caution, I will send the sample bag back to master goldsmith Surianko before we move on. Perhaps we will have time after we rescue Imoen to choose a ring at his shop.~
+@744  = ~<CHARNAME>, I still wanted to give you something. Look what I have selected for you.~ [c#ablank]
+@745  = ~It is a gem bag, beloved. It is made of red velvet, and look here, on the side, your name is inscribed. (smiles shyly)~
+@746  = ~I hope you like it. It is not just a gift, <CHARNAME>. I... I want to make sure you do not think that you must always wear all the jewelry I give you. Now you have a safe place where you can keep it when fighting requires wearing other protective items.~
+@747  = ~And I... well, I find it to be very beautiful, anyway. (blushes)~
+@748  = ~Oh, that is really beautiful! Thank you.~
+@749  = ~Hm, practical. Thank you.~
+@750  = ~Well, if you could think of nothing else.~
+@751  = ~Then it makes me happy. I requested it from master Surianko. It is a special order, created for you.~
+@752  = ~I hope you like it. I requested it from Master Surianko, <CHARNAME>. It is a special order, especially for you.~
+@753  = ~Oh, that does not sound as though you like the gift... That is a pity. I found the bag beautiful and practical at the same time. I requested it from Master Surianko, <CHARNAME>. It is a special order. Well, you will certainly have a benefit from it.~
+@754  = ~I have abandoned the hope that my family will accept you as a daughter-in-law, beloved... (sigh)~ [c#ablank]
+@755  = ~This weighs heavily upon you. I am sorry, Ajantis.~
+@756  = ~I do not expect otherwise, Ajantis. They have clearly stated their opinion.~
+@757  = ~Well, you finally show a trace of realism, Ajantis. There are just things that you cannot change, despite your being a knight.~
+@758  = ~(groan) I wonder when this issue will finally be closed.~
+@759  = ~Do not blame yourself, <CHARNAME>.~
+@760  = ~I know! I had only hoped...~
+@761  = ~This will still take a while, so steel your nerves! I had expected a little more sympathy from you in this matter.~
+@762  = ~I have written many letters recently... I could not resist the temptation to request that my parents reconsider their decision. I still cannot believe it.~
+@763  = ~I did not expect that they would refuse me their consent. It was imprudent of me to give them the message about your heritage so quickly. We could have worked together slowly towards this... My family would then have come to know you. I wonder if they would have rejected you if they had learned more about you.~
+@764  = ~Ajantis, they have not rejected me, but your relationship with a daughter of Bhaal. My presence wouldn't have changed anything.~
+@765  = ~Maybe, but to speculate about it is idle thoughts, Ajantis. Do not torment yourself.~
+@766  = ~We cannot change what happened, Ajantis.~
+@767  = ~Maybe you are right...~
+@768  = ~It is the fate that I have to bear. If I cannot be your wife in the name of your family, I will nevertheless ensure that you will never need to doubt our relationship, as my husband, and as a paladin.~
+@769  = ~It will not be the last time that my heritage causes rejection. It would be for the best if you prepare yourself now.~
+@770  = ~We have talked about it enough. Your parents are back in Waterdeep, and we are here.~
+@771  = ~(sigh) I know.~
+@772  = ~I sincerely thank you for those words, beloved.~
+@773  = ~I have written to my parents that we will soon marry. We will see when they make good on their announcement.~
+@774  = ~I have written to my parents that we have married... We will see when they make good on their announcement.~
+@775  = ~I am aware of this, beloved, and I am ready to bear it with you.~
+@776  = ~(solemnly) Now all is ready, <CHARNAME>, most wonderful of all women. The Priests of Helm are informed and ready to perform the ceremony, and our wedding rings are with my religious brethren. We can go at any time to the temple of the Helm in the Temple District to celebrate our wedding!~ [c#ablank]
+@777  = ~Are you ready to make the oath of a lifetime with me, beloved?~
+@778  = ~Wonderful! I am longing for this moment.~
+@779  = ~The large temple in the Temple District? Tell me, can't we use the small temple in the Bridge District instead? That would be less overwhelming.~
+@780  = ~Ajantis... I considered it carefully and came to the conclusion that I would not like to marry you after all.~
+@781  = ~Just as I do. Then let us soon go to the temple, when our duty permits.~
+@782  = ~We will do it this way.~
+@783  = ~Of course, if you prefer it.~
+@784  = ~Then I choose the small temple of Helm in the Bridge District of Athkatla.~
+@785  = ~No, I would like to be married in the major temple of Helm in the Temple District.~
+@786  = ~As you wish. As soon as we go to this temple, the priests of Helm will be ready for us. The wedding will be performed by priest Antaunus. He is responsible for ceremonies of this kind.~
+@787  = ~You... (dismayed) Are you serious?~
+@788  = ~Yes, I am. Let us end the engagement.~
+@789  = ~No, I do not want to lose you... Let us go to the temple.~
+@790  = ~Once we go to the temple, the priests of Helm will be ready for us. The wedding will be performed by priest Antaunus. He is responsible for ceremonies of this kind.~
+@791  = ~I... I am so happy and excited that I don't know what to say, beloved...~
+@792  = ~However... I would prefer not to marry in this condition.~
+@793  = ~Let us now go to Cromwell... soon, if possible.~
+@794  = ~Let us go to a private, sunny place... You know why.~
+@795  = ~<CHARNAME> what have you done?! I must avenge the death of my temple brother!~ [c#ajan31]
+@796  = ~Well, then we will go on. Beloved, I had hoped that we could find time to perform the ceremony, but I realize that our search is more important than our private plans.~
+/*
+@797  = ~Exactly. I cannot celebrate while Imoen is abducted. Our wedding has to wait.~
+*/
+@798  = ~Ah, Sir Ajantis and Lady <CHARNAME>! Be welcome, I have been expecting you. If you are ready to commit to the alliance of life with each other, then follow me, please.~
+@799  = ~Yes, we are here for you to marry us, priest Antaunus.~
+@800  = ~Who are you?~
+@801  = ~No, that is not why we have come. We still have work to do.~
+@802  = ~No, we... we must do something first.~
+@803  = ~As you say, my <PRO_LADYLORD>. Come to me when you are ready. I will wait for you.~
+@804  = ~Be welcome. Will you now enter into the covenant of life?~
+@805  = ~I am sorry, but I can do nothing for you. If Sir Ajantis and Lady <CHARNAME> are seeking the covenant of marriage, then they should come to me.~
+@806  = ~I see that I cannot be of service to you at the moment. I will wait until you are ready to celebrate your wedding.~
+@807  = ~I am Priest Antaunus, loyal servant of Helm. I will preside at your wedding, if you wish it.~
+@808  = ~Take these rings, which symbolize your union. A ring for the wife, and one for the husband, carry them in memory of the oath that you have given.~
+@809  = ~You are now man and wife in Helm's name and in the face of all the gods who have heard your oath. Go from here with the certainty that you have received the blessing on your marriage.~
+@810  = ~I wish you all the best.~
+@811  = ~What are you saying?~
+@812  = ~I said 'No'. I'm sorry, Ajantis, but I will not marry you. This is my last word.~
+@813  = ~Forgive me. I meant to say: Yes, I swear!~
+@814  = ~So I cannot declare you as husband and wife. My services are not needed here.~
+@815  = ~Let me first place the bridal wreath of flowers on your head, as is customary here. Then follow me thus.~
+@816  = ~Of course, priest Antaunus. I follow you gladly.~
+@817  = ~Sir Ajantis, Lady <CHARNAME>, I greet you in the sacred halls of the Ever Watchful. You have come to receive his blessing and the covenant of marriage.~
+@818  = ~So I ask you, Sir Ajantis Ilvastarr: Are you ready to enter into the covenant of marriage with this woman? Will you proceed together with her on the path of righteousness? Will you stand beside her, in good times and in bad? Will you dwell faithfully by her side and protect her with all your strength against any evil that may come? If so, then say 'Yes, I swear.'~
+@819  = ~Yes, I swear!~
+@820  = ~I now ask you, <CHARNAME> of Candlekeep: Are you ready to enter into the covenant of marriage with this man? Will you proceed with him on the path of righteousness? Will you stand beside him, in good times and bad? Will you dwell faithfully at his side and protect him with all your strength against any evil that may come? If so, then say 'Yes, I swear.'~
+@821  = ~No, I won't.~
+@822  = ~<CHARNAME>, beloved! We are finally married! My heart pounds with joy. I have wished for this day since I proposed to you, long ago. I want to hold and kiss you!~ [c#ablank]
+@823  = ~(You embrace Ajantis.) I am endlessly pleased as well, Ajantis. I love you!~
+@824  = ~Yes, it is a beautiful moment. (You give Ajantis a kiss.)~
+@825  = ~We have important things to do, I think.~
+@826  = ~You are probably right. We will have enough opportunity to enjoy our time together. I thank you that we nevertheless took the time to celebrate our wedding.~
+@827  = ~No, I cannot let this moment pass in such a way! (Ajantis takes you into his arms and hugs you tenderly, giving you a light kiss before releasing you.)~
+@828  = ~I am happy to see you as my wife, <CHARNAME>. Let us work together against the evil of this world! I have sworn an oath of loyalty to you, and I say it again: I will be with you and protect you, always. Together, we will walk the path of righteousness.~
+/*the following are @582 to @603 from C#AjanJ_PID.tra */
+@829  = ~Oh, my friends. My old eyes are actually wet. I wish you all the best for the path you share.~
+@830  = ~Also from me all the best, comrades.~
+@831  = ~Minsc is happy for his friends. We are so moved that we do not know what we should say, right, Boo?~
+@832  = ~Minsc is pleased for his friends. Boo would know what to say now. If only Boo were here!~
+@833  = ~What-what a joyful moment.~
+@834  = ~You have sworn a serious oath and gained a lot of responsibility. May the balance never leave you.~
+@835  = ~Tin suit, dry the tears from your eyes. It could be that you do not see my axe coming.~
+@836  = ~Amazing what your devotion to this relationship contrives. (Although I am rather surprised that this monkey is even capable of understanding the meaning of such a relationship.)~
+@837  = ~Let us leave here, the halls of the Ever Watchful One are far too overwhelming. If we are far enough away, perhaps I will honor you and compose an ode.~
+@838  = ~Voluntarily celebrating a wedding is a very good thing. I hope you will find your peace.~
+@839  = ~I wish that your enemies leave you in peace.~
+@840  = ~What strange ritual of self obligation. One man for a woman, what a meager allocation.~
+@841  = ~I never thought that I would be present at the wedding of an Order knight...~
+@842  = ~Proud and noble you look, Sir Ajantis. I wish you well, <CHARNAME>, all the best for your marriage.~
+@843  = ~An oath before a god reminds us that there are more important commitments than the ones we make to ourselves. May you never be denied assistance.~
+@844  = ~Oh, this reminds me of Aunt Fidelia's wedding. Their third, to be precise. The two earlier ones were not quite so moving, nor the five thereafter. But their seventh wedding involved a certain amount of comedy, as the former husband of the married aunt Franni, who a year later, married the niece of Uncle Frenkel, or was it his daughter? That is what I was reminded of.~
+@845  = ~Now you are married. <CHARNAME>, I wish you all the best. Sir Ajantis, see that you take good care of her!~
+@846  = ~Ajantis, I am happy to know you are now my husband. I will support and protect you, as I swore.~
+@847  = ~What you said was beautiful, Ajantis. Thank you.~
+@848  = ~Hmm. Let us continue, we have much to do.~
+@849  = ~And I love you, <CHARNAME>, from the bottom of my heart. (Ajantis embraces you and gives you a gentle kiss.)~
+@850  = ~(Ajantis answers your kiss with passion.) A very beautiful moment!~
+//
+@851  = ~That we have, indeed. I would just like to address one thing if you would allow...~
+@852  = ~I thank you. I would just like to address one thing if you would allow...~
+@853  = ~Beloved, am I correct in the understanding that for the time being, we do not plan for children to follow our wedding?~
+@854  = ~Good grief. We have just been married, and you ask that already?~
+@855  = ~Yes. That would be very difficult at present.~
+@856  = ~(sigh) Despite what I might like, I believe that in our current situation children would not be advisable.~
+@857  = ~(sarcastically) Why not? Between the search for a very powerful evil mage and the hunt for my soul, without which I am slowly losing myself to the darkness, a child right now would be just right!~
+@858  = ~(sarcastically) Why not? With us currently searching for a very powerful evil mage, and Imoen awaiting liberation, a child now would be just right!~
+@859  = ~Actually, I would like a child as quickly as possible, Ajantis.~
+@860  = ~What is so reprehensible about my question? It is an important issue and with the (ahem) available herbs, we do not have to let chance decide about this important matter.~
+@861  = ~I... I am a loyal servant of Helm. Although Helm rejoices in children, it would be extremely reprehensible of me to weaken you with an unplanned pregnancy.~
+@862  = ~Well, then I say that I will not have children. They would be too difficult at present.~
+@863  = ~(sarcastically) Why not? With us currently searching for a very powerful evil mage, and Imoen awaiting liberation, a child now would be just right!~
+@864  = ~I want a child as quickly as possible, Ajantis.~
+@865  = ~I think likewise... Then I will periodically refresh the dose that allows me to lie with you without getting you with child, <CHARNAME>.~
+@866  = ~Thank you for taking care of this, Ajantis.~
+@867  = ~If you've decided that, I probably have no other option.~
+@868  = ~(purr) Hmmm, say, how quickly do these herbs actually work?...~
+@869  = ~The image of seeing you use a suitable powder kills the last spark of romanticism in me, Ajantis. Really!~
+@870  = ~I agree with this. Forgive me for speaking so plainly... I hope that you will not send me away tonight. I will betimes take the herbs that will allow me to lie with you without getting you with child, <CHARNAME>.~
+@871  = ~I'm not sure yet whether you need to take these precautions, Ajantis... We will see.~
+@872  = ~I hope you are not serious, <CHARNAME>...  Please, it is an important issue. Tell me honestly, what do you think about it?~
+@873  = ~Although this answer pleases me, it greatly surprises me in view of our current situation. I am afraid I must deny you this desire. We have powerful enemies who would ruthlessly exploit your weakness.~
+@874  = ~No, let us take some time. Forgive me for speaking so plainly... I hope that you will not send me away tonight. I will betimes take the herbs that will allow me to lie with you without getting you with child, <CHARNAME>.~
+@875  = ~Well, maybe you are right. Thank you for taking care of it.~
+@876  = ~No, let us wait. I will betimes take the herbs that will allow me to lie with you without getting you with child, <CHARNAME>.~
+@877  = ~Is that so? I take this dose to allow me to do my... duties as your husband, to be able to concentrate on fulfilling your... (blushes) physical desires without losing my vigilance against the possibility of unwanted pregnancy. (cough) Does that sound... more romantic?~
+@878  = ~Yes, it does. I thank you for taking care of it.~
+@879  = ~(grin) You're really sweet, Ajantis.~
+@880  = ~No, not in the least. Could we change the subject, please?~
+@881  = ~This is self evident. Now let us continue. I will be close at your side, my wonderful, beloved wife!~
+@882  = ~I hope you see that. I would prefer nothing more than to have a family with you, beloved, please believe me.~
+@883  = ~Ah? Well, we'll see... Let us therefore continue. I will be close at your side, my wonderful, beloved wife!~
+@884  = ~I am pleased, although I am not sure why you say that, because I meant it very seriously.~
+@885  = ~Now let us continue. I will be close at your side, my wonderful, beloved wife!~
+@886  = ~Well, after taking it, the effect is more or less immediate. Why... You wouldn't now... I mean ... (clears his throat) You wanted to confuse me, yes? Well, you succeeded. (grin)~
+@887  = ~Let us continue. I will be close at your side, my wonderful, beloved wife!~
+@888  = ~Sir Ajantis! Forgive my sudden appearance... I have this for you.~
+@889  = ~Douglas, the Ilvastarr's family messenger! Give the letter to me.~
+@890  = ~(moans under his breath) Oh, no!...~
+@891  = ~What is it, Ajantis?~
+@892  = ~Don't make such a fuss. Just tell me what it is!~
+@893  = ~A message from your parents, but not a joyful one, so it seems?~
+@894  = ~Get over with this quickly, Ajantis, we have things to do.~
+@895  = ~It is a letter from my parents, together with an official proclamation. My parents fulfill their announcement, <CHARNAME>. They... they disinherit me from the Ilvastarr family line.~
+@896  = ~(reads aloud) '...the name of the Ilvastarr's is no longer yours to carry.' (With angry tone) So be it! It will be 'Sir Ajantis of Waterdeep' from now on!~
+@897  = ~Douglas, there is nothing I will give you in return. I thank you for your last loyal service.~
+/* @898  in setup.tra */
+@899  = ~(sigh) I have to give back the shield, <CHARNAME>.~
+@900  = ~Yes, I guess it has to be done.~
+@901  = ~No, I cannot allow this, Ajantis. We need the shield for our fight!~
+@902  = ~No, Ajantis. We need the shield for our fight!~
+@903  = ~I cannot allow this! I paid to increase the shield's power. Who is going to repay this to me?~
+@904  = ~(sigh) I have to give back the shield, <CHARNAME>. I... I cannot give it back just now, Douglas. I don't have it with me.~
+@905  = ~(With stern expression) I will send it to them as soon as I have it back. Please tell them this and tell them my... thanks for the replacement shield. Now, if this was all, I release you from your services for the last time. Farewell.~
+@906  = ~Yes, so be it.~
+@907  = ~I know, my love, but there is nothing I can do.~
+@908  = ~I know, my love. I will try to make it up to you. There is nothing else I can do.~
+@909  = ~(With stern expression) Herewith I send the Ilvastarr family shield back to its rightful owners. Please tell them my... thanks for the replacement shield, Douglas. Now, if this was all, I release you from your services for the last time. Farewell.~
+@910  = ~This is not all I have for you, Sir Ajantis. Your parents... the Ilvastarrs gave me this to give to you as well.~
+@911  = ~What is this? Another note? And a shield? Why would they send me a shield? I... no, this can only mean...~
+@912  = ~(reads) 'We expect you to give back the Ilvastarr family shield, as it is no longer yours to carry...'~
+@913  = ~Now that we are here I have to look for a messenger who will return the shield to my family... (sigh)~ [c#ablank]
+@914  = ~Wait. Excuse me, my lord? Sir?~
+@915  = ~Yes, what can I do for you?~
+@916  = ~I see you are a messenger... Would you be so kind as to arrange for this shield to be brought to Waterdeep, estate of Lord and Lady Ilvastarr?~
+@917  = ~That would be no problem, Sir.~
+@918  = ~I thank you, good man. Farewell.~
+@919  = ~Now it is done. (takes a deep breath)~
+@920  = ~I am sorry for you, Ajantis.~
+@921  = ~Dear me, it was only a piece of enchanted metal anyway.~
+@922  = ~It is all right, <CHARNAME>... It is the loss of the sentimental value that grieves me the most, but it had to be done, and now it is over. Let us move on, I do not want to talk more about it.~
+@923  = ~That might be true, <CHARNAME>... It is the loss of the sentimental value that grieves me the most, though. But it had to be done, and now it is over. Let us move on, I do not want to talk more about it.~
+@924  = ~It has come to pass! I have been disowned by my parents. <CHARNAME> of Candlekeep and Sir Ajantis of Waterdeep, these are our names now.~
+@925  = ~I'm so sorry, Ajantis. I hope you will not regret this one day.~
+@926  = ~(seriously) Sounds good, in my opinion.~
+@927  = ~Although I understand that it troubles you, there is nothing we can do about it.~
+@928  = ~Thereby the topic is finally finished? I was getting tired of listening to this.~
+@929  = ~No, we cannot change it. (deep sigh) Why must everything always be so complicated...~
+@930  = ~(Ajantis stands before you, serious, and places his hand on your shoulder.) <CHARNAME>, I have already told you that I have chosen you as my family, and I have not changed my opinion. I have decided after due deliberation, and I am prepared to bear the consequences.~
+@931  = ~Let us therefore end this topic. It has happened. A new time begins. So the gods wish it, and so it will be.~
+@932  = ~Beloved, do you still remember how I asked for a lock of your wonderful hair?...~ [c#ablank]
+@933  = ~How could I forget? Do you still have it with you?~
+@934  = ~Yes, and I am sorry that I did not grant it to you at the time.~
+@935  = ~I thought then the issue was inappropriate, and that has not changed. Leave me be.~
+@936  = ~Of course. See here...~
+@937  = ~I fear only that it has suffered somewhat in the meantime. I should find myself a better place for it... perhaps a nice locket? Then I could carry it by my heart.~
+@938  = ~Hmm, a locket, yes? Well, we will see whether we can't find something...~
+@939  = ~That would be an idea, yes.~
+@940  = ~Whatever. Let us continue.~
+@941  = ~Oh! Forgive me. I will not speak of it again.~
+@942  = ~Does this mean that I can now hope for a luck-bringing curl of your beautiful hair, beloved?~
+@943  = ~Yes. (You cut a lock of your hair and hand it to Ajantis.) Here you are!~
+@944  = ~Hmm, no. You would only stuff it somewhere in your armor and I don't find that idea very appealing, quite frankly.~
+@945  = ~No. Let us continue.~
+@946  = ~I thank you, wonderful woman! How soft and silky your hair is... This curl is now my good luck token. Let me see... Hmm, maybe I should find a better place for it, perhaps a nice locket? Then I could carry it beside my heart...~
+@947  = ~Indeed. But I have already delayed us long enough.~
+@948  = ~It is the question of whether I could not find a better, safer place for it... A locket for example. Then I could carry it beside my heart!~
+@949  = ~Oh, I like this idea! Wait, I will give it to you at once. (You cut a lock of your hair and hand it to Ajantis.) Here you are!~
+@950  = ~Nevertheless, no.~
+@951  = ~I thank you, wonderful woman! How soft and silky your hair is... This curl is now my good luck token. Let me place it somewhere safe...~
+@952  = ~Do that. Hmm, let's see whether we can't find a nice locket for you...~
+@953  = ~I am in search of a locket with a compartment for storing a keepsake in... It is for a man and should withstand some force.~
+@954  = ~I am afraid  I cannot help you with this, my <PRO_LADYLORD>... But do have a look around and see if you like something. Can I get anything else for you?~
+@955  = ~I am in search of a locket with a compartment for storing a keepsake in... It is for a man and should withstand some force. Do you have such a thing?~
+@956  = ~Maheer has no lockets... Can it be fought with? Weapons you see here!~
+@957  = ~I am afraid that I cannot help you there... Even if I had goods for sale, such a locket would not be among them.~
+@958  = ~I would love to offer you such a locket, my <PRO_LADYLORD>! But unfortunately I don't have one.~
+@959  = ~Well, thank you anyhow.~
+@960  = ~Whatever the case may be. Farewell.~
+@961  = ~Does it look like I sell jewelry? This is a forge. The goods of a forge, I can offer you.~
+@962  = ~No... I do not have such a locket to offer.~
+@963  = ~(sigh) Well, thank you anyhow.~
+@964  = ~Aha. Good day.~
+@965  = ~The locket you have bought...~ [c#ablank]
+@966  = ~It is for you, Ajantis. My gift to you. For my lock of hair.~
+@967  = ~It is for the lock of hair, so that it will no longer be crushed like it is now!~
+@968  = ~I have bought it for myself.~
+@969  = ~Indeed! Beloved, it is beautiful... Thank you. Wait, let me place the hair curl in it...~
+@970  = ~Oh. Well, I thought... Hm.~
+@971  = ~No, that was a joke. It is for you, Ajantis. My gift to you. For my lock of hair.~
+@972  = ~Exactly.~
+@973  = ~Beautiful. It is simply beautiful. Thank you, beloved. If it were up to me, I would never again be without it.~ [c#ablank]
+@974  = ~So... so it will be. Our engagement is hereby ended. I will make my way to the Order, and I will pray there for Helm to guide me...~
+@975  = ~You were the light of my heart, and I owe you my life... Farewell.~
+
+@976   = ~Ajantis, you don't reproach yourself for not being there, do you? Because, to be honest, I am very happy you weren't there when Irenicus abducted me. He would have killed you just to cause me pain.~
+@977   = ~No, I cannot let this stand like this... I wanted to protect you, always...~
+@978   = ~These words of yours were truly kind, love. But still...~
+@979   = ~You did everything you could, Ajantis, and I know that. We do not need to talk about this further, and there is no need for you to worry yourself.~
+@980   = ~I thank you for these words. Be assured that I am filled with both joy and relief to have you with me again, beloved.~
+@981   = ~I... I cannot stay under these circumstances. I am sorry.~
+@982   = ~Let us talk about it now, shall we?~
+@983   = ~Now is not a good moment. Let's do this later, Ajantis.~
+@984   = ~If you wish. I will come to you later, then. Or you chose the moment, love. Let me know when you want to prepare our wedding.~
+@985   = ~I would like Anomen to wed us, Ajantis.~
+@986   = ~I would like <PLAYER2> to wed us.~
+@987   = ~I would like <PLAYER3> to wed us.~
+@988   = ~I would like <PLAYER4> to wed us.~
+@989   = ~I would like <PLAYER5> to wed us.~
+@990   = ~I would like <PLAYER6> to wed us.~
+@991   = ~I would like Gavin to wed us, Ajantis.~
+@992   = ~Indeed... he would be a priest of Helm.~
+@993   = ~Love, he... courted you himself, and the refusal surely pains him still. I do not think it wise to let him do the ceremony... for us as well as for him.~
+@994   = ~I understand that a travel companion seems closer than an unknown priest in the temple. But... I beg you, love. We will hold the ceremony in such a small circle already, without my family... my parents and siblings. Please, let it be as solemnly as possible. I could not do it by the wayside. I need this... I need it to be by the temple of Helm. Grant me this wish, love, please!~
+@995   = ~I understand. The Temple of Helm it is, then.~
+@996   = ~Very well, if it is so dear to you.~
+@997   = ~(sigh). And again I have to comply with your wishes.~
+@998   = ~But... Gavin is not a priest of Helm, <CHARNAME>?~
+@999   = ~What... what just happened? Was it real?!~
+@1000  = ~I... I understand their doubts. Ajantis, we have to face the fact that I am not a worthy wife for a paladin of noble birth.~
+@1001  = ~That is... that is what *they* said. But they err! They have to err!~
+@1002  = ~Oh - love, no! I see in your eyes how much they hurt you. They... hurt us both.~
+@1003  = ~(You are unable to speak. The rejection of your betrothed's family filled your eyes with tears.)~
+
+
+@1004  = ~I feel like in turmoil, but I know that I love you without doubt, Ajantis.~
+@1005  = ~I have doubts our love will be strong enough.~
+@1006  = ~Well, I don't love you the way I did before, so, yes.~
+@1007  = ~Your honest answer is what I need.~
+@1008  = ~I don't want to burden you with my love, if all it gives you is refusal and pain.~
+@1009  = ~I do love you, Ajantis, but I am scared the loss of your parents' approval and support will make it hard for *you* not to hate or at least disdain me some day.~
+@1010  = ~(sighs with relief) I thank you, love.~
+@1011  = ~But you do doubt our love will be strong enough. (ponders for a small moment)~
+@1012  = ~(sternly) You already stated your opinion on that... If I cannot offer you the position of a lady, it does not suffice you. Was this spoken in distress or is it still your opinion?~
+@1013  = ~It was spoken in complete distress. I am very sorry, Ajantis.~
+@1014  = ~I meant it. Actually, I made up my mind that it might be better to end our relationship.~
+@1015  = ~This is something that torments me. Can I... impose myself on you as a nameless, disinherited man? With my admission to the Order, I departed from the usual paths of a nobleman. I am a paladin and knight, a fighter for justice. You can be proud of me, at least, I think that. (cough) You would not have to be ashamed with me at your side as your husband. I have my own livelihood and can provide for you well, with what I earn myself. But...~
+@1016  = ~I would never be ashamed with you at my side! How can you even think something like that?~
+@1017  = ~Your family threatens to cast you out, the family you love deeply and who was your source of strength all your life, and all you worry about is whether *I* will be content with your future social status?~
+@1018  = ~You are posing the wrong question. *You* should consider whether you want to spend the rest of your life with the woman who made you a have-not, Ajantis.~
+@1019  = ~I am not sure, Ajantis... I am adjusting to the new situation.~
+@1020  = ~I love you from the bottom of my heart, and your question shows what a true knight you are. I will be happy and content with you, if you would have me, Ajantis.~
+@1021  = ~Last time I checked, I wanted to marry you, not your parents. So, yes, it will suffice.~
+@1022  = ~No, it wouldn't suffice.~
+@1023  = ~You will not make me any such thing, <CHARNAME>. It is my parents who do that.~
+@1024  = ~I am asking, because I am weighing my worth. My worth as your husband, under the changed conditions we have to face... Please, love.~
+@1025  = ~I thank you for saying that.~
+@1026  = ~An honest answer. Not the one I was hoping for, but... What does your heart tell you, do you think you can accept my new status?~
+@1027  = ~No. Let us end the relationship.~
+@1028  = ~Yes, I think I will get used to it.~
+@1029  = ~It... it wouldn't?~
+@1030  = ~I will, but this discussion leaves a foul taste in my mouth.~
+@1031  = ~The refusal of my parents... It shook me to the ground. I turned so many questions, weighed so many thoughts.~
+@1032  = ~I already know that your heritage is no threat to my paladin duties. We have been over this many times.~
+@1033  = ~But I am also a son of a noble family, one I affronted with my choice. So, I asked myself: Can I do this? Can I perform this affront against the family council, or would it be inherently wrong for me to do so? The answer is: It is not wrong. I am convinced that it is right because you are good and admirable. I have support for the wedding from my god and my brethren in the Order, so it is correct. My... parents are wrong.~
+@1034  = ~I know that I love you, I love you endlessly. But I needed to be sure not to lose your love, should my parents disown me.~
+@1035  = ~Love, how happy your reassurances of your endless love made me! I trust that your love for me will continue, that you love me for my own sake.~
+@1036  = ~And do not worry about my love for you. It will not falter. And never, not in the nine hells and by all the gods will my love for you turn to hate or even the slightest disdain!~
+@1037  = ~How... how it saddened me to hear you questioning our love.~
+@1038  = ~How can I trust that your love for me will continue, that you love me for my own sake, if you doubt it already?~
+@1039  = ~How can I trust that your love for me will continue, that you love me for my own sake, if you already suggested we end our bond?~
+@1040  = ~Another consideration I had was: Can I do this to you? Can I impose myself on you, as a nameless, familyless knight? I already told you my thoughts on this.~
+@1041  = ~How happy I was to see that you share my opinion. Your reassurance that my position as a knight would be enough for you gave me great comfort.~
+@1042  = ~And the way you said it was free from any doubt. I am very thankful, love.~
+@1043  = ~I am sorry that my position as a knight without a noble family does not make you as happy as you were, but I thank you for your support.~
+@1044  = ~Unfortunately, you made it clear that my position as a knight would not be enough for you, and that you were longing to become a lady by marriage. (sigh) Which I cannot offer you any more.~
+@1045  = ~I must confess that there was another, by no means unselfish side to these last questions. For in the end I would like to be able to count on you, trust you, and rely on you to support and appreciate me. I took so much strength from my family until now. This will no longer be possible after our wedding. The question that concerned me was: Will the strength you give me be sufficient?~
+@1046  = ~And the answer is 'yes'. Since the very troubling answer from my parents, I received strength from your proximity and your support, and it is a neverending source.~
+@1047  = ~Alas... the counsel you gave me these last days troubled me, <CHARNAME>. I know it all concerns you, too, and my parents hurt you, so I cannot expect you to be there for me as you usually are, but... If I am to draw strength from you, I need more than this.~
+@1048  = ~But... *you* do not seem to be content any more. I therefore suggest we end our bond.~
+@1049  = ~You gave a vow, Ajantis. You are bound to it!~
+@1050  = ~Let us end our relationship.~
+@1051  = ~It was an offer to you, <CHARNAME>.~
+@1052  = ~I am indeed bound to my vow, and I will fulfill it.~
+@1053  = ~Then fulfill it, and speak no more about it.~
+@1054  = ~I thank you, <CHARNAME>.~
+@1055  = ~This leaves the last question, my love. There will be only us... at least from my side. Do you see any reason not to marry as soon as possible?~
+@1056  = ~No. Let us do it as soon as possible.~
+@1057  = ~Ajantis, Imoen is all family I have left. I want to wait until we freed her.~
+@1058  = ~I don't care.~
+@1059  = ~(smiles) Good morning, love.~
+@1060  = ~To wake up beside you, to know that I am yours, is all I need in this moment. I pray to Helm that he will give us many such mornings, <CHARNAME>, my lovely wife.~  
+@1061  = ~(annoyed) As if these rogues could do anything with something like that! But... (softly) this grants me the opportunity to give you another present, beloved. Let me consider what I could prepare to bring you joy.~
+@1062  = ~I... I am so thankful not all of your personal gifts were destroyed by that criminal Irenicus and his thugs. It is bad luck enough the engagement ring was destroyed.~ 
+@1063  = ~I know very well what you are referring to. We... we already discussed about this, love. Believe me when I say that it aches me to know that the information about your distress was so near and yet so far away from me.~
+@1064  = ~A scouring of this pit by my brethren is long overdue.~
+@1065  = ~I don't mean to insult you, but it is a *fact* that the Shadow Thieves knew about my abduction, information that would have helped you in your search.~
+
+@1066  = ~And this Irenicus already pestered you in Dragonspear in the disguise of a mysterious 'hooded man'? And he is also the one who put the accusation of Skie's murder upon you?!~
+
+/* new for v20 */
+@1067  = ~Well, then it is time to go on. Beloved, for the sake of caution, I will send the sample bag back to master goldsmith Surianko before we move on. Perhaps we will have time after we faced Irenicus to choose a ring at his shop.~

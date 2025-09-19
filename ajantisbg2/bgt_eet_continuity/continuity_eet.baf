@@ -37,6 +37,7 @@ Global("C#AjantisIsDeadBG1","GLOBAL",1) is set in sod_transition.baf
 /* 1A. Ajantis was truly dead and left for dead in BG1 */
 IF
 	GlobalGT("ENDOFBG1","GLOBAL",0) //for conti game only (both BGT & EET)
+	!InPartyAllowDead("Ajantis")
 	Dead("Ajantis")
 	Global("C#AjantisIsDeadBG1","GLOBAL",0)
 THEN

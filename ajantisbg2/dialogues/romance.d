@@ -3238,31 +3238,25 @@ END
 //-------------------------------------
 /* wedding is ready: fires for "Global("C#AjantisPCChoseRing","GLOBAL",2) GlobalTimerExpired("C#AjantisGoldsmithSchmiedet","GLOBAL")
 
-
-OR(2)
-Global("C#AjantisWedNotWithoutImoen","GLOBAL",0)
-Global("Chapter","GLOBAL",%bg2_chapter_6%)
-
 For Global("C#AjantisWeddingReady","GLOBAL",2), PC and Ajantis can go to the temple of Helm any time they want, and the wedding cutscene will be triggered. */
 
 
 /* PC said not without Imoen, Chapter < 4 */
-
-
 IF ~Global("C#AjantisWeddingReady","GLOBAL",1)
 Global("C#AjantisWedNotWithoutImoen","GLOBAL",1)
-!Global("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN wedding_ready_imoen
+GlobalLT("C#IM_ImoenStays","GLOBAL",2)
+GlobalLT("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN wedding_ready_imoen
 SAY @446 /* ~Love, our wedding rings are forged and with my religious brethren. As soon as Imoen is freed, we can go to celebrate our wedding!~ */ 
 IF ~~ THEN DO ~SetGlobal("C#AjantisWeddingReady","GLOBAL",6)~ EXIT
 END
 
 
 /* either PC said nothing about waiting for Imoen, or it's chapter > 5 */
-
 IF ~Global("C#AjantisWeddingReady","GLOBAL",1)
-OR(2)
+OR(3)
 Global("C#AjantisWedNotWithoutImoen","GLOBAL",0)
-Global("Chapter","GLOBAL",%bg2_chapter_6%)~ THEN wedding_ready
+GlobalGT("C#IM_ImoenStays","GLOBAL",1)
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)~ THEN wedding_ready
 SAY @776 
 = @777
 ++ @778 DO ~SetGlobal("C#AjantisWeddingReady","GLOBAL",2)~ + wedding_ready_01
@@ -3351,6 +3345,7 @@ Global("C#AjantisWedNotWithoutImoen","GLOBAL",0)~ THEN @796
 END
 
 //-------------------------------
+/* C#AJCHBE chastidy belt */
 
 /* Cutscene triggeres either in the temple of Helm in Temple district ("Global("C#AjantisBrueckenTempel","GLOBAL",0)") or in the temple of Helm in Bridge district (for "Global("C#AjantisBrueckenTempel","GLOBAL",1)") and Global("C#AjantisWeddingReady","GLOBAL",2)
 */
@@ -3398,7 +3393,7 @@ InMyArea("C#Ajantis")
 InMyArea(Player1)
 Global("C#AjantisWeddingReady","GLOBAL",2)~ THEN trauung_02
 SAY @804
-++ @799 + trauung_05_chain
++ ~!HasItem("C#AJCHBE","C#Ajantis")~ + @799 + trauung_05_chain
 + ~Global("C#AJAskedAboutPR01","GLOBAL",0)~ + @800 DO ~SetGlobal("C#AJAskedAboutPR01","GLOBAL",1)~ + trauung_04
 ++ @801 + trauung_01
 END
@@ -3429,7 +3424,7 @@ END
 
 IF ~~ THEN trauung_04
 SAY @807
-++ @799 + trauung_05_chain
++ ~!HasItem("C#AJCHBE","C#Ajantis")~ + @799 + trauung_05_chain
 ++ @801 + trauung_01
 END
 

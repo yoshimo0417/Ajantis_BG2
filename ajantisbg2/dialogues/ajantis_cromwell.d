@@ -54,7 +54,6 @@ END
 IF ~~ THEN BEGIN HowMuch_ring 
 SAY @12
  IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("C#AjanForgeShieldRing","GLOBAL",1)
-                                 SetGlobal("ForgeStuff","GLOBAL",1)
                                  TakePartyGold(5000)
                                  DestroyGold(5000)~ REPLY @13 GOTO 56
  IF ~~ THEN REPLY @6 GOTO MovingRightAlong
@@ -63,7 +62,6 @@ END
 IF ~~ THEN BEGIN HowMuch_necklace 
 SAY @12
  IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("C#AjanForgeShieldAmulet","GLOBAL",1)
-                                 SetGlobal("ForgeStuff","GLOBAL",1)
                                  TakePartyGold(5000)
                                  DestroyGold(5000)~ REPLY @13 GOTO 56
  IF ~~ THEN REPLY @6 GOTO MovingRightAlong
@@ -95,7 +93,6 @@ END
 IF ~~ THEN BEGIN HowMuch
 SAY @12
  IF ~PartyGoldGT(4999)~ THEN DO ~SetGlobal("C#AjanForgeSword","GLOBAL",1)
-                                 SetGlobal("ForgeStuff","GLOBAL",1)
                                  TakePartyGold(5000)
                                  DestroyGold(5000)~ REPLY @13 GOTO 56
  IF ~~ THEN REPLY @6 GOTO MovingRightAlongSword
@@ -105,6 +102,17 @@ IF ~~ THEN BEGIN MovingRightAlongSword
 SAY @14
 COPY_TRANS WSMITH01 13
 IF ~PartyHasItem("C#AJSHLD")~ THEN GOTO PartyHasAjantisShield
+END
+
+IF WEIGHT #-1
+~OR(3)
+Global("C#AjanForgeShieldRing","GLOBAL",1)
+Global("C#AjanForgeShieldAmulet","GLOBAL",1)
+Global("C#AjanForgeSword","GLOBAL",1)~ THEN BEGIN done
+  SAY #59797 /* ~Well, there ye go, me friend.  Use it well.  And if ye comes across anything else of interest, ye knows where to bring it, aye?~ */
+  IF ~~ THEN DO ~SetGlobal("C#AjanForgeShieldRing","GLOBAL",0)
+SetGlobal("C#AjanForgeShieldAmulet","GLOBAL",0)
+SetGlobal("C#AjanForgeSword","GLOBAL",0)~ EXIT
 END
 
 

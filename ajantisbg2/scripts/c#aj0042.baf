@@ -14,10 +14,10 @@ IF
 	Range(LastTrigger,12)
 	!PartyHasItem("C#AJ0001") //unsichtbare Rune
 	PartyHasItem("C#AJ0005") //blaues Pulver
+	Global("C#AjantisPulver","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("C#AjantisPulver","GLOBAL",1)
-		DisplayString(Myself,@1)
+		DisplayString(Myself,@7)
 END
 
 IF
@@ -26,6 +26,8 @@ IF
 	PartyHasItem("C#AJ0001") //unsichtbare Rune
 	PartyHasItem("C#AJ0005") //blaues Pulver
 	!PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+	Global("C#AjantisPulver","GLOBAL",1)
+	Global("C#AjantisUnsichtbareRune","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetGlobal("C#AjantisPulver","GLOBAL",2)
@@ -35,26 +37,41 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,12)
-PartyHasItem("C#AJ0001") //unsichtbare Rune
-PartyHasItem("C#AJ0005") //blaues Pulver
-PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
-	Global("C#AjantisRune","GLOBAL",0)
+	PartyHasItem("C#AJ0001") //unsichtbare Rune
+	PartyHasItem("C#AJ0005") //blaues Pulver
+	PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+	Global("C#AjantisPulver","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("C#AjantisRune","GLOBAL",1)
+		SetGlobal("C#AjantisPulver","GLOBAL",2)
 		DisplayString(Myself,@3)
 END
 
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,12)
-PartyHasItem("C#AJ0001") //unsichtbare Rune
-PartyHasItem("C#AJ0005") //blaues Pulver
-PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
-	Global("C#AjantisRune","GLOBAL",1)
+	PartyHasItem("C#AJ0001") //unsichtbare Rune
+	PartyHasItem("C#AJ0005") //blaues Pulver
+	Global("C#AjantisUnsichtbareRune","GLOBAL",1) //PC went through portal with invisible rune and knows it does nothing
+	Global("C#AjantisPulver","GLOBAL",1)
 THEN
 	RESPONSE #100
-		SetGlobal("C#AjantisRune","GLOBAL",2)
+		SetGlobal("C#AjantisPulver","GLOBAL",2)
+		DisplayString(Myself,@8)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItem("C#AJ0001") //unsichtbare Rune
+	PartyHasItem("C#AJ0005") //blaues Pulver
+	OR(2)
+		PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+		Global("C#AjantisUnsichtbareRune","GLOBAL",1)
+	Global("C#AjantisPulver","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPulver","GLOBAL",3)
 		TakePartyItem("C#AJ0001") TakePartyItem("C#AJ0005")
 		DestroyItem("C#AJ0001") DestroyItem("C#AJ0005")
 		ActionOverride(Player1,CreateItem("C#AJ0004",1,0,0))
@@ -64,7 +81,7 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,12)
-	Global("C#AjantisRune","GLOBAL",2)
+	Global("C#AjantisPulver","GLOBAL",3)
 THEN
 	RESPONSE #100
 		DisplayString(Myself,@5)
@@ -73,8 +90,18 @@ END
 IF
 	Clicked([ANYONE])
 	Range(LastTrigger,12)
-!PartyHasItem("C#AJ0005") //blaues Pulver
+	!PartyHasItem("C#AJ0005") //blaues Pulver
 THEN
 	RESPONSE #100
 		DisplayString(Myself,@6)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItem("C#AJ0005") //blaues Pulver
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPulver","GLOBAL",1)
+		DisplayString(Myself,@1)
 END

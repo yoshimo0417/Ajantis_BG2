@@ -298,7 +298,8 @@ GlobalLT("Chapter","GLOBAL",%bg2_chapter_6%)~ + @851 DO ~IncrementGlobal("C#Ajan
 
 ++ @80 DO ~IncrementGlobal("C#AjantisWarUnzufrieden","GLOBAL",1) SetGlobal("C#AjantisFirstMaevarQuestRom","GLOBAL",3)~ + maevar_rom_01
 ++ @81 DO ~IncrementGlobal("C#AjantisWarUnzufrieden","GLOBAL",1) SetGlobal("C#AjantisFirstMaevarQuestRom","GLOBAL",3) SetGlobal("C#AjantisMaevarSchlechtesLicht","GLOBAL",1)~ + maevar_rom_07
-+ ~InMyArea("C#Husam1") !Dead("C#Husam1") GlobalLT("C#HusamSpawn","GLOBAL",12)~ + @852 + maevar_rom_02
++ ~!Dead("C#Husam1")
+Global("C#HusamSpawn","GLOBAL",11)~ + @852 + maevar_rom_02
 END
 
 IF ~~ THEN lathander_01

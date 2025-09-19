@@ -1,0 +1,374 @@
+@32   = ~Sir Ajantis was captured by Bodhi and infected with vampirism, forcing you to slay him. There may be some way to revive him, though you don't know what it would be.
+
+STATISTICS:
+
+Weight: 135
+~
+
+@65   = ~This is Ajantis' locket, which you have presented to him. He keeps the lock of hair that you bestowed upon him at his request, safe within it. Whether because of your hair or some other magic, the medallion lends the wearer a bonus to luck...
+
+STATISTICS:
+
+Weight: 1 
+~
+
+@66   = ~This is Ajantis' locket, which you have presented to him. He keeps your lock of hair, which you bestowed at his request, safe within it. Whether because of your hair or some other magic, the medallion lends the wearer a bonus to luck...
+
+STATISTICS:
+
+Equipped Ability:
+- Luck: +1
+
+Weight: 1
+~
+@68   = ~This is a locket, which is excellently suited for storing small objects. It is both modest and simple, and it looks durable.
+
+STATISTICS:
+
+Weight: 1 
+~
+
+@72   = ~A medium shield is carried in the same manner as a small shield. Its weight prevents the character from using his shield hand for anything else. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+This particular shield bears the coat of arms of the noble Ilvastarr family of Waterdeep: a metallic green dragon with orange eyes on a golden field. The shield's level of armor protection has been updated since Ajantis' time at the Sword Coast.
+
+STATISTICS:
+
+Equipped Ability:
+- Armor Class: +2
+- Grants proficiency in Sword and Shield style
+
+Requires: 
+ 12 Strength
+
+Weight: 7
+~
+
+@74   = ~A medium shield is carried in the same manner as a small shield. Its weight prevents the character from using his shield hand for anything else. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+This particular shield bears the coat of arms of the noble Ilvastarr family of Waterdeep: a metallic green dragon with orange eyes on a golden field. The shield's level of armor protection has been improved since Ajantis' time at the Sword Coast. Additionally, the armor class of this shield was increased by Cromwell.
+
+STATISTICS:
+
+Equipped Ability:
+- Armor Class: +3
+- Grants proficiency in Sword and Shield style
+
+Requires: 
+ 12 Strength
+ 
+Weight: 7
+~
+@77   = ~Not only has a smith made this sword so that it is better balanced and more durable than a standard blade, powerful enchantments have also been placed on it. It is faster, more accurate, and hits for far more damage than the standard of its type.   
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d4+2
+Damage type: Slashing
+Speed Factor: 6
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires: 
+ 11 Strength
+
+Weight: 7
+~
+
+@78   = ~The name of this Bastard Sword probably stems more from its famous owner than from the properties of the sword. Sir Teuben, Paladin and knight from the far North, with the help of this sword, ended a plague of robbers in the woods near his home town. He fought relentlessly against the robber horde, unaffected by evil spells, and it seemed to many observers as if his vital force increased the longer he held the sword in his hands.
+
+STATISTICS:
+
+Equipped Ability:
+- Regeneration: 1 hit point every 20 seconds
+- Magic Resistance: +5%
+
+THAC0: +2
+Damage: 2d4+2
+Damage type: Slashing
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires: 
+ 11 Strength
+
+Weight: 7
+~
+
+@79 = ~The name of this Bastard Sword probably stems more from its famous owner than from the properties of the sword. Sir Teuben, Paladin and knight from the far North, with the help of this sword, ended a plague of robbers in the woods near his home town. He fought relentlessly against the robber horde, unaffected by evil spells, and it seemed to many observers as if his vital force increased the longer he held the sword in his hands.
+The sword was improved by Cromwell to hold the magic spell courage.
+
+STATISTICS:
+
+Equipped Ability:
+- Regeneration: 1 hit point every 20 seconds
+- Magic Resistance: +5%
+
+Charge abilities:
+- Can cast Courage, three times per day
+
+THAC0: +2
+Damage: 2d4+2
+Damage type: Slashing
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires: 
+ 11 Strength
+
+Weight: 7
+~
+@81   = ~This is the drow chastity belt that was put on Ajantis by the priestess of Lolth to punish him for his disrespectful remarks. You being his 'mistress', this punishment is addressed at you as well... The material is unknown, and it seems to be magically enhanced to prevent any attempt at breaking it. There is no lock to open it with.
+
+For obvious reasons, the belt lowers dexterity if equipped.
+
+STATISTICS:
+
+Weight: 3
+~ 
+@83   = ~Invisible Rune
+
+You feel a heavy rune stone with rough surfaces in your hands, but you see - nothing.
+
+STATISTICS:
+
+Weight: 5
+~
+@85   = ~This diary seems to have been written by Firkraag. The first few pages are very old and almost disintegrated. From a few of the remarks, you gain the impression that Firkraag wrote in this diary to enjoy in full the studies of his 'low ones' while in human form. You find a few entries that are interesting to you:
+
+"(...) People are so easy to influence. And, nevertheless, this low form seems to offer some charm. I will prepare an enclave to be able to experiment with it in peace.
+
+(...) I have put a paladin in front of the balancing portal. No matter how much I continue to study him, I do not understand why he does not surrender. He fights and fights... His calls to his God are slowly getting on my nerves. He will probably never figure out that only evil may go through the portal, and that he maintains the balance as the force of good on this side of the portal with his endless fight. I synchronized the portal to him and gave him some aid, so that he will be able to persevere in this fight with his fragile human body. (Just the thought that his strength for this fight does not arise by the grace of his God alone, but also by me, justifies the whole thing.) This involves some risk, considering the self-sacrifice of these fools. However, looking at how resolutely he performs his 'task', I believe I do not have to worry about the overall stability.
+
+(...) One of my experiments seems to be even more successful than I had planned. A girl called 'Sheena' was at the funeral of her mother. How interesting...
+
+(...) Gorion has a fosterchild. A Bhaalspawn! I will attract <PRO_HIMHER> here. This promises to be interesting!
+
+(...) I have fetched more paladins. These fighters for justice are so predictable... It was simple to deceive them, and now they are fooled by even their own senses. It is difficult to recognize one's true enemy if one is surrounded by all-pervasive evil! If it was not so pathetic, one could almost feel sorry for them. But they are insignificant, as my focus lies in attracting <CHARNAME>. Time to see whether my challenge is accepted and how it goes. Garren is, as usual, a toy ball in my hands. I have even included the effigy of the hut of this weakling in my play.
+
+ (...) I will give up the enclave. To monitor <CHARNAME>, and whether and how <PRO_HESHE> would free the paladins out of their loop, will give me a last entertainment. Otherwise, I have lost interest."
+
+The entries end here.
+
+STATISTICS:
+
+Weight: 2
+~
+@87   = ~This is a note, written in shaky handwriting:
+"Only the invisible can destroy the visible illusion and make the truth visible." 
+There follows a description of an invisible rune stone that should have the strength to break the illusion in which Ajantis and the paladins are trapped.
+
+STATISTICS:
+
+Weight: 0
+~
+@89   = ~This is another note about the magic rune stone. You have the feeling that this is the real note:
+"Only the invisible MADE VISIBLE can destroy the illusion and make the truth visible." The following is a description of an invisible rune stone, which should have the ability to break the illusion that Ajantis and the other paladins are caught in. There will be no special ritual for making it visible. A sticking powder or dye should be sufficient.
+
+STATISTICS:
+
+Weight: 0
+~
+@90   = ~This is the receipt that proves Lord Enderold's innocence.~
+
+STATISTICS:
+
+Weight: 0
+~
+@92   = ~This is the 'invisible' magic rune stone that your coating has made visible. Having this with you should be enough to free the paladins of the Order.
+
+STATISTICS:
+
+Weight: 5
+~
+@94   = ~Vial with blue powder
+
+This is a vial with blue powder. It seems to be magical.
+
+STATISTICS:
+
+Weight: 5
+~
+@96   = ~This is the golden sphere you received in Firkraag's lair. You have no idea what it is good for. If you look closely, it seems there are movements inside.
+
+STATISTICS:
+
+Weight: 1
+~
+/* Note that this text is *different* than for BGII/BGT! */
+
+@103  = ~This is a pile of letters from your betrothed, Ajantis, all addressed to '<CHARNAME> of Candlekeep'. The last carries the note 'place of residence unknown' in the address line. Ajantis wrote them during the time of your absence. It seems that he collected them here because he could not determine your place of residence. Some of the letters show clear creases as if they had been on the move long before they finally landed here. You read the letters and can discern the most important incidents in Ajantis' life since your separation at the Sword Coast. All letters are signed "loving you, revering you, and missing you, your Ajantis." The newer ones carry the addition: "I hope and pray that we see each other again, unscathed."
+
+The first letter reads:
+
+"Beloved <CHARNAME>, 
+What an unsettling course of events, beloved <CHARNAME>! News from Baldur's Gate reached us. Knowing you there, in this situation - in such danger - such unproven, hideous accusations! - knowing that I will not be there to protect you, unsettled me in the highest fashion. The news of your departure from the city reached us soon after. The Order's prelates had mercy with me and allowed me to return to Baldur's Gate, to learn what truly happened and to help cleanse your name. It was hard, being here and not being informed about where you went. Duke Eltan granted me a long audience, explaining the complicated situation. Still, I am very relieved now, love. I know it will all turn out well, it must! The city is still in turmoil, but after all the threats the people faced in the recent past that is to be expected. They, too, will eventually learn about your innocence, and the dispute on the streets will settle itself in time. I will continue to send my letters to Baldur's Gate, hoping that Duke Eltan has a chance to pass them on..."
+
+"Beloved <CHARNAME>, 
+I reached Athkatla, and asked for an audience with the Prelate at once. <CHARNAME>, what a relief! They believe us! Your name will be free of any wrongful accusations when you will come here.
+I have seen my mentor Keldorn again, after such a long time. I am as glad as I have not been in a long time, because Keldorn showed himself to be astonishingly insightful in regards to our relationship. I will have no fear of repressive measures from the Order with respect to us, as long as we walk together on the path of good and righteousness. Now I will stay here, in the hopes that you will find your way here, as we had agreed."
+
+The following one is written hastily.
+
+"You disappeared, love, the letters to you return... Where are you? I take it you are laying low, and you have my full understanding. Please, let me know about your whereabouts as soon as possible. I send this letter with the dearest hope that it might find you."
+
+The following letters are filled with the gradually increasing worry that the letters may not reach you.
+
+"Beloved <CHARNAME>, 
+My heart these days is filled with light and warmth, the only dark spot being our separation. The Order has considered my concerns and actions and has found me worthy to be raised to the title of Knight! As soon as I am ready, I am to be belted as a knight. You know how much this means to me..."
+
+"Beloved <CHARNAME>, 
+I do not give up the hope that I will find you, so that we can celebrate this day together. I would like to see you in these venerable halls when I receive my knight's accolade. I must find you... My heart is torn apart with worry. Where are you? How are you doing? If only I knew the answers to these questions!"
+
+"Beloved <CHARNAME>, 
+I can wait no longer. I do not reach this decision hastily. I feel dull and useless... I can defer it no longer. My knight's accolade will take place next week. I hope to have more authority as a knight to search more widely for you..."
+
+"Today I was belted to the knighthood. It was the proudest and at the same time the saddest day of my life, beloved, because your absence overshadowed everything. My parents were there, though, and I could see the pride in their eyes. After the festivities, we had a private moment. Worried that it might be the last such moment for a long time, I informed them of your divine descent. Beloved, I do not know whether it was good... Their expression darkened all of a sudden. I have never depressed my parents in such a way, or experienced anxiety... so negative, <CHARNAME>. They asked for time to reflect and departed without giving me a response. They planned their business trip through Amn in such a way that they will call here once again before their departure back to Waterdeep. I hope that they will have come to understand by then, trust me in the choice of my bride, and will give their approval."
+
+"Beloved <CHARNAME>, 
+Should I give up the hope in the possibility of seeing you again one day? No search, no spells, and no scholar can give me even a hint of where I could find you. My duties as a paladin and knight of the Order press me more and more, and I can neglect them no longer. My heart is heavy with your absence. I pray to Helm that I see you again. Now I will journey to the Windspear Hills to assist Lord Jierdan against monster activities. My first assignment as a knight! I pray that after this assignment a hint as to your whereabouts may reach me. Maybe you are already on your way to Amn... You know that I am to be found here. Maybe I will be fortunate and we will meet in the Windspear Hills? Who knows. I will never give up hope."
+
+The last letter ends here.
+
+STATISTICS:
+
+Weight: 0
+~
+@105 = ~These are the fragments of a golden engagement ring. You still recognize the 'A', but the rest of the insignia can no longer be made out. The manner in which it was broken suggests that the gem was removed.
+
+STATISTICS:
+
+Weight: 0
+~
+@110 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. It is rather simple, with few, but skillfully worked decorations.  According to your wish, a light blue gem adorns the ring. The ring just looks like the previous one.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+
+@111 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. It is rather simple, with few, but skillfully worked decorations. According to your wish, a green precious stone adorns the ring.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+@112 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. It is rather simple, with few, but skillfully worked decorations. According to your wish, a colorless precious stone adorns the ring.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+@113 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. It is rather simple, with few, but skillfully worked decorations. According to your wish, a red precious stone adorns the ring.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+@114 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. It is rather simple, with few, but skillfully worked decorations. According to your wish, a yellow precious stone adorns the ring.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+@115 = ~This is your 'new' engagement ring, the one you allowed Ajantis to have forged. it is rather simple, with few, but skillfully worked decorations. According to your wish, no precious stone adorns the ring.
+
+STATISTICS:
+
+Equipped Abilities: 
+- Protection from Evil
+
+Weight: 0
+~
+@118 = ~This is the bridal wreath that you wore for your wedding to Sir Ajantis. It is wound from fresh white flowers. The bridal wreath is often worn as a sign of good luck. On this occasion, however, that is probably a superstition rather than a real magic effect.
+
+STATISTICS:
+
+Weight: 0
+~
+@121 = ~Master Goldsmith Surianko's Sample Bag 
+This bag contains prototypes for wedding rings from which the bride can select before the wedding. The prototypes are not for sale. The desired wedding ring will be newly made and, hence, can slightly deviate in appearance from the shown samples. Master Goldsmith Surianko vouches for the high quality of his rings.
+
+STATISTICS:
+
+Weight: 2
+~
+@124 = ~This is the gem bag that Ajantis has given you. The small bag is excellently suited for keeping precious stones, rings and necklaces in it. It is made from red velvet. On the front, your name is embroidered with golden thread in curved letters.
+
+STATISTICS:
+
+Weight: 2
+~
+@130 = ~This is the engagement ring that Ajantis gave to you. It is rather simple, with few, but artistically crafted decorations.
+
+STATISTICS:
+
+Equipped Abilities:
+- Protection from Evil
+
+Weight: 0
+~
+@169 = ~This is Ajantis' wedding ring, which he carries as a token of his attachment to you.
+
+STATISTICS:
+
+Weight: 0
+~
+
+@904  = ~The name of this Bastard Sword probably stems more from its famous owner than from the properties of the sword. Sir Teuben, Paladin and knight from the far north, with the help of this sword, ended a plague of robbers in the woods near his home town. He fought relentlessly against the robber horde, unaffected by evil spells, and it seemed to many observers as if his vital force increased the longer he held the sword in his hands.
+
+The sword was improved by Cromwell to hold the magic spell Courage. Your imp Cespenar enforced the sword's effects.
+
+STATISTICS:
+
+Equipped Abilities:
+- Regeneration: 1 hit point every 15 seconds
+- Magic Resistance: +10%
+
+Charge abilities:
+- Can cast Courage, three times per day
+- Can cast Remove Fear, three times per day
+
+THAC0: +2
+Damage: 2d4+3
+Damage type: Slashing
+Speed Factor: 5
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7
+~
+
+@905  = ~A medium shield is carried in the same manner as a small shield. Its weight prevents the character from using his shield hand for else. Medium shields are usually made of metal, range from 3'-4' in diameter, and can be of any shape, from round to square to a spread dragon's wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+This particular shield bears the coat of arms of the noble Ilvastarr family of Waterdeep: a metallic green dragon with orange eyes on a golden field. The shield's level of armor protection has been improved since Ajantis' time on the Sword Coast. Additionally, the armor class of this shield was increased by Cromwell as well as Cespenar.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +5
+- Grants proficiency in Sword and Shield style while equipped
+
+Requires:
+ 12 Strength
+
+Weight: 7
+~

@@ -110,7 +110,8 @@ Global("C#AjantisPCSleptWithAno","GLOBAL",1) Global("C#AjantisPCAnomenRomance","
 Global("C#CheckAnomenLTGT34","GLOBAL",1) //romance proceeded 
 Global("C#AjantisPCSleptWithAno","GLOBAL",1) //PC slept with Anomen
 Global("C#AjantisPCAnomenRomance","GLOBAL",0) //no dialogue after Anomen loving
-Global("AnomenRomanceActive","GLOBAL",3) //Anomen romance dead	Global("C#AjantisPCAnomenNight","GLOBAL",0)~ + @11 DO ~SetGlobal("C#AjantisPCAnomenNight","GLOBAL",2)~ + 2
+Global("AnomenRomanceActive","GLOBAL",3) //Anomen romance dead
+Global("C#AjantisPCAnomenNight","GLOBAL",0)~ + @11 DO ~SetGlobal("C#AjantisPCAnomenNight","GLOBAL",2)~ + 2
 + ~Global("C#AjantisPCModRomance","GLOBAL",0)
 Global("C#AjantisPCAnomenRom","GLOBAL",0)~ + @12 DO ~SetGlobal("C#AjantisPCModRomance","GLOBAL",3) SetGlobal("C#AjantisPCOtherRom","GLOBAL",2)~ + 10
 ++ @13 EXIT
@@ -369,7 +370,8 @@ CheckStatLT("C#ajantis",7,FATIGUE)
 + ~Global("Chapter","GLOBAL",%bg2_chapter_2%)~ + @19 + C#Advice1
 + ~Global("Chapter","GLOBAL",%bg2_chapter_3%) Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2
 
-+ ~Global("Chapter","GLOBAL",%bg2_chapter_3%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2_i4e
++ ~Global("Chapter","GLOBAL",%bg2_chapter_3%)
+!Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2_i4e
 
 + ~Global("Chapter","GLOBAL",%bg2_chapter_4%)~ + @19 + C#Advice3
 + ~Global("Chapter","GLOBAL",%bg2_chapter_5%)~ + @19 + C#Advice4
@@ -872,7 +874,8 @@ CheckStatLT("C#ajantis",7,FATIGUE)
 + ~Global("Chapter","GLOBAL",%bg2_chapter_2%)~ + @19 + C#Advice1
 + ~Global("Chapter","GLOBAL",%bg2_chapter_3%) Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2
 
-+ ~Global("Chapter","GLOBAL",%bg2_chapter_3%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2_i4e
++ ~Global("Chapter","GLOBAL",%bg2_chapter_3%)
+!Global("C#IM_ImoenStays","GLOBAL",0)~ + @19 + C#Advice2_i4e
 + ~Global("Chapter","GLOBAL",%bg2_chapter_4%)~ + @19 + C#Advice3
 + ~Global("Chapter","GLOBAL",%bg2_chapter_5%)~ + @19 + C#Advice4
 + ~Global("Chapter","GLOBAL",%bg2_chapter_6%)~ + @19 + C#Advice5

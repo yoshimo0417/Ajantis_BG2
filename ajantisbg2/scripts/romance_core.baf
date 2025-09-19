@@ -81,9 +81,10 @@ IF
 	PartyHasItem("C#AJSHLD")
    THEN
 	RESPONSE #100
-		TakePartyItem("C#AJSHLD") 
+		SetInterrupt(FALSE)
+		TakePartyItem("C#AJSHLD") DestroyItem("C#AJSHLD")
 		SetGlobal("C#AjantisDisinheritage","GLOBAL",6)
-		DestroyItem("C#AJSHLD")
+		SetInterrupt(TRUE)
 
 END
 
@@ -649,7 +650,7 @@ IF
 	Global("C#AjantisEngagedMatch","GLOBAL",1)
 	Global("C#AjantisEngaged","GLOBAL",1)
 	!Global("C#AjantisSlayerCycle","GLOBAL",1)
-	Global("Chapter","GLOBAL",%bg2_chapter_6%)
+	GlobalGT("Chapter","GLOBAL",%bg2_chapter_5%)
 	OR(8)
 		AreaCheck("AR0700")
 		AreaCheck("AR0800")

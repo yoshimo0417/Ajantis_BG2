@@ -3,9 +3,9 @@ IF
  Global("ForgeStuff","GLOBAL",1)
 THEN
  RESPONSE #100
-     SetGlobal("C#AjanForgeShieldRing","GLOBAL",0)
+     SetGlobal("ForgeStuff","GLOBAL",0)
      TakePartyItem("C#AJSHLD")
-     TakePartyItem("RING06")
+     TakePartyItemNum("RING06",1)
      DestroyItem("C#AJSHLD")
      DestroyItem("RING06")
      GiveItemCreate("C#AJSHL2",PLAYER1,0,0,0) // completed item
@@ -17,9 +17,9 @@ IF
  Global("ForgeStuff","GLOBAL",1)
 THEN
  RESPONSE #100
-     SetGlobal("C#AjanForgeShieldAmulet","GLOBAL",0)
+     SetGlobal("ForgeStuff","GLOBAL",0)
      TakePartyItem("C#AJSHLD")
-     TakePartyItem("AMUL14")
+     TakePartyItemNum("AMUL14",1)
      DestroyItem("C#AJSHLD")
      DestroyItem("AMUL14")
      GiveItemCreate("C#AJSHL2",PLAYER1,0,0,0) // completed item
@@ -31,9 +31,9 @@ IF
  Global("ForgeStuff","GLOBAL",1)
 THEN
  RESPONSE #100
-     SetGlobal("C#AjanForgeSword","GLOBAL",0)
+     SetGlobal("ForgeStuff","GLOBAL",0)
      TakePartyItem("C#AJ0012")
-     TakePartyItem("SCRL94")
+     TakePartyItemNum("SCRL94",1)
      DestroyItem("C#AJ0012")
      DestroyItem("SCRL94")
      GiveItemCreate("C#AJ012A",PLAYER1,1,3,0) // completed item

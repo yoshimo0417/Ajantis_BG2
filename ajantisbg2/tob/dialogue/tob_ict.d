@@ -207,6 +207,7 @@ END
 I_C_T SARCNT01 14 C#AjantisSARCNT01_14
 == C#Aja25J IF ~InParty("C#Ajantis") InMyArea("C#Ajantis") !StateCheck("C#Ajantis",CD_STATE_NOTVALID)~ THEN @778 DO ~ActionOverride("C#Ajantis",LeaveParty())
 ActionOverride("C#Ajantis",Enemy())
+ActionOverride("SARCNT01",Enemy())
 SetGlobal("C#AjantisRomanceActive","GLOBAL",3)~
 END
 

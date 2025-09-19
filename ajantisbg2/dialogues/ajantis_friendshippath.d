@@ -79,39 +79,8 @@ END
 IF ~~ THEN talk_0_02
 SAY @9
 = @354
-+ ~Global("BD_PLOT","GLOBAL",0) //no SoD
-OR(2)
-Global("Chapter","GLOBAL",%bg2_chapter_1%)
-Global("Chapter","GLOBAL",%bg2_chapter_2%)~ + @10 + talk_0_fortsetzung
 
-+ ~!Global("BD_PLOT","GLOBAL",0) //with SoD
-OR(2)
-Global("Chapter","GLOBAL",%bg2_chapter_1%)
-Global("Chapter","GLOBAL",%bg2_chapter_2%)~ + @356 + talk_0_fortsetzung
-
-++ @11 + talk_0_fortsetzung
-
-+ ~Global("BD_PLOT","GLOBAL",0) //no SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) Global("C#IM_ImoenStays","GLOBAL",0)~ + @12 + talk_0_fortsetzung
-
-+ ~!Global("BD_PLOT","GLOBAL",0) //with SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) Global("C#IM_ImoenStays","GLOBAL",0)~ + @357 + talk_0_fortsetzung
-
-+ ~Global("BD_PLOT","GLOBAL",0) //no SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @355 + talk_0_fortsetzung
-
-+ ~!Global("BD_PLOT","GLOBAL",0) //with SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @358 + talk_0_fortsetzung
-
-+ ~Global("BD_PLOT","GLOBAL",0) //no SoD
-Global("Chapter","GLOBAL",%bg2_chapter_6%)~ + @13 + talk_0_05
-
-+ ~!Global("BD_PLOT","GLOBAL",0) //with SoD
-Global("Chapter","GLOBAL",%bg2_chapter_6%)~ + @359 + talk_0_05
-
-+ ~Global("Chapter","GLOBAL",%bg2_chapter_6%)~ + @14 + talk_0_05
-++ @15 + talk_0_fortsetzung
-++ @16 + talk_no_interest
+COPY_TRANS_LATE C#AjanJ talk_0_03
 END
 
 IF ~~ THEN talk_0_03
@@ -134,11 +103,13 @@ GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) Global("C#IM_ImoenStays","GLOBAL",0
 + ~!Global("BD_PLOT","GLOBAL",0) //with SoD
 GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) Global("C#IM_ImoenStays","GLOBAL",0)~ + @357 + talk_0_fortsetzung
 
-+ ~Global("BD_PLOT","GLOBAL",0) //no SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @355 + talk_0_fortsetzung
++ ~Global("BD_PLOT","GLOBAL",0) //no SoD, I4E
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%)
+!Global("C#IM_ImoenStays","GLOBAL",0)~ + @355 + talk_0_fortsetzung
 
-+ ~!Global("BD_PLOT","GLOBAL",0) //with SoD
-GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%) !Global("C#IM_ImoenStays","GLOBAL",0)~ + @358 + talk_0_fortsetzung
++ ~!Global("BD_PLOT","GLOBAL",0) //with SoD, I4E
+GlobalGT("Chapter","GLOBAL",%bg2_chapter_2%)
+!Global("C#IM_ImoenStays","GLOBAL",0)~ + @358 + talk_0_fortsetzung
 
 + ~Global("BD_PLOT","GLOBAL",0) //no SoD
 Global("Chapter","GLOBAL",%bg2_chapter_6%)~ + @13 + talk_0_05
@@ -166,7 +137,10 @@ END
 
 IF ~~ THEN talk_0_fortsetzung
 SAY @19
-+ ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)~ + @24 + talk_0_fortsetzung_1
++ ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)
+Global("C#IM_ImoenStays","GLOBAL",0)~ + @24 + talk_0_fortsetzung_1
++ ~GlobalLT("Chapter","GLOBAL",%bg2_chapter_4%)
+!Global("C#IM_ImoenStays","GLOBAL",0)~ + @360 + talk_0_fortsetzung_1
 ++ @25 + talk_0_fortsetzung_1
 ++ @22 + talk_0_fortsetzung_1
 ++ @23 + talk_0_fortsetzung_1

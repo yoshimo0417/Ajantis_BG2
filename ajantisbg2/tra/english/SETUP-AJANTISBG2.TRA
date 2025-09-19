@@ -1,0 +1,69 @@
+/* all numbers missing in between are used in game.tra! */
+/* in case of added numbers higher than @250, remember to put a note into the game.tra (or use very high numbers, e.g. @5000. Note: @10000 and higher are journal entries.) */
+
+
+@0 = ~Sir Ajantis NPC for BGII~ 
+
+
+@14   = ~----------------------------------------~
+
+/* @16 changed for v19 */
+@16   = ~Installation of adult romance content~
+
+/*
+@17   = ~Please choose the romance rating:
+[1] Install Teen Romance.
+[2] Install Adult Romance [Adult content].~ 
+//@18
+@19   = ~Please select 1, or 2 and press enter.~
+@20   = ~Teen Romance selected.~
+*/
+
+@21   = ~Adult Romance [Adult content] selected.~
+@22   = ~Select Ajantis' Friendship Dialogues and Romance Speed:~
+
+/*
+@23   = ~Please choose one of the following:
+[1] 1 hour real time (standard) minimum between Dialogues 
+[2] 45 minutes real time minimum between Dialogues
+[3] 30 minutes real time minimum between Dialogues
+[4] 15 minutes real time minimum between Dialogues
+[5] 1 hour 30 minutes (extended) real time minimum between Dialogues~
+@24   = ~Please select 1, 2, 3, 4, or 5 and press enter~
+*/
+
+@25   = ~Speed: 1 hour real time (standard) minimum between Dialogues~
+@26   = ~Speed: 45 minutes real time minimum between Dialogues~
+@27   = ~Speed: 30 minutes real time minimum between Dialogues~
+@28   = ~Speed: 15 minutes real time minimum between Dialogues~
+@29   = ~Speed: 1 hour 30 minutes (extended) real time minimum between Dialogues~
+
+/* @170 changed for v19 */
+@170 = ~Ajantis kit choice: make Ajantis Cavalier~ 
+
+/*
+@171 = ~Please choose one of the following:
+[1] Ajantis as a plain paladin.
+[2] Ajantis as cavalier.~
+@172  = ~Ajantis as plain paladin selected.~ 
+@173  = ~Ajantis as Cavalier selected.~
+*/
+
+@174  = ~Install the unique BG(II):EE BAM for Ajantis' Family Shield~
+@175  = ~This component is only available for the Enhanced Edition.~
+@176  = ~Sir Ajantis NPC for BGII mod needs to be installed.~
+
+@177  = ~Install crossmod for Sir Ajantis for BGII~
+@178  = ~Skie - Cost for One Soul Mod component 0 detected. Installing crossmod content...~
+@179  = ~Alternatives Mod detected. Installing crossmod content...~
+@180  = ~Alternatives Mod not detected. Install Ajantis crossmod component after installing the Alternatives mod!~
+@181  = ~Gavin BGII mod not detected. Install Ajantis crossmod component after installing the Gavin BGII mod!~
+@182  = ~Gavin BGII Mod detected. Installing crossmod content...~
+@183  = ~Skie - Cost for One Soul Mod component 1 detected. Installing crossmod content...~
+
+/* new for v21 */
+@184  = ~This mod is not compatible with this game.~
+@185  = ~This mod needs to be installed before EET_End on your EET install.~
+
+/* numbers up to @250 to be used here. */
+/* in case of added numbers here, remember to put a note into the game.tra (or use very high numbers, e.g. @5000. Note: @10000 and higher are journal entries.) */
