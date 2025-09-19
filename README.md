@@ -2,7 +2,7 @@
 Sir Ajantis NPC for BGII modification introduces Ajantis, the known BG1 NPC, paladin of the Order of the Radiant Heart into the SoA and ToB part of the game. 
 
 With this modification Ajantis can be acquired as a member of the PC's group after the fight in the Windspear Hills (which was not changed by the mod principally). The player must then solve a quest to free Ajantis from Firkraag's ransom. 
-The modification contains a fully developed engaged romance path, which continues the Ajantis Romance from the [BG1 NPC Project](https://www.gibberlings3.net/mods/npcs/bg1npc/) (for vanilla BG1: [BG1 Ajantis Expansion Mod](https://www.gibberlings3.net/mods/npcs/ajantis/); a new beginnings romance, and a friendship path.
+The modification contains a fully developed engaged romance path, which continues the Ajantis Romance from the [BG1 NPC Project](https://www.gibberlings3.net/mods/npcs/bg1npc/) (for vanilla BG1: [BG1 Ajantis Expansion Mod](https://www.gibberlings3.net/mods/npcs/ajantis/)); a new beginnings romance, and a friendship path.
 
 Contentwise, the mod assumes that Ajantis travelled with the PC in BG1 for some time. It was there that Ajantis gained enough honor to be knighted.
 
