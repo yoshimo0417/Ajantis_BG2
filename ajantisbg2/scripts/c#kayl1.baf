@@ -1,0 +1,11 @@
+/*This prevents Sir Ryan Trawl's appearance if Anomen's romance gets shut down after the accolade */
+
+IF
+	OR(2)
+		Global("AnomenIsKnight","GLOBAL",1)
+		Global("AnomenIsNotKnight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("TalkedToKayl","GLOBAL",1)
+		EscapeArea()
+END

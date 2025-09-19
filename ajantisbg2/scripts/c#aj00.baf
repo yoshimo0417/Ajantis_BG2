@@ -1,0 +1,47 @@
+IF
+	Global("C#AjantisPortalPaladinExists","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPortalPaladinExists","GLOBAL",1)
+		CreateCreature("C#KNIG06",[3870.3165],12)
+		CreateCreature("C#AJSKE1",[4061.3036],0)	
+END	
+
+IF
+	Dead("C#AJSKE1") 
+	Global("C#AjantisPortalSkelett","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPortalSkelett","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisPortalSkelettTimer","GLOBAL",20)
+END
+
+IF
+	Global("C#AjantisKnig0sHeimkehr","GLOBAL",1)
+	Global("C#AjantisKnig02Heimkehr","GLOBAL",0)
+	Dead("C#KNIG02")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKnig02Heimkehr","GLOBAL",1)
+		ActionOverride("C#KNIG02",DestroySelf())
+END
+
+IF
+	Global("C#AjantisKnig0sHeimkehr","GLOBAL",1)
+	Global("C#AjantisKnig03Heimkehr","GLOBAL",0)
+	Dead("C#KNIG03")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKnig03Heimkehr","GLOBAL",1)
+		ActionOverride("C#KNIG03",DestroySelf())
+END
+
+IF
+	Global("C#AjantisKnig0sHeimkehr","GLOBAL",1)
+	Global("C#AjantisKnig04Heimkehr","GLOBAL",0)
+	Dead("C#KNIG04")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKnig04Heimkehr","GLOBAL",1)
+		ActionOverride("C#KNIG04",DestroySelf())
+END

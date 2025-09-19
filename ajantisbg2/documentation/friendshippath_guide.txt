@@ -1,0 +1,44 @@
+--Ajantis NPC for SoA--
+
+GUIDE: FRIENDSHIP PATH
+
+
+The friendship path is for all PCs that do not meet the romance criteria, or if the player chose the option "engagement broke up on the Sword Coast" during the game (only for PCs that fulfilled the romance criteria).
+
+
+Conditions for friendship path (i.e. no Romance Match):
+-Male,
+-or: female, but single-class thief
+-or: female, but not of alignment good, neutral or lawful neutral but no druid
+
+
+LIST OF DIALOGUES WITH CONDITIONS
+
+Before going to Brynnlaw / the Underdark:
+
+1. ~I find myself once again traveling at your side, <CHARNAME>.~
+
+2. ~It was a big venture for you to free me and my comrades from Firkraag's grasp.~
+
+3. ~<CHARNAME>, you mentioned it briefly, but I would like to learn more.~
+
+4. ~Now your descent from the god of murder is well known...~
+
+5. ~Forgive me if I share my thoughts with you for a moment...~~
+
+6. ~<CHARNAME>, have we discussed weapons previously at the Sword Coast?~
+
+7. ~My apologies; my thoughts still revolve around Firkraag's illusion.~
+
+8. (Inside a tavern after dialogue about weapons; does not block the other cyclic talks): ~Now, look at all the rundown characters that waste their time here...~
+
+9. (City area, being approached by someone else): ~Wait a minute, there!~
+
+
+After returning from the Underdark:
+
+10. ~It is amazing how things develop...~
+
+11. ~There we see creatures of unbelievable elegance and power...~
+
+12. ~<CHARNAME>, when we walked through the streets recently, did you notice how some of those who passed us looked at you?~

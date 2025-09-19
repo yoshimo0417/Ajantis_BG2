@@ -1,0 +1,12 @@
+
+IF
+	HasItem("c#aj0001","Container 3")
+	SpellCast([PC],2203) //WIZARD_DETECT_INVISIBILITY
+THEN
+	RESPONSE #100
+		CreateVisualEffect("c#ajinvi",[609.405])
+END
+
+
+
+

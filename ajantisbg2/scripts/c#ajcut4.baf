@@ -1,0 +1,48 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	FadeToColor([20.0],0)
+	ActionOverride("C#AJSPY1",DestroySelf())
+	Wait(1)
+	LeaveAreaLUAPanic("C#AJ00","",[72.798],9)
+	LeaveAreaLUA("C#AJ00","",[72.798],9)
+	ActionOverride(Player2,LeaveAreaLUA("C#AJ00","",[40.798],9))
+	ActionOverride(Player3,LeaveAreaLUA("C#AJ00","",[73.728],9))
+	ActionOverride(Player4,LeaveAreaLUA("C#AJ00","",[42.749],9))
+	ActionOverride(Player5,LeaveAreaLUA("C#AJ00","",[75.701],9))
+	ActionOverride(Player6,LeaveAreaLUA("C#AJ00","",[37.700],9))
+//	MoveViewPoint([162.705],INSTANT)
+	MoveViewObject(Myself,INSTANT)
+	CreateCreature("C#KNIG01",[169.661],5)//Oger - Knight01 (OGRE) DLG
+	CreateCreature("C#KNIG02",[188.851],5)//Oger - Knight02 (OGRE)
+	CreateCreature("C#Ajan08",[237.608],5)//OgerMagus - Ajantis (OGRE_MAGE)
+	CreateCreature("C#KNIG03",[235.723],5)//Gnoll Elite - Knight03 (GNOLL)
+	CreateCreature("C#KNIG04",[347.592],5)//Lindwurmbaby - Knight04 (WYVERN)
+	ActionOverride("C#KNIG01",SetName(6313)) //Oger
+	ActionOverride("C#KNIG02",SetName(6313)) //Oger
+	ActionOverride("C#KNIG03",SetName(19691)) //Gnoll Elite
+	ActionOverride("C#KNIG04",SetName(10310)) //Lindwurmbaby
+	ActionOverride("C#Ajantis",SetName(9354)) //OgerMagus
+	ActionOverride("C#KNIG01",FaceObject(Player1))
+	ActionOverride("C#KNIG02",FaceObject(Player1))
+	ActionOverride("C#KNIG03",FaceObject(Player1))
+	ActionOverride("C#KNIG04",FaceObject(Player1))
+	ActionOverride("C#Ajantis",FaceObject(Player1))
+	ActionOverride("C#Ajantis",Polymorph(OGRE_MAGE))
+	FaceObject("C#KNIG01")
+	ActionOverride(Player2,FaceObject("C#KNIG01"))
+	ActionOverride(Player3,FaceObject("C#KNIG01"))
+	ActionOverride(Player4,FaceObject("C#KNIG01"))
+	ActionOverride(Player5,FaceObject("C#KNIG01"))
+	ActionOverride(Player6,FaceObject("C#KNIG01"))
+	Wait(2)
+	FadeFromColor([20.0],0)
+	Wait(1)
+	SetGlobal("C#AjantisDurchPortal","GLOBAL",1)
+	EndCutSceneMode()
+	ActionOverride("C#KNIG01",StartDialogueNoSet(Player1))
+END
+

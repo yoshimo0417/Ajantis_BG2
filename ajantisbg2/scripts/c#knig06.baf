@@ -1,0 +1,261 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Global("C#AjanKnigh06Enemy","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanKnigh06Enemy","GLOBAL",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("C#AjanKnigh06Enemy","GLOBAL",1)
+	See([PC])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanKnigh06Enemy","GLOBAL",2)
+		ChangeAlignment(Myself,NEUTRAL)
+		ClearAllActions()
+		SetGlobal("TempleShout0903","GLOBAL",0)
+		StartDialogNoSet([PC])
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Global("TempleShout0903","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("TempleShout0903","GLOBAL",1)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+	Global("TempleShout0903","GLOBAL",1)
+	Global("C#AjanKnig06TShout0903","GLOBAL",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanKnig06TShout0903","GLOBAL",1)
+		Enemy()
+END
+
+
+//Wenn die Lösung nahe ist, Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+
+
+
+IF
+	!Dead("C#KNIG01")
+!Dead("C#KNIG02")
+!Dead("C#KNIG03")
+!Dead("C#KNIG04")
+!Dead("C#Ajantis")
+!Allegiance("C#KNIG01",ENEMY)
+!Allegiance("C#KNIG02",ENEMY)
+!Allegiance("C#KNIG03",ENEMY)
+!Allegiance("C#KNIG04",ENEMY)
+!Allegiance("C#Ajantis",ENEMY)
+	Detect("C#KNIG01")
+	Detect("C#KNIG02")
+	Detect("C#KNIG03")
+	Detect("C#KNIG04")
+	Detect("C#Ajantis")
+	Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPortalPalKampf","GLOBAL",11)
+		SetGlobal("C#AjantisRitterBeimPortal","GLOBAL",2)
+		MoveToPoint([3983.3088])
+		Face(0)
+END
+
+IF
+	CombatCounter(0) !See([ENEMY])
+	See([PC])
+	!StateCheck(LastSeenBy(Myself),CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	See("C#KNIG01")
+	See("C#KNIG02")
+	See("C#KNIG03")
+	See("C#KNIG04")
+	See("C#Ajantis")
+	!Dead("C#KNIG01")
+	!Dead("C#KNIG02")
+	!Dead("C#KNIG03")
+	!Dead("C#KNIG04")
+	!Dead("C#Ajantis")
+	!Allegiance("C#KNIG01",ENEMY)
+	!Allegiance("C#KNIG02",ENEMY)
+	!Allegiance("C#KNIG03",ENEMY)
+	!Allegiance("C#KNIG04",ENEMY)
+	!Allegiance("C#Ajantis",ENEMY)
+	Global("C#AjantisRitterBeimPortal","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRitterBeimPortal","GLOBAL",3)
+		StartDialogNoSet("C#KNIG01")
+END
+		
+IF 
+	Detect([PC])
+	RealGlobalTimerExpired("C#AjantisPortalSkelettTimer","GLOBAL")
+	GlobalLT("C#AjantisPortalSkelett","GLOBAL",5)
+	GlobalLT("C#AjantisRitterBeimPortal","GLOBAL",2)
+	
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjantisPortalSkelett","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisPortalSkelettTimer","GLOBAL",30)
+		CreateCreatureDoor("C#AJSKE1",[4083.2958],0)
+END
+IF
+	GlobalGT("C#AjantisPortalBewachen","GLOBAL",1)
+
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJSKE1",Kill(Myself))
+		ActionOverride("C#AJSKE2",Kill(Myself))
+END
+
+IF 
+	Detect([PC])
+	RealGlobalTimerExpired("C#AjantisPortalSkelettTimer","GLOBAL")
+	Global("C#AjantisPortalBewachen","GLOBAL",1)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisPortalSkelettTimer","GLOBAL",60)
+		CreateCreatureDoor("C#AJSKE2",[4083.2958],0)
+END
+
+IF 
+	Detect([PC])
+	RealGlobalTimerExpired("C#AjantisPortalSkelettTimer","GLOBAL")
+	GlobalGT("C#AjantisPortalSkelett","GLOBAL",4)
+	GlobalLT("C#AjantisRitterBeimPortal","GLOBAL",2)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjantisPortalSkelett","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisPortalSkelettTimer","GLOBAL",60)
+		CreateCreatureDoor("C#AJSKE2",[4083.2958],0)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	HPLT(Myself,55)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@0)
+		ForceSpell(Myself,PALADIN_LAY_ON_HANDS)
+END
+
+IF
+	Global("C#AjantisPortalPalKampf","GLOBAL",1)
+	See([PC])
+	OR(2)
+	!AttackedBy([ANYONE],DEFAULT)
+	!Range(NearestEnemyOf(Myself),10)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+//	Dead("C#AJSKE1") 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPortalPalKampf","GLOBAL",2)
+		RealSetGlobalTimer("C#AjantisPortalKampfPCTimer","GLOBAL",60)
+		StartDialogueNoSet([PC])
+END
+
+
+
+IF 
+	!AttackedBy([ANYONE],DEFAULT)
+	See(PLayer1)
+	GlobalGT("C#AjantisPortalPalKampf","GLOBAL",2)
+	GlobalLT("C#AjantisRitterBeimPortal","GLOBAL",2)
+	RealGlobalTimerExpired("C#AjantisPortalKampfPCTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisPortalKampfPCTimer","GLOBAL",15)
+		DisplayStringHead(Myself,@1)
+END
+
+IF
+	!AttackedBy([ANYONE],DEFAULT)
+	GlobalGT("C#AjantisPortalPalKampf","GLOBAL",0)
+	GlobalLT("C#AjantisRitterBeimPortal","GLOBAL",2)
+THEN
+	RESPONSE #100
+		MoveToPoint([3970.3123])
+		Face(12)
+END
+
+IF
+	Detect([PC])
+	Global("C#AjantisPortalPalKampf","GLOBAL",0)
+	OR(2)
+		See("C#AJSKE1")
+		See("C#AJSKE2")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPortalPalKampf","GLOBAL",1)
+		Attack("C#AJSKE1")
+		Attack("C#AJSKE2")
+END
+
+IF
+	GlobalGT("C#AjantisPortalPalKampf","GLOBAL",0)
+	OR(2)
+		See("C#AJSKE1")
+		See("C#AJSKE2")
+THEN
+	RESPONSE #100
+		Attack("C#AJSKE1")
+		Attack("C#AJSKE2")
+END
+
+IF
+	!Dead("C#KNIG01")
+!Dead("C#KNIG02")
+!Dead("C#KNIG03")
+!Dead("C#KNIG04")
+!Dead("C#Ajantis")
+!Allegiance("C#KNIG01",ENEMY)
+!Allegiance("C#KNIG02",ENEMY)
+!Allegiance("C#KNIG03",ENEMY)
+!Allegiance("C#KNIG04",ENEMY)
+!Allegiance("C#Ajantis",ENEMY)
+	Detect("C#KNIG01")
+	Detect("C#KNIG02")
+	Detect("C#KNIG03")
+	Detect("C#KNIG04")
+	Detect("C#Ajantis")
+	Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJSKE1",Kill(Myself))
+		ActionOverride("C#AJSKE2",Kill(Myself))
+END
+
+IF
+	Global("C#AjantisQuestEnde","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJSKE1",Kill(Myself))
+		ActionOverride("C#AJSKE2",Kill(Myself))
+END
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+IF
+	!Detect(Player1)
+	Global("C#AjanEnderQuestSpawn","GLOBAL",2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	Detect(Player1)
+	Global("C#AjanEnderQuestSpawn","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Wait(2)
+		StartDialogueNoSet(Player1)
+END

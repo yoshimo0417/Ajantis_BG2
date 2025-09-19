@@ -1,0 +1,10 @@
+/* new SoA game: check for spawning */
+IF
+	Global("C#NewSoAGame","GLOBAL",0)
+	Global("ENDOFBG1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#NewSoAGame","GLOBAL",1)
+		Continue()
+END
+

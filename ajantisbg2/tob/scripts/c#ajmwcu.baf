@@ -1,0 +1,12 @@
+/* masterwraith cutscene */
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateVisualEffect("SPFLESHS",[1454.1398])
+		Wait(1)
+		CreateCreature("C#AJ25MW",[1454.1398],14) // boy
+		ActionOverride("C#AJ25MW",StartDialogueNoSet(Player1))
+END

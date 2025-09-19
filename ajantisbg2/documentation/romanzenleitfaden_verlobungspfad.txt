@@ -1,0 +1,127 @@
+--Ajantis NPC für SvA--
+Leitfaden: Verlobungspfad
+
+Ajantis ist seit Euren ruhmreichen Tagen an der Schwertküste zum Ritter geschlagen worden und darf sich daher Sir Ajantis nennen. Damit ist sein größter Wunsch in Erfüllung gegangen: Er kann nun als Ritter des Ordens im Namen Helms gute Taten vollbringen. Doch sein Herz ist schwer, denn Ihr seid verschwunden und er kann sich Euer Fehlen nicht erklären. Zum vereinbarten Treffpunkt, den Ihr mit Ajantis an der Schwertküste vor Eurem Abschied vereinbart hattet, seid Ihr nicht erschienen, Ihr seid wie vom Erdoden verschluckt. Sir Ajantis begibt sich auf eine kleine Mission, um sich von seiner Verzweiflung abzulenken. In den Windspeerhügeln jagt er mit Kameraden nach Monstern, um sich danach wieder vollständig auf die Suche nach Euch vorbereiten zu können. Ihr trefft ihn tatsächlich dort, doch eine Illusion verhindert es, dass Ihr Euch rechtzeitig erkennt... Begebt Euch in Firkraags Höhlen, um zu ergründen, was mit Eurem Verlobten wirklich geschah!
+
+Der Verlobungspfad unterstellt, dass Ajantis in BG1 bereits mit der HC gereist ist, und damals die Romanze bis zum Ende gespielt wurde, so dass Ajantis und die HC nach dem Sieg an der Schwertküste als Verlobte getrennte Wege gingen, um sich in BGII wiederzutreffen. 
+
+Konditionen der HC, damit der Verlobungspfad in Frage kommt:
+-weiblich,
+-keine reine Diebin
+-von guter Gesinnung, rechtschaffen neutral oder neutraler Gesinnung
+-Druidinnen jeder Gesinnung
+-alle Rassen außer Halbork.
+
+Der Spieler hat mehrere Möglichkeiten, den Status der Romanze zu definieren. 
+Die Auswahlmöglichkeiten sind folgende:
+-Verlobungspfad: die Romanze aus BG1 (BG1NPC Projekt (G3) oder Ajantis BG1 Expansion (Rosenranken)) wird fortgeführt.
+-Erstromanze: Ajantis hat in BG1 der HC keinen Antrag gemacht, kennt sie aber schon von damals.
+-Verlobung zerbrach an der Schwertküste: Diese Option existiert nur der Vollständigkeit halber. Sie bietet einen kleine zusätzliche Dialog, in dem Ajantis die HC begrüßt, ansonsten führt sie zum normalen Freundschaftspfad (ohne Romanze, d.h. auch die BGII-Erstromanze ist dann nicht mehr möglich.).
+
+Um den Verlobungspfad zu spielen, muss die erste Option gewählt werden ("Ajantis war Euer Verlobter an der Schwertküste").
+
+Auswahl des Romanzenstatus: 
+Die Auswahl erfolgt über Dialogoptionen im Spiel. Es gibt mehrere Möglichkeiten, abhängig davon, wann im Spiel das Mod installiert wird, den Status der Romanze (Verlobungspfad, Erstromanze oder beendete Beziehung) zu wählen. Davon wird natürlich nur eine in jedem Spiel zu sehen sein; sobald der Grad der Romanze gewählt wurde, ist das Spiel entsprechend eingerichtet und diese Auswahlmöglichkeit erscheint nicht noch einmal.
+
+Die Auswahlmöglichkeiten bieten sich:
+-In Irenicus' Dungeon im Gespräch mit Imoen (wenn Imoen in der Gruppe ist).
+-Falls Imoen nicht in der Gruppe ist: In Irenicus' Dungeon, wenn die HC einen Gegenstand der BG1-Romanze findet.
+-In den Windspeerhügeln, kurz nach dem Kampf mit den Rittern vor dem Gespräch mit Garren.
+-In Athkatla, falls die Windspeerhügel bei der Installation bereits betreten wurden und die Ritter tot sind: Durch Sprechen mit dem Knappen Roman im Hauptquartier des Ordens.
+-Vor Betreten des Portals, das den Ajantisquest startet; bzw. bevor der Priester des Oghma das Portal umkehrt, falls der Quest nicht gespielt werden möchte. 
+
+Falls das Mod spät, also nach dem Verlassen des Irenicus' Dungeon installiert wurde, wartet im Orden der Knappe "Roman". Sprecht mit ihm, am besten bevor Ihr mit irgendwem sonst im Orden sprecht, falls das in Eurem Spiel noch nicht geschehen ist, und sagt ihm, dass Ihr mit Ajantis verlobt seid. Nur so kommt Ihr in den vollen Genuss der Romanzen-bedingten Änderungen, die das Mod für den Verlobungspfad einfügt, und die *vor* dem Quest auf der Suche nach Ajantis stattfinden.
+
+Der Verlobungspfad beinhaltet folgende Extras (Auszug aus der Readme):
+-16 zyklische Lovetalks
+-weitere spielabhängige Dialoge
+-13 Gespräche, die vor dem Rasten stattfinden (der Fortlauf der Romanze ist hiervon nicht abhängig).
+-Ajantis-initiierte Flirts
+-PIDs und PI Flirts. Diese sind orts- und Kapitelabhängig.
+-mehrere Dialoge, die die HC über das PID Menü starten kann.
+-In Irenicus Dungeon findet die HC einen persönlichen Gegenstand
+-Im Orden des Strahlenden Herzens kann nach Ajantis nachgefragt werden. Sir Ryan Trawl erkennt beim ersten Ansprechen die HC als Ajantis' Verlobte (sofern dies im Spiel bereits vom Spieler definiert wurde).
+-Ajantis und die HC können heiraten
+-Eine Auswahl von 12 verschiedenen Eheringen, die auf zwei verschiedene Arten ausgewählt werden können: Entweder direkt beim Goldschmied, oder indem Ajantis einen Musterbeutel bestellt. Letzteres geht nur in Gegenden, von denen aus man Athkatla erreichen kann.
+-Ajantis schenkt der HC ein Geschenk, und die HC kann ihm ebenfalls ein Geschenk kaufen, nachdem sie darüber in einem Lovetalk gesprochen haben.
+-Romanzenkonflikt mit Anomen: Solange Ajantis und die HC nicht verheiratet sind, wird die Anomenromanze in leicht angepasster Form weitergeführt. Veränderungen sind hier zugefügte Antwortoptionen der HC, um Anomen höflich anzulehnen und auf die Beziehung mit Ajantis hinzuweisen. Nach der Hochzeit der HC mit Ajantis wird die Anomenromanze bis zu seinem Ritterschlag fortgeführt, und erst vor dem "Blumendialog" deaktiviert. 
+
+Jugendfreigabe:
+Während der Installation kann der Grad des Erotikanteils gewählt werden. "jugendfrei" entspricht dem BioWare-Standard, es erfolgt das Abblenden der Szene ohne eindeutige Beschreibungen. "nicht jugendfrei" beinhaltet Intimszenen, aber auch hier erfolgt das Abblenden vor eindeutigen Handlungen.
+
+
+In der Romanze möchte Ajantis mehrere Dinge mit der Hc gemeinsam unternehmen:
+-Auswahl der Farbe des Edelsteins für den neuen Verlobungsring. Sucht sich die HC keine Farbe aus, lässt Ajantis einen Ring schmieden, der so aussieht wie der originale in BG1.
+-Auswahl des Eheringes bei einem Goldschmied (über das Mod eingefügt). Hinweis: Die Auswahl kann auf zwei Arten erfolgen. Entweder direkt beim Goldschmied in Athkatla, oder indem Ajantis einen Musterbeutel bestellt, in dem die Ringe angeschaut werden können (unverkäufliche Musterringe). In beiden Fällen muss die HC Ajantis über PID ihre Auswahl mitteilen. 
+-Treffen seiner Eltern in Athkatla
+-Hochzeit in Athkala
+
+Bricht die Gruppe nach Brynnlaw auf, während Ajantis auf einen dieser Punkte wartet, so werden sie auf später verschoben. Die Romanze pausiert u.U. bezüglich der LoveTalks, aber kann problemlos bei der Rückkehr fortgeführt werden. Sind die Punkte noch nicht beendet, bevor die Gruppe nach Suldanessalar aufbricht, wird die Romanze voraussichtlich im noch in Planung befindlichen TdB-Teil zu Ende zu spielen sein.
+
+Modadditionen des Verlobungspfades, die vor dem Treffen mit Ajantis stattfinden:
+-In Irenicus' Dungeon befindet sich ein Gegenstand der BG1-Romanze (in der Nähe der Duergar-Schmiede).
+-Bei ihrem ersten Dialog nach dem Verlassen des Irenicus Dungeon nimmt Jaheira auf Ajantis Bezug.
+-Beim ersten Gespräch erkennt Sir Ryan Trawl im Orden des Strahlenden Herzens die Hc als Ajantis' Verlobte.
+-Beim Prälaten des Ordens kann man nach persönlichen Gegenständen fragen, die Ajantis für die HC hinterlegt hat.
+-Keldorn und Anomen (dieser nur als als Knappe oder Ritter) sprechen die HC unabhängig voneinander auf Ajantis an.
+
+
+Auflistung der zyklischen LoveTalks mit Triggerbedingungen:
+
+1 - <CHARNAME>, nun sind wir wieder zusammen.
+
+2 - Liebste, was für grässliche Dinge erfahre ich!
+
+3a (sofern noch nicht via PID über den Verlobungsring gesprochen wurde) - Ich sehe in Eurem Gepäck 
+ODER
+3b (sofern bereits via PID über den Verlobungsring gesprochen wurde) - Für den Blumenanhänger, den ich Euch an der Schwertküste schenkte...
+
+4 - Ihr könnt Euch nicht vorstellen, was ich alles versucht habe, um Euch zu finden.
+
+5 - <CHARNAME>, Ihr hattet es bereits kurz angesprochen, aber ich würde es gerne noch ausführlicher erfahren.
+
+6 - Wollt Ihr erfahren, was genau geschah, bevor Ihr uns in Firkraags Enklave befreit habt?~
+
+7 - Ich bin manchmal froh, dass Firkraag mich und meine Kameradinnen eingekerkert hatte...
+
+8 - (seufz)
+
+9 - Ich bin so glücklich, Euch wieder bei mir zu haben, Liebste.
+
+10a (nur, wen sich die Gruppe nicht in einem zugänglichen Gebiet befindet) - Langsam nähert sich die Zeit, zu der meine Eltern wieder in Athkatla sein wollten...
+
+10 (in Stadtgebiet, Bote) - Sir Ajantis? Verzeiht, mein Herr.
+
+11 (im Gasthaus Mithreast, nach LT 12) - Ah! Ich sehe meine Eltern, <CHARNAME>.
+
+12 - Ich kann es nicht fassen...
+
+13 - Verzeiht, Liebste, dass ich in letzter Zeit so verschlossen bin.
+
+14 - Ihr... Ihr solltet Euch überlegen,
+
+15 - <CHARNAME>, ich habe viele Gedanken in meinem Herzen bewegt 
+
+16a (nur, wenn nicht über PID bereits die Hochzeit geplant wurde) - Ich wollte Euch letzthin nicht abwimmeln, Liebste.
+
+16b (nur, wenn die HC den Beutel mit den Muster-Eheringen beim Goldschmied bestellt hat) - <CHARNAME>, schaut, was heute Morgen angekommen ist.
+
+17 - <CHARNAME>, ich wollte Euch doch noch etwas schenken.
+
+18 (nach der Wahl des Ringes, aber unabhängig zur Hochzeit) - Ich habe die Hoffnung aufgegeben...
+
+19 - (feierlich) Nun ist es soweit, <CHARNAME>.
+
+20 (Hochzeit, im Tempel) - Ah, willkommen, Sir Ajantis!
+
+21 (direkt nach der Hochzeit) - (freudig) <CHARNAME>, Liebste!
+
+22 (Bote im Stadtgebiet, Kapitel 6 (nach Unterreich)) - Sir Ajantis! Vergebt mir mein plötzliches Erscheinen...
+
+23 (direkt nach LT 22) - Nun ist es also geschehen!
+
+24 - Liebste, erinnert Ihr Euch noch, wie ich Euch um eine Locke Eures wunderbaren Haares bat...
+
+25 (nach LT 24, und falls die HC ein bestimmtes Medallion für Ajantis gekauft hat):  - Das Medaillon, das Ihr gekauft habt...
+
+

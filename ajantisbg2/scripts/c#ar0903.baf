@@ -1,0 +1,23 @@
+//AR0903
+
+IF
+	Global("C#AjantisPCInWindspeerHills","GLOBAL",2)
+	Global("C#AjantisKNIG05Existiert","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#KNIG05",[820.1500],8)
+	SetGlobal("C#AjantisKNIG05Existiert","GLOBAL",1)
+	SetGlobal("C#AjantisPCInWindspeerHills","GLOBAL",3)
+END
+
+IF
+	Global("C#AjantisSpaetInstallation","GLOBAL",1)
+	Global("C#AjantisKNIG05Existiert","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#KNIG05",[820.1500],8)
+	SetGlobal("C#AjantisKNIG05Existiert","GLOBAL",1)
+	SetGlobal("C#AjantisSpaetInstallation","GLOBAL",2)
+END
+
+

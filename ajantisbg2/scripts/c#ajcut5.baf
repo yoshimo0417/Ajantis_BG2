@@ -1,0 +1,22 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	Wait(1)
+	ActionOverride("C#KNIG01",ForceSpell(Myself,DRYAD_TELEPORT))
+	ActionOverride("C#KNIG02",ForceSpell(Myself,DRYAD_TELEPORT))
+	ActionOverride("C#KNIG03",ForceSpell(Myself,DRYAD_TELEPORT))
+	ActionOverride("C#KNIG04",ForceSpell(Myself,DRYAD_TELEPORT))
+	ActionOverride("C#Ajantis",ForceSpell(Myself,DRYAD_TELEPORT))
+	PlaySound("EFF_M29")
+	Wait(1)
+	ActionOverride("C#KNIG01",DestroySelf())
+	ActionOverride("C#KNIG02",DestroySelf())
+	ActionOverride("C#KNIG03",DestroySelf())
+	ActionOverride("C#KNIG04",DestroySelf())
+	ActionOverride("C#Ajantis",DestroySelf())
+	Wait(1)
+	EndCutSceneMode()
+END

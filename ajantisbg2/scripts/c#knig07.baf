@@ -1,0 +1,11 @@
+IF
+	OR(4)
+		Global("C#AjantisEngaged","GLOBAL",1)	
+		Global("C#AjantisRomanceActive","GLOBAL",3) 
+		Global("C#AjanEngagementBrokenBG1","GLOBAL",1)
+		GlobalGT("C#AjantisIsDeadBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

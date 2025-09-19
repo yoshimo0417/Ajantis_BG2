@@ -1,0 +1,24 @@
+//AR1007 barracks
+
+//spawning of Erenal
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Dead("C#AJEILA")
+	!Dead("GARREN")
+	GlobalGT("C#AjanEnderoldQuest","GLOBAL",0)
+	Global("C#AjanEnderQuestEreSpawn","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanEnderQuestEreSpawn","GLOBAL",1)
+		createCreature("C#AJELER",[895.347],0)
+END
+
+//in case Erenal gets killed before he talks
+IF 
+	Dead("C#AJELER")
+	GlobalLT("C#AjanEnderoldQuest","GLOBAL",5)
+THEN 
+	RESPONSE #100
+		SetGlobal("C#AjanEnderoldQuest","GLOBAL",5)
+END
+

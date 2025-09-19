@@ -1,0 +1,44 @@
+//Fate spirit: no summoning for evil PC
+//Assumes PC rescued Ajantis, and also took him along.
+
+/*
+ IF ~  Global("AjantisSummoned","GLOBAL",0)
+Global("AjantisPartyBG2","GLOBAL",1)
+!Dead("Ajantis")
+~ THEN REPLY #287599 /* ~Bring me Ajantis, the paladin.~ */ DO ~SetGlobal("AjantisSummoned","GLOBAL",1)
+~ GOTO 9
+*/
+
+
+/* %IsNotContiGameToB%: true for tob, bg2ee, tob game in bgt and eet */
+IF
+	Global("%AjantisSummoned_Variable%","GLOBAL",1)
+	%IsNotContiGameToB%
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		CreateCreature("c#ajatob",[1999.1218],0)
+		SetGlobal("%AjantisSummoned_Variable%","GLOBAL",2)
+    Continue()
+END
+
+
+/* %IsContiGameToB%: returns only true if continuous game for eet */
+
+IF
+	%IsContiGameToB%
+	Global("%AjantisSummoned_Variable%","GLOBAL",1)
+THEN
+	RESPONSE #100
+		CreateVisualEffect("SPPORTAL",[1999.1218])
+		Wait(2)
+		ActionOverride("C#Ajantis",SetDialog("C#Ajan25"))
+		ActionOverride("C#Ajantis",ChangeAIScript("C#Ajan25",OVERRIDE))
+		MoveGlobal("AR4500","C#Ajantis",[1999.1218])
+		ActionOverride("C#Ajantis",FaceObject(Player1))
+		ActionOverride("C#Ajantis",SetGlobal("BD_JOINXP","LOCALS",0))
+		ActionOverride("C#Ajantis",SetGlobal("C#AjantisJoined","GLOBAL",0))
+		SetGlobal("%AjantisSummoned_Variable%","GLOBAL",2)
+    Continue()
+END

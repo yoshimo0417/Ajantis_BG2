@@ -1,0 +1,1104 @@
+/* Ajantis will not accompany an evil PC through throne of Bhaal: dialogue activation (C#Aja25J.d) */
+
+IF 
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	AreaCheck("AR4000")
+	Global("C#AjantisEvilPCLeave","GLOBAL",0)
+	Alignment(Player1,MASK_EVIL)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisEvilPCLeave","GLOBAL",1)
+END
+
+/* Ajantis will not accompany an evil PC through throne of Bhaal: dialogue triggering (C#Aja25J.d) */
+
+IF
+	Detect(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C#AjantisEvilPCLeave","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+/* Ajantis was summoned in the pocketplane. (fate spirits, in tob_ict.d): dialogue triggering (C#Aja25.d)*/
+
+IF
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("%AjantisSummoned_Variable%","GLOBAL",2)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+/* DestroyItem() (temporary romance item from SoA) */
+
+IF 
+	Global("C#AjantisDestroyBagTB","GLOBAL",1)
+	PartyHasItem("C#AJBA02")
+   THEN
+	RESPONSE #100
+		TakePartyItem("C#AJBA02") DestroyItem("C#AJBA02")
+		SetGlobal("C#AjantisDestroyBagTB","GLOBAL",2)
+END
+
+
+
+
+
+
+
+/* DestroyItem(): Ajantis' shield for RA = 2 (always!) 
+
+AR6400 : River Area
+AR5500 : Amkethran
+
+GlobalGT("C#Ajantis_RestdialoguesToB","GLOBAL",1): After Ajantis announced it
+
+For nb romance track after confession (in hell)
+
+
+"C#AjantisDisinheritage"
+
+1,2: messenger appears and takes the shield
+3: Ajantis didn't have the shield with him
+4: triggert den "Schild"-später-zurück Dialog
+
+5: triggert den "Schild"-zerstör Skriptblock
+
+6: originalschild zurück gegeben
+7: verbesserter Schild zurückgegeben
+8: von Cespenar verbesserter Schild zurück gegeben
+
+--
+
+triggern in ToB:
+9: Originalschild wiedergegeben
+10: verbesserter Schild wiedergegeben
+11: von Cespenar verbesserter Schild zurück gegeben
+
+*/
+
+
+IF 
+	GlobalLT("C#AjantisDisinheritage","GLOBAL",4)
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("C#Ajantis_RestdialoguesToB","GLOBAL",1)
+	Global("C#AjantisRomanceActive","GLOBAL",2)
+	OR(3)
+		PartyHasItem("C#AJSHLD")
+		PartyHasItem("C#AJSHL2")
+		PartyHasItem("C#AJSHL3")
+	OR(2)
+		AreaCheck("AR6400")
+		AreaCheck("AR5500")
+   THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisDisinheritage","GLOBAL",4)
+END
+
+IF 
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisDisinheritage","GLOBAL",4)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* DestroyItem(): Schild nach Rückgabe an Ajantis' Familie */
+
+
+/* original shield - no improvements */
+IF 
+	InParty(Myself)
+	Global("C#AjantisDisinheritage","GLOBAL",5)
+	PartyHasItem("C#AJSHLD")
+   THEN
+	RESPONSE #100
+		TakePartyItem("C#AJSHLD") DestroyItem("C#AJSHLD")
+		SetGlobal("C#AjantisDisinheritage","GLOBAL",6)
+
+END
+
+/* shield was improved by Cromwell */
+
+IF 
+	InParty(Myself)
+	Global("C#AjantisDisinheritage","GLOBAL",5)
+	PartyHasItem("C#AJSHL2")
+   THEN
+	RESPONSE #100
+		TakePartyItem("C#AJSHL2") DestroyItem("C#AJSHL2")
+		SetGlobal("C#AjantisDisinheritage","GLOBAL",7)
+
+END
+
+/* shield was improved by Cespenar */
+
+IF 
+	InParty(Myself)
+	Global("C#AjantisDisinheritage","GLOBAL",5)
+	PartyHasItem("C#AJSHL3")
+   THEN
+	RESPONSE #100
+		TakePartyItem("C#AJSHL3") DestroyItem("C#AJSHL3")
+		SetGlobal("C#AjantisDisinheritage","GLOBAL",8)
+
+END
+
+
+
+
+/* messenger Douglas in Amkethran. */
+
+IF 
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!Exists("C#AJDOUG")
+	Global("C#AjantisRomanceActive","GLOBAL",2)
+	OR(3)
+		Global("C#AjantisDisinheritage","GLOBAL",6)
+		Global("C#AjantisDisinheritage","GLOBAL",7)
+		Global("C#AjantisDisinheritage","GLOBAL",8) 
+	AreaCheck("AR5500")
+	Dead("Abazigal")
+	Dead("Sendai")
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjantisDisinheritage","GLOBAL",3)
+		CreateCreatureObjectOffScreen("C#AJDOUG",Myself,0,0,0) // Douglas
+END
+
+
+IF 
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisRomanceActive","GLOBAL",2)
+	OR(3)
+		Global("C#AjantisDisinheritage","GLOBAL",9)
+		Global("C#AjantisDisinheritage","GLOBAL",10)
+		Global("C#AjantisDisinheritage","GLOBAL",11)
+	See("C#AJDOUG")
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------
+PC went with the Saradush (vampire) courtesans */
+
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Detect(Player1)
+	Global("C#AjantisRomanceActive","GLOBAL",2)
+	Global("C#AjantisSARPROVM_1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisSARPROVM_1","GLOBAL",2)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisSARPROVM_1","GLOBAL",2)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+
+
+/* romance - Ajantis talks to the PC at the stone heads 
+only for marriage = 0*/
+
+IF 	
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	AreaCheck("AR4000")
+	Global("C#AjantisRomanceActive","GLOBAL",2)
+	Global("C#AjantisLT","GLOBAL",0)
+	Global("C#AjantisPCMarriage","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisLT","GLOBAL",1)
+END
+
+/* dialogue triggering */
+
+IF
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisLT","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+
+
+/* romance - Ajantis protects his love interest if HP get too low - same as SoA*/
+IF
+	InParty(Myself)
+	!GlobalTimerNotExpired("C#AjantisBeschuetzerTimer","GLOBAL")
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	HPPercentLT(Player1,15)
+	Exists(LastAttackerOf(Player1))
+	Global("C#AjantisNichtBeschuetzen","GLOBAL",0) //set by PID to stop this
+THEN
+	RESPONSE #100
+		SetGlobalTimer("C#AjantisBeschuetzerTimer","GLOBAL",60)
+		DisplayStringHead(Myself,~Hang on, <CHARNAME>! I am coming to your aid!~) 
+		SetGlobal("C#AjantisBeschuetzer","GLOBAL",1)
+		Attack(LastAttackerOf(Player1))
+END
+
+
+
+/* In the Pocketplane. "You created this?" (1. FR Talk / romance) 
+Starts both Lt and DialogTimer*/
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	AreaCheck("AR4500")
+	Global("TalkedToSarevok","GLOBAL",1)
+	Global("C#AjToB_Talk","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Talk","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Talk","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisRomanceTimer","GLOBAL",%ROMANCE_TIMER%)
+		StartDialogueNoSet(Player1)
+END
+
+
+
+/* In Saradush (tavern). "I can feel their dispair" (FR Talk) */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	AreaCheck("AR5003") //Saradush Tavern (Tankard Tree)
+	Global("C#AjToB_SaradushTavern","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_SaradushTavern","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_SaradushTavern","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+/* Saradush's fall. "THe whole city! We were too late." (NPC Talk) */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	AreaCheck("AR5203")
+	Global("EnteredArea5203","GLOBAL",1)
+	Global("C#AjToB_Talk","GLOBAL",2)
+  !AreaType(DUNGEON)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Talk","GLOBAL",3)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Talk","GLOBAL",3)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+/* PC's mother. "What did the Solar show you?" (FR Talk) */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+//??	Global("SaradushSacked","GLOBAL",1) //from SARMEL01.dlg Melissan
+	GlobalGT("TalkedToSolar","GLOBAL",1)
+	Global("C#AjToB_SolarTalk","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_SolarTalk","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_SolarTalk","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+/* reaction to evil solution of PP challenges 
+
+From FINSOL01.dlg:
+  IF ~GlobalLT("PPEvilChoices","GLOBAL",2)
+~ THEN GOTO 17
+  IF ~GlobalGT("PPEvilChoices","GLOBAL",1)
+GlobalLT("PPEvilChoices","GLOBAL",4)
+~ THEN GOTO 20
+  IF ~GlobalGT("PPEvilChoices","GLOBAL",3)
+GlobalLT("PPEvilChoices","GLOBAL",6)
+~ THEN GOTO 23
+*/
+
+/* second evil choice - Ajantis warns */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Detect(Player1)
+	GlobalGT("PPEvilChoices","GLOBAL",1)
+	Global("C#Ajantis_EvilPPChoices","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_EvilPPChoices","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Ajantis_EvilPPChoices","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+/* 4th evil choice - Ajantis ends romance and warns the PC */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Detect(Player1)
+	GlobalGT("PPEvilChoices","GLOBAL",3)
+	Global("C#Ajantis_EvilPPChoices","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_EvilPPChoices","GLOBAL",3)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Ajantis_EvilPPChoices","GLOBAL",3)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+/* trigger: after incident at oasis. (Questpack considered) 
+
+GlobalGT("TethyrBattleStart","GLOBAL",0) //gilt auch für Questpack! */
+
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) 
+	!Detect([ENEMY])
+	!Range([ENEMY],2500)
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("TethyrBattleStart","GLOBAL",0)
+	Global("C#AjToB_Oasis","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Oasis","GLOBAL",2)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Oasis","GLOBAL",2)
+	!Detect([ENEMY])	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+/* Melissans Verrat.
+triggger in game, and 
+
+	Global("TalkedToSolar","GLOBAL",6)
+	!Exists("solar")
+*/
+
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	GlobalGT("TalkedToSolar","GLOBAL",5)
+	!Exists("solar")
+	Global("C#AjToB_Melissan","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Melissan","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Melissan","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+
+/* romance: scenery: diving in Abazigal caves */
+
+/* dialogue activation */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	AreaCheck("AR6004")
+	Global("C#AjToB_Diving","GLOBAL",0)
+
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Diving","GLOBAL",1)
+END
+
+/* dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Diving","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+/* romance: Sand, überall Sand */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	AreaCheck("AR5500")
+	Global("C#AjToB_Sand","GLOBAL",0)
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	Global("C#AjanRomAdultContent","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Sand","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Sand","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+//--------------------------------------------------------
+
+/* NPC interaction: Chinchilla child of Bhaal */
+/* Dialogue activation */
+
+IF
+	InParty(Myself)
+//	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!Range([NEUTRAL],10)
+//	!StateCheck(Player1,CD_STATE_NOTVALID)
+	AreaCheck("AR5200")
+	Dead("ysgp04")
+	Dead("ysgp03")
+	Dead("ysgp02")
+	Dead("ysgp01")
+	Global("C#AjToB_Chinchilla","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjToB_Chinchilla","GLOBAL",1)
+END
+
+/* Dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjToB_Chinchilla","GLOBAL",1)	
+
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+
+
+
+
+/* LT floaters with no specific trigger (other than order and elapsed time) 
+ */
+
+
+
+
+
+/* to ensure that the floater dialogues do not fire directly after wake up: LT*/
+IF
+	InParty(Myself)
+	RealGlobalTimerExpired("C#AjantisRomanceTimer","GLOBAL")
+	PartyRested()
+	InMyArea(Player1) 
+	CombatCounter(0)
+	OR(2)
+		!AreaType(DUNGEON)
+		AreaCheck("AR4500")
+	OR(6)
+		Global("C#AjToB_LT","GLOBAL",1) //dream1
+		Global("C#AjToB_LT","GLOBAL",3) //dream2
+		Global("C#AjToB_LT","GLOBAL",5) //vigilant
+		Global("C#AjToB_LT","GLOBAL",7) //normalsterblicher
+		Global("C#AjToB_LT","GLOBAL",9) //entscheidung
+		Global("C#AjToB_LT","GLOBAL",11) //thron
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisRomanceTimer","GLOBAL",30)
+END
+
+
+
+/* floater activation : only LT */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	GlobalGT("C#AjToB_Talk","GLOBAL",1) //after dialogue in pocket plane
+	RealGlobalTimerExpired("C#AjantisRomanceTimer","GLOBAL")
+	OR(3)
+		Global("C#AjToB_LT","GLOBAL",0)
+		Global("C#AjToB_LT","GLOBAL",2)
+		Global("C#AjToB_LT","GLOBAL",4)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjToB_LT","GLOBAL",1)
+END
+
+
+
+/* floater activation : only LT - from Global("C#AjToB_LT","GLOBAL",7) only if the PC did not make 4 evil choices */
+
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	GlobalGT("C#AjToB_Talk","GLOBAL",1) //after dialogue in pocket plane
+	RealGlobalTimerExpired("C#AjantisRomanceTimer","GLOBAL")
+	GlobalLT("PPEvilChoices","GLOBAL",4)
+	OR(3)
+		Global("C#AjToB_LT","GLOBAL",6)
+		Global("C#AjToB_LT","GLOBAL",8)
+		Global("C#AjToB_LT","GLOBAL",10)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjToB_LT","GLOBAL",1)
+END
+
+
+
+/* Floater Dialogue triggering: LT with love music */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	OR(6)
+		Global("C#AjToB_LT","GLOBAL",1) //dream1
+		Global("C#AjToB_LT","GLOBAL",3) //dream2
+		Global("C#AjToB_LT","GLOBAL",5) //vigilant
+		Global("C#AjToB_LT","GLOBAL",7) //normalsterblicher
+		Global("C#AjToB_LT","GLOBAL",9) //entscheidung
+		Global("C#AjToB_LT","GLOBAL",11) //thron
+
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisRomanceTimer","GLOBAL",%ROMANCE_TIMER%)
+		StartDialogueNoSet(Player1)
+END
+
+
+
+
+
+//--------------------------------------------------------
+
+//reactions to items
+
+
+
+/* Set Variable: Ajantis has BG1NPC Family Shield */
+IF 
+Global("C#AjantisHasShield","GLOBAL",0)
+OR(3)
+PartyHasItem("C#AJSHLD")
+PartyHasItem("C#AJSHL2")
+PartyHasItem("C#AJSHL3")
+InParty(Myself)
+THEN
+RESPONSE #100
+SetGlobal("C#AjantisHasShield","GLOBAL",1)
+END
+
+/*set variable to 0 if shield was only shortly gone */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",1)
+OR(3)
+PartyHasItem("C#AJSHLD")
+PartyHasItem("C#AJSHL2")
+PartyHasItem("C#AJSHL3")
+!RealGlobalTimerExpired("C#AjantisShieldGoneT","GLOBAL")
+InParty(Myself)
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("C#AjantisShieldGone","GLOBAL",0)
+END
+
+/*set shield timer when shield is gone */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",0)
+Global("C#AjantisHasShield","GLOBAL",1) //only triggers if Ajantis had the shield
+!PartyHasItem("C#AJSHLD")
+!PartyHasItem("C#AJSHL2")
+!PartyHasItem("C#AJSHL3")
+InParty(Myself)
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("C#AjantisShieldGone","GLOBAL",1)
+RealSetGlobalTimer("C#AjantisShieldGoneT","GLOBAL",300)
+END
+
+/* Activate: Ajantis Shield Removed talk */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",1)
+Global("C#AjantisHasShield","GLOBAL",1) //only triggers if Ajantis had the shield
+RealGlobalTimerExpired("C#AjantisShieldGoneT","GLOBAL") 
+!PartyHasItem("C#AJSHLD")
+!PartyHasItem("C#AJSHL2")
+!PartyHasItem("C#AJSHL3")
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Detect(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+	!Range([NEUTRAL],10)
+
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("C#AjantisShieldGone","GLOBAL",2)
+END
+
+/* Initiate:  Ajantis Shield Removed talk */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",2)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Detect(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+	!Range([NEUTRAL],10)
+
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+/* Activate: Ajantis Shield Returned talk */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",3)
+
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+OR(3)
+PartyHasItem("C#AJSHLD")
+PartyHasItem("C#AJSHL2")
+PartyHasItem("C#AJSHL3")
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Detect(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+	!Range([NEUTRAL],10)
+THEN
+RESPONSE #100
+SetGlobal("C#AjantisShieldGone","GLOBAL",4)
+END
+
+/* Initiate:  Ajantis Shield Returned talk */
+IF 
+Global("C#AjantisShieldGone","GLOBAL",4)
+
+!Global("C#AjantisRomanceActive","GLOBAL",2)
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Detect(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+	!Range([NEUTRAL],10)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+/* Carsomyr: dialogue activation */
+
+IF
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!Range([NEUTRAL],10)
+	CombatCounter(0) !See([ENEMY])
+	Global("C#AjantisWieldsCarsomyr","GLOBAL",0)
+	OR(2)
+		HasItemEquiped("sw2h10",Myself)
+		HasItemEquiped("sw2h19",Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisWieldsCarsomyr","GLOBAL",1)
+END
+
+/* dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!Range([NEUTRAL],10)
+	Global("C#AjantisWieldsCarsomyr","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+/* girdle of gender bender */
+
+
+
+IF
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!Range([NEUTRAL],10)
+	CombatCounter(0) !See([ENEMY])
+	Global("C#Ajantis_GenderGirdle","GLOBAL",0)
+	HasItemEquiped("belt05",Myself)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_GenderGirdle","GLOBAL",1)
+END
+
+/* dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)	
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!Range([NEUTRAL],10)
+	Global("C#Ajantis_GenderGirdle","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+
+/* PID options - DisplayStringHead */
+
+IF
+	InParty(Myself)
+	GlobalGT("C#Ajantis_EvilPPChoices","GLOBAL",1) 
+	Global("C#Ajantis_PIDEvilPP","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1)
+		SetGlobal("C#Ajantis_PIDEvilPP","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("C#AjToB_LT","GLOBAL",9) 
+	Global("C#Ajantis_PIDMaybe","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1)
+		SetGlobal("C#Ajantis_PIDMaybe","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("C#Ajantis_RestdialoguesToB","GLOBAL",1) 
+	Global("C#Ajantis_PIDShield","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1)
+		SetGlobal("C#Ajantis_PIDShield","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("C#AjToB_Talk","GLOBAL",1)
+	GlobalGT("C#AjantisDisinheritage","GLOBAL",5)
+	Global("C#AjanToB_FamilyBriefe","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1)
+		SetGlobal("C#AjanToB_FamilyBriefe","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("C#AjToB_Talk","GLOBAL",3) 
+	Global("C#AjToB_TalkPID","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_TalkPID","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	Global("BeginChallenge3","GLOBAL",3) 
+	Global("C#AjToB_TalkPID","LOCALS",2)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_TalkPID","LOCALS",3)
+END
+
+IF
+	InParty(Myself)
+	Global("C#AjantisBeschuetzerTalk","GLOBAL",3) 
+	Global("C#AjToB_TalkPID","LOCALS",4)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_TalkPID","LOCALS",5)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("TalkedToSolar","GLOBAL",3) 
+	GlobalGT("C#Ajantis_RestdialoguesToB","GLOBAL",3) 	
+	Global("C#AjToB_SolarTalkPID","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_SolarTalkPID","LOCALS",1)
+END
+
+IF
+	InParty(Myself)
+	Dead("Abazigal") 
+	Global("C#AjToB_SolarTalkPID","LOCALS",2)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_SolarTalkPID","LOCALS",3)
+END
+
+IF
+	InParty(Myself)
+	Dead("Abazigal")
+	Dead("Sendai")
+	ReputationGT(Player1,9) 
+	Global("C#AjToB_SolarTalkPID","LOCALS",4)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_SolarTalkPID","LOCALS",5)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("BeginChallenge4","GLOBAL",1) 
+	!Exists("chalcy01") 
+	Global("C#AjToB_SolarTalkPID","LOCALS",6)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjToB_SolarTalkPID","LOCALS",7)
+END
+
+IF
+	InParty(Myself)
+	GlobalGT("C#AjantisDisinheritage","GLOBAL",5) 
+	Global("C#AjanToB_MissFamily","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1) 
+		SetGlobal("C#AjanToB_MissFamily","LOCALS",1)
+END
+
+/* silent */
+IF
+	InParty(Myself)
+	Global("C#AjantisPCMarriage","GLOBAL",0) 
+	Global("c#ajantis_weddingPID","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("c#ajantis_weddingjoke","LOCALS",1)
+		SetGlobal("c#ajantis_weddingPID","LOCALS",1)
+END
+
+/* silent */
+IF
+	InParty(Myself)
+	Global("%AjantisSummoned_Variable%","GLOBAL",3)
+	Global("C#AjantisToB_Suldanesselar","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisToB_Suldanesselar","LOCALS",1)
+END

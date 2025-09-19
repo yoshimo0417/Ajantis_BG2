@@ -1,0 +1,35 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("C#Ajantis")
+		Wait(1)
+		DisplayStringHead("C#Ajantis",@0)
+		CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","C#Ajantis")
+		SetGlobal("C#AjantisVampire","GLOBAL",1)
+		Wait(1)
+		CreateVisualEffectObject("SPDISPMA",Myself)
+		DropInventory()
+		SetLeavePartyDialogFile()
+		ChangeAIScript("C#VAMP",OVERRIDE)
+		ChangeAIScript("",DEFAULT)
+		DialogInterrupt(FALSE)
+		LeaveParty()
+		Wait(1)
+		DisplayStringHead("BODHIAMB",@1)
+		Wait(2)
+		EndCutSceneMode()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("bodhiamb")
+		DialogInterrupt(FALSE)
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampir
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampir
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampir
+		CreateCreatureObject("VAMPIM01",Myself,0,0,0) // Vampir
+END
+

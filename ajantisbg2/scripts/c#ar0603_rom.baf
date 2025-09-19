@@ -1,0 +1,47 @@
+//AR0603
+
+/* moved to baldur.bcs
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	PartyHasItem("C#AJ0008")
+	GlobalLT("C#AjantisRomanceBG1Items","GLOBAL",3)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBG1Items","GLOBAL",3)
+		ActionOverride(Player1,StartDialogOverride("player1",Player1))
+END
+*/
+
+
+/* new BGII game! */
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("%NewSoAGame%","GLOBAL",1)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	!Global("C#AjantisEngaged","GLOBAL",2) //this is a potential or real engaged romance run
+	GlobalLT("C#AjantisRomanceBG1Items","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBG1Items","GLOBAL",2)
+		ActionOverride("Container3",CreateItem("C#AJ0008",0,0,0)) // zerbrochener Ring
+END
+
+
+/* spawning of broken engagement ring for conti game BGT /EET: only if the ring was in the PC's possession upon capture! */
+
+
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("%NewSoAGame%","GLOBAL",0)
+	Global("C#AjantisRomanceBG1Items","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1) //only for engaged path 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBG1Items","GLOBAL",2)
+		ActionOverride("Container3",CreateItem("C#AJ0008",0,0,0)) // zerbrochener Ring
+END
+
+/* no spawning of ring for Global("%NewSoAGame%","GLOBAL",0) (conti run) and Global("C#AjantisRomanceBG1Items","GLOBAL",0) (no ring in PC's inventory) */

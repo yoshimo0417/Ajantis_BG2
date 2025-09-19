@@ -1,0 +1,44 @@
+IF
+	Global("C#AjanEnderoldMove","GLOBAL",1)
+	See("C#AJWAC1")
+THEN
+	RESPONSE #100
+		DialogInterrupt(FALSE)
+		MoveToObjectFollow("C#AJWAC1")
+END
+
+IF
+	Global("C#AjanEnderoldMove","GLOBAL",1)
+	!See("C#AJWAC1")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanEnderoldMove","GLOBAL",2)
+		CreateCreatureOffScreen("GARREN",5)
+		MoveBetweenAreas("AR1005",[1242.433],0)
+END
+
+IF
+!Dead("GARREN")
+Global("C#AjanEnderoldQuest","GLOBAL",7)
+Detect([PC])
+THEN
+	RESPONSE #100
+StartDialogNoSet([PC])
+END
+
+IF
+GlobalGT("C#AjanEnderoldQuest","GLOBAL",5)
+AreaCheck("AR1005")
+THEN
+RESPONSE #100
+DestroySelf()
+END
+
+IF
+   AreaCheck("AR1005")
+   Global("C#AjanEnderoldMove","GLOBAL",2)
+THEN
+   RESPONSE #100
+      DialogInterrupt(TRUE)
+      SetGlobal("C#AjanEnderoldMove","GLOBAL",3)
+END

@@ -1,0 +1,103 @@
+--Ajantis NPC for SoA--
+
+ROMANCE GUIDE BGII - NEW BEGINNINGS ROMANCE
+
+
+The BGII new beginnings romance assumes that Ajantis travelled in CHARNAME's group in BG1, but the romance was stopped before or when her Bhaal heritage was revealed. In case of a half-orc PC, he didn't romance her at all due to his ideals. Now, experience has broadened Ajantis' mind in this regard and he is ready to fall in love with the PC (again).
+
+
+Conditions for engaged path Romance Match (extended as for the BG1 romance):
+-Female,
+-Not a single-class thief
+-Alignment good, neutral or lawful neutral
+-Druids of all alignments
+-All races, i.e. INCLUDING half-orc.
+
+
+CHOICE OF ROMANCE STATUS
+
+For a PC that fulfills the romance criteria, the choice of romance has to be made in the game. There are several possibilities before the first meeting with Ajantis to make this choice.
+
+The choices are offered in the following places during the game. Because this mod can be installed at any time during gameplay, there are several places where the dialog can trigger:
+-In Irenicus' Dungeon, in a dialogue with Imoen (Imoen in the party).
+-In Irenicus' Dungeon, upon encountering an item that might be a BG1 romance item (Imoen not in the party).
+-In the Windspear Hills, shortly after the fight with the knights, but before the first meeting with Garren.
+-In Athkatla, for the case that the Windspear Hills were already visited and the knights already killed: by talking to squire Roman in the Headquarters of the Order in Athkatla (optional).
+-Before the entering of the portal which starts the Ajantis main quest. Or, for the alternative route if the quest should not be played, before the priest of Oghma reverses the portal.
+
+The dialog closest to any point after the mod is installed will trigger. For example, if you are starting a new game, the dialog will be started by Imoen. If you have just made your deal with Gaelen Bayle, the event will either trigger in the Windspear Hills or before entering the portal.
+
+The choices presented in the dialogs are:
+-Engaged path: "Ajantis is your fiance". The romance from BG1 will be continued.
+-New beginnings romance: "Ajantis was your travel companion at the Sword Coast", or (in Imoen's dialogue) "I didn't have that much connection to him".
+-Engagement broke at the Sword Coast: This option is included to present the full choice. It will lead to the pure friendship path, i.e. no romance will trigger. It includes a short greeting upon the first meeting to account for the past.
+
+To play the new beginnings romance, the second choice "Ajantis was your travel companion at the Sword Coast" (or, in Imoen's dialogue also the third choice "I didn't have that much connection to him") must be chosen.
+
+
+SPECIAL CONTENT
+
+Special content of the new beginnings romance:
+-The 11 friendship path dialogues, in slightly altered fashion.
+-At least 7 more event triggered dialogues.
+-Several dialogues, accessible via the PID menu
+-Ajantis-initiated flirts, depending on the development status of the romance. The flirts can be deactivated via PID option.
+-PID with place and chapter depending flirts.
+
+
+LIST OF CYCLIC LOVETALKS WITH CONDITIONS
+
+Cyclic lovetalks before going to Brynnlaw / the Underdark (parallel to friendship path):
+
+1. ~I find myself once again traveling at your side, <CHARNAME>.~
+
+2. ~It was a big venture for you to free me and my comrades from Firkraag's grasp.~
+
+3. ~<CHARNAME>, you mentioned it briefly, but I would like to learn more.~
+
+4. ~Now your descent from the god of murder is well known...~
+
+5. ~Forgive me if I share my thoughts with you for a moment...~~
+
+6. ~<CHARNAME>, have we discussed weapons previously at the Sword Coast?~
+
+7. ~My apologies; my thoughts still revolve around Firkraag's illusion.~
+
+8. (Inside a tavern after dialogue about weapons; does not block the other cyclic talks): ~Now, look at all the rundown characters that waste their time here...~
+
+9. (City area, being approached by someone else): ~Wait a minute, there!~
+
+
+After returning from the Underdark:
+
+Cyclic lovetalks; same as for friendship path:
+
+10. ~It is amazing how things develop...~
+
+11. ~There we see creatures of unbelievable elegance and power...~
+
+12. ~<CHARNAME>, when we walked through the streets recently, did you notice how some of those who passed us looked at you?~
+
+
+Romance specific encounter after the Underdark:
+
+13. (Messenger) ~Sir Ajantis Ilvastarr? I have a message for you, my Lord.~
+
+(No. 13 Opens up the thinking-cycle. Other dialogues pause during the cycle):
+14.   = ~(sigh) I seek your forgiveness, lady <CHARNAME>~
+
+15. ~Lady <CHARNAME>, if you found something that was as important to you as your own life...~
+
+16. ~Lady <CHARNAME>, if you knew a man who prides himself on never acting without control of his feelings...~
+
+17. ~Forgive my secrecy of the last few hours, my lady.~
+
+
+Romance specific floaters:
+18. (After dialogue 5, OUTDOOR, reputation > 11): ~Excuse me, my lady, there seems to be something in your hair...~
+
+19. (After dialogue about weapons, dialogue no. 6,  OUTDOOR, reputation > 15): ~What a wonderful sight... My lady, my apologies for drawing your attention to something so small~
+
+20a-d. (Slayer change in Bhodi's labyinth): several shorter dialogues
+
+21. (In hell): ~Lady <CHARNAME>, might I speak to you away from the others for a short moment?~

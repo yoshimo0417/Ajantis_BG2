@@ -1,0 +1,12 @@
+//AR1202 Garkid
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisKugeltraeger","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#AJTRAE",[1901.883],8)
+	SetGlobal("C#AjantisKugeltraeger","GLOBAL",1)
+END	
+	
+

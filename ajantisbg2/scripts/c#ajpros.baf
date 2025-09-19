@@ -1,0 +1,32 @@
+IF
+	Global("C#AjantisFTVerwechslung","GLOBAL",1)
+	!See("C#Ajantis")
+	InParty("C#Ajantis")
+	InMyArea("C#Ajantis")
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		MoveToObject("C#Ajantis")
+END
+
+IF
+	InParty("C#Ajantis")
+	See("C#Ajantis")
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	Global("C#AjantisFTVerwechslung","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet("C#Ajantis")
+END
+
+IF
+	OR(4)
+		!Global("C#AjantisFTVerwechslung","GLOBAL",1)
+		!InParty("C#Ajantis")
+		!InMyArea("C#Ajantis")
+		StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+

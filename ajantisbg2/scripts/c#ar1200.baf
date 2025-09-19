@@ -1,0 +1,29 @@
+IF 
+	Global("C#AjantisPCInWindspeerHills","GLOBAL",1)
+THEN
+	RESPONSE #100
+	  SetGlobal("C#AjantisPCInWindspeerHills","GLOBAL",2)
+          ActionOverride("C#dkn01",DestroySelf()) //Leiche 
+          ActionOverride("C#dkn02",DestroySelf()) //Leiche 
+          ActionOverride("C#dkn03",DestroySelf()) //Leiche 
+          ActionOverride("C#dkn04",DestroySelf()) //Leiche 
+          ActionOverride("C#dkn05",DestroySelf()) //Leiche 
+	  ActionOverride("C#AJALEX",EscapeArea())
+	  ActionOverride("C#AJKEND",EscapeArea())
+	  ActionOverride("C#RYAN",EscapeArea())
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("DomainPaladinBattle","GLOBAL",1)
+	!Global("C#AjantisEngaged","GLOBAL",2)
+	Global("C#AjantisPCSeesAjantis","GLOBAL",0)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	!Global("C#AjantisPCBrokeRomance","GLOBAL",1)
+	!Global("C#AjantisKugeltraeger","GLOBAL",2) //not if mod is prevented
+	
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPCSeesAjantis","GLOBAL",1)
+		ActionOverride(Player1,StartDialogOverride("Player1",Player1))
+END

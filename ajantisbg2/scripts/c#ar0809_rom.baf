@@ -1,0 +1,17 @@
+IF
+	Global("C#AjantisVampire","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisVampire","GLOBAL",2)
+		CreateCreature("C#AJVAMP",[1473.332],2) // Ajantis
+END
+
+IF
+	Dead("C#AJVAMP")
+	Global("C#AjantisVampire","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisVampire","GLOBAL",3)
+		ActionOverride("C#AJVAMP",DropInventory())
+		ActionOverride("C#AJVAMP",DestroySelf())
+END

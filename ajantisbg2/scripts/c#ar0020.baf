@@ -1,0 +1,19 @@
+//AR0020.bcs City Gates
+
+
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Dead("C#AJEILA") // Eila Windspear
+	!Dead("GARREN") // Garren Windspear
+	Global("C#AjanEQFlinnSpawn","GLOBAL",0)
+	GlobalGT("C#AjanEnderoldQuest","GLOBAL",0)
+	!Exists("C#AJEFFL")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanEQFlinnSpawn","GLOBAL",1)
+		CreateCreature("C#AJEFFL",[877.480],2) // Flinn
+	Continue()
+END
+
+

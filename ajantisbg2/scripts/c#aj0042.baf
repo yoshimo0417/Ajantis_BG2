@@ -1,0 +1,80 @@
+//Experimentiertisch in Firkraags Enklave
+
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@0)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	!PartyHasItem("C#AJ0001") //unsichtbare Rune
+	PartyHasItem("C#AJ0005") //blaues Pulver
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPulver","GLOBAL",1)
+		DisplayString(Myself,@1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItem("C#AJ0001") //unsichtbare Rune
+	PartyHasItem("C#AJ0005") //blaues Pulver
+	!PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPulver","GLOBAL",2)
+		DisplayString(Myself,@2)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+PartyHasItem("C#AJ0001") //unsichtbare Rune
+PartyHasItem("C#AJ0005") //blaues Pulver
+PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+	Global("C#AjantisRune","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRune","GLOBAL",1)
+		DisplayString(Myself,@3)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+PartyHasItem("C#AJ0001") //unsichtbare Rune
+PartyHasItem("C#AJ0005") //blaues Pulver
+PartyHasItem("C#AJ0006") //2. Notiz über Zauberrune
+	Global("C#AjantisRune","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRune","GLOBAL",2)
+		TakePartyItem("C#AJ0001") TakePartyItem("C#AJ0005")
+		DestroyItem("C#AJ0001") DestroyItem("C#AJ0005")
+		ActionOverride(Player1,CreateItem("C#AJ0004",1,0,0))
+		DisplayString(Myself,@4)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("C#AjantisRune","GLOBAL",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@5)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+!PartyHasItem("C#AJ0005") //blaues Pulver
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@6)
+END

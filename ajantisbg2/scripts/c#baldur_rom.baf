@@ -1,0 +1,84 @@
+/* compatibility with Skip Chateau Irenicus */
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	PartyHasItem("C#AJ0008")
+	GlobalLT("C#AjantisRomanceBG1Items","GLOBAL",3)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBG1Items","GLOBAL",3)
+		ActionOverride(Player1,StartDialogOverride("player1",Player1))
+END
+
+
+//active Romance: only for Global(C#AjantisRomanceMatch","GLOBAL",1) AND Global("C#AjantisRomanceActive","GLOBAL",2)
+
+
+//Global("C#AjantisEngagedMatch","GLOBAL",1)
+//Global("C#AjantisEngaged","GLOBAL",1)
+//Global("C#AjantisNewRomMatch","GLOBAL",1), Global("C#AjantisRomanceActive","GLOBAL",1)
+
+//Global("C#AjantisRomanceBG1Items","GLOBAL",1): Player had ring. -> ring will be spawned, even if engagement was broken.
+
+
+//Check for EngagedMatch (only once)
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisRomancePCIsMale","GLOBAL",0)
+	Gender(Player1,MALE)	
+	!HasItemEquiped("belt05",Player1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomancePCIsMale","GLOBAL",1)
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisRomancePCIsMale","GLOBAL",0)
+	Global("C#AjantisEngagedMatch","GLOBAL",0)
+	Global("C#AjantisEngagedMatchCheck","GLOBAL",0)
+	Global("C#AjantisEngaged","GLOBAL",0)
+	Gender(Player1,FEMALE)
+	!Class(Player1,THIEF)
+	OR(4)
+		Alignment(Player1,MASK_GOOD)
+		Alignment(Player1,LAWFUL_NEUTRAL)
+		Alignment(Player1,NEUTRAL)
+		Class(Player1,DRUID_ALL)
+	OR(4)
+		Race(Player1,HUMAN)
+		Race(Player1,HALF_ELF)
+		Race(Player1,HALFLING)
+		Race(Player1,ELF)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisEngagedMatch","GLOBAL",1)
+		SetGlobal("C#AjantisEngagedMatchCheck","GLOBAL",1)
+END
+
+
+//Check for C#AjantisNewRomMatch new beginnings romance
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisRomancePCIsMale","GLOBAL",0)
+	Global("C#AjantisRomanceActive","GLOBAL",0)
+	Global("C#AjantisNewRomMatch","GLOBAL",0)
+	Global("C#AjantisNewRomMatchCheck","GLOBAL",0)
+	Gender(Player1,FEMALE)
+	!Class(Player1,THIEF)
+	OR(4)
+		Alignment(Player1,MASK_GOOD)
+		Alignment(Player1,LAWFUL_NEUTRAL)
+		Alignment(Player1,NEUTRAL)
+		Class(Player1,DRUID_ALL)
+	
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisNewRomMatch","GLOBAL",1)
+		SetGlobal("C#AjantisNewRomMatchCheck","GLOBAL",1)
+		SetGlobal("C#AjantisRomanceActive","GLOBAL",1)
+END
+
+

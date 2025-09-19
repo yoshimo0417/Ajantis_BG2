@@ -1,0 +1,134 @@
+--Ajantis NPC for SoA--
+
+ROMANCE GUIDE: ENGAGED PATH
+
+
+When your PC first met him in BG1, Ajantis was stunned by her appearance but thought it was only her abilities that impressed him. He was actually too deep in his search for glory to let the thought of loving the PC come to his mind. It took Ajantis some months of travelling with her to realize his true feelings. His love had to stand the test as the PC discovered the dark heritage she carries...
+You went separate ways after the victory over Sarevok, as Ajantis was urged to travel to his parents and his Order to ask for their consent for his marriage with you, a daughter of Bhaal. Amn was your agreed meeting point, but you did not come, and for a long time, were vanished from all sight. Desparatly searching for you, Ajantis had to fulfill his knightly duties. He went on a short mission to the Windspear Hills, ready to gather hope for continuing his search for you afterwards. Upon your first meeting there, Firkraag's illusion prevents you from recognizing each other. Start a search into Firkraag's lair to find out what really happened to your fiance!
+
+The engaged romance path assumes that Ajantis travelled with the PC in BG1 and that the BG1 romance was played until the end.
+
+
+Conditions for engaged path Romance Match (same as for the BG1 romance):
+-Female,
+-Not a single-class thief
+-Alignment good, neutral or lawful neutral
+-Druids of all alignments
+-All races except half-orc
+
+CHOICE OF ROMANCE STATUS (for new BGII or BGII:EE game, not for BGT or EET)
+
+For a PC that fulfills the romance criteria, the choice of romance has to be made in the game. There are several possibilities before the first meeting with Ajantis to make this choice.
+
+The choices are offered in the following places during the game. Because this mod can be installed at any time during gameplay, there are several places where the dialog can trigger:
+-In Irenicus' Dungeon, in a dialogue with Imoen (Imoen in the party).
+-In Irenicus' Dungeon, upon encountering an item that might be a BG1 romance item (Imoen not in the party).
+-In the Windspear Hills, shortly after the fight with the knights, but before the first meeting with Garren.
+-In Athkatla, for the case that the Windspear Hills were already visited and the knights already killed: by talking to squire Roman in the Headquarters of the Order in Athkatla (optional).
+-Before the entering of the portal which starts the Ajantis main quest. Or, for the alternative route if the quest should not be played, before the priest of Oghma reverses the portal.
+
+The dialog closest to any point after the mod is installed will trigger. For example, if you are starting a new game, the dialog will be started by Imoen. If you have just made your deal with Gaelen Bayle, the event will either trigger in the Windspear Hills or before entering the portal, if you don't let your PC go and talk to squire Roman in the Order Headquarters. The sooner you install the mod, the better. There are items and other banter goodies to be gleaned.
+
+The choices presented in the dialogs are:
+-Engaged path: "Ajantis is your fiance". The romance of BG1 will be continued.
+-New beginnings romance: "Ajantis was your travel companion at the Sword Coast", or (in Imoen's dialogue) "I didn't have that much connection to him".
+-Engagement broke at the Sword Coast: This option is included to present the full choice. It will lead to the pure friendship path, i.e. no romance will trigger. It includes a short greeting upon the first meeting to account for the past.
+
+To play the engaged path, the first choice "Ajantis is your fiance" has to be taken.
+
+SPECIAL CONTENT
+
+The engaged path contains the following extra features (from the readme):
+-16 cyclic love talks
+-Several more event-triggered dialogues
+-13 dialogues that are triggered before the party rests (cyclic lovetalks do not depend on these)
+-Ajantis-initiated flirts, that can be switched off and on via the PID menu
+-PIDs and PI flirts, changing dependent on the place and the chapter of the game.
+-Several dialogues the PC can start via the PID menu.
+-In Irenicus' Dungeon lies a personal BG1-romance item for the PC
+-In the headquarters of the Order of the Radiant Heart, the PC can ask about Ajantis' whereabouts. Sir Ryan Trawl notices upon their first meeting that the PC is Ajantis' fiancee (for this to happen, the choice of the romance path already had to be made in the game).
+-Ajantis and the PC can marry
+-Choice of 12 different wedding rings; the choice can either be done by visiting the goldsmith or by ordering a bag of sample rings by Ajantis (only in reachable areas).
+-Ajantis presents the PC a gift item. Also the PC can buy a gift for Ajantis after they have spopken about it in a lovetalk.
+-Romance conflict with Anomen: As long as Ajantis and the PC are not married, the Anomen romance will continue in slightly adapted form. Changes to the Anomen romance consist of additional replies for the PC to politely decline Anomen's approaches and talk about Ajantis as a fellow Order member. After the marriage, the Anomen romance will proceed until after his knighting test. Then it will be deactivated.
+
+During installation, the rating of the romance can be chosen. "Teen content" is like in the original BioWare romances, the curtain falls before any explicit erotic descriptions. "Adult content" contains erotic descriptions, but no explicit description of intimate actions.
+
+There are three main parts of the engaged romance:
+-Choice of the color of the gem for the new engagement ring. If the PC did not choose it until the dialogue about the wedding preparations, Ajantis will order a ring that resembles the BG1 one.
+-Choice of wedding rings by a certain gold smith (added by the mod). Note: to choose the wedding rings, either the goldsmith can be visited in Athkatla, or Ajantis can order a sample bag with sample rings in it. In both cases, talk to Ajantis with your PC to tell him your choice (click-talk using the dialogue button).
+-Meeting his parents in Athkatla
+-Wedding in Athkala
+
+If the party leaves for Brynnlaw while one of the above parts is in process, they will be delayed. The cyclic lovetalks of the romance pause and will continue after the return. Additional content will go on as normal. In case of open points at the end of SoA, it is planned that they can be finished in the (still in planning) ToB-part of the mod.
+
+Goodies before the first meeting with Ajantis (Please note that all but the first one only play if the engaged path was already specified in the game):
+-In Irenicus' Dungeon the PC will find a former romance item from BG1 (near the Duergar forge).
+-Jaheira makes a reference to Ajantis and his Order after exiting Irenicus' Dungeon.
+- Sir Ryan Trawl will recognize her as Ajantis' fiancée when you first meet him in the Order of the Radiant Heart.
+- The prelate of the Order will give the PC the personal items Ajantis left for her.
+-Keldorn and Anomen (the latter only as squire or knight) will talk about Ajantis with the PC.
+
+ROMANCE CONFLICTS
+
+To see the most of the original lovetalks of the game romances for Anomen, Rasaad, Dorn, and Hexxat, do not tell about the engagement with Ajantis too soon. Chose other reply options which do not encourage the love interest further, instead. This will mostly lead to the romances to continue. 
+The PC has to state her engagement to Ajantis if an NPC wants to call the relationship committed, of course. Neither kiss nor sleep with either Anomen or Dorn, or Ajantis will end the engagement after he joins.
+
+
+
+LIST OF CYCLIC LOVETALKS WITH CONDITIONS
+
+1. ~<CHARNAME>, we are together again, at last!~
+
+2. ~That is grim news, beloved!~
+
+3. (If not talked about the ring via PID) ~I see the fragments of your engagement ring, beloved.~
+3. (If already talked about the ring):  ~For the flower pendant that I gave you on the Sword Coast, there is probably no hope of rescue.~
+
+4. ~You cannot imagine... I tried everything to find you.~
+
+5. ~<CHARNAME>, you told me a little of what happened before my release from Firkraag's enclave.~
+
+6. ~Do you want to know what exactly happened before you released us from Firkraag's enclave?~
+
+7. ~I am sometimes glad that Firkraag imprisoned me and my companions...~
+
+8. ~(sigh)~
+
+9. ~I am so happy to have you with me again, beloved.~
+
+10a. (Only if the party is in a hardly reachable area):nur, wen sich die Gruppe nicht in einem zugänglichen Gebiet befindet): ~The time when my parents will be in Athkatla again slowly approaches...~
+
+10. (In city area, messenger): ~Sir Ajantis? Forgive me, my lord.~
+
+11. (In Mithreast Inn, after the messenger): ~Ah! I see my parents, <CHARNAME>.~
+
+12. ~I cannot believe...~
+
+13. ~Forgive me, beloved, for being so quiet lately.~
+
+14. ~You... you should consider whether you really want...~
+
+15. ~I have had many thoughts that moved me the last few days.~ 
+
+16a. (Only, if the wedding was not planned via PID already): ~I did not mean to put you off recently, beloved.~
+
+16b. (Only, if Ajantis had ordered the sample bag with wedding rings from the goldsmith): ~<CHARNAME>, look what arrived this morning.~
+
+17. ~<CHARNAME>, I still wanted to give you something.~
+
+18. (after chosing of the wedding rings, but independent of wedding): ~I have abandoned the hope...~
+
+19. ~(solemnly) Now all is ready, <CHARNAME>.~
+
+20. (Wedding, in a temple of Helm): ~Ah, Sir Ajantis and lady <CHARNAME>!~
+
+21. (Directly after the wedding): ~<CHARNAME>, beloved! We are finally married!~
+
+22. (Messenger in city area, chapter 6): ~Sir Ajantis! Forgive my sudden appearance.~
+
+23. (Directly after LT 22): ~It has come to pass!~
+
+24. ~Beloved, do you still remember how I asked for a lock of your wonderful hair?...~
+
+25. (After LT 24, if the PC bought a (special) locket for Ajantis): ~The locket you have bought...~

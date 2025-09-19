@@ -1,0 +1,45 @@
+//AR1204 Garren's hut 
+
+IF
+	GlobalGT("C#AjanEnderoldQuest","GLOBAL",0)
+	GlobalLT("C#AjanEnderoldQuest","GLOBAL",6)
+	Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJEILA",DestroySelf())
+END
+
+IF 
+	Global("C#AjanEnderoldQuest","GLOBAL",6)
+	!Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		CreateCreature("C#AJEILA",[366.349],0)
+		CreateCreature("C#AJENDE",[384.385],0)
+		SetGlobal("C#AjanEnderoldQuest","GLOBAL",7)
+END
+
+IF 
+	Global("C#AjanEnderoldQuest","GLOBAL",6)
+	Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		CreateCreature("C#AJENDE",[384.385],0)
+		SetGlobal("C#AjanEnderoldQuest","GLOBAL",7)
+END
+
+
+IF 
+	OR(2)
+		GlobalGT("C#AjantisIsDeadBG1","GLOBAL",2)
+		Dead("GARREN")
+	OR(2)
+		Exists("C#AJENDE")
+		Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJEILA",DestroySelf())
+		ActionOverride("C#AJENDE",DestroySelf())
+END
+	
+

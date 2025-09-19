@@ -1,0 +1,128 @@
+//Minsc - Ajantis wilderness banter
+
+IF //trace if 
+	!AreaCheck("AR2600") //Thetyr Woods
+	Global("C#AjantisMinsc4Area","GLOBAL",1)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",0)
+END 
+
+IF
+	AreaCheck("AR2600") //Thetyr Woods
+	InParty("C#Ajantis")
+	!Dead("C#Ajantis")
+	Global("C#AjantisMinsc4Area","GLOBAL",0)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisMinsc4Timer","GLOBAL",1200) //1200
+END 
+
+IF //trace if 
+	!AreaCheck("AR1800") //Nordwald
+	Global("C#AjantisMinsc4Area","GLOBAL",2)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",0)
+END 
+
+IF
+	AreaCheck("AR1800") //Nordwald
+	InParty("C#Ajantis")
+	!Dead("C#Ajantis")
+	Global("C#AjantisMinsc4Area","GLOBAL",0)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",2)
+		RealSetGlobalTimer("C#AjantisMinsc4Timer","GLOBAL",1200) //1200
+END 
+
+IF //trace if 
+	!AreaCheck("AR1700") //Pass
+	Global("C#AjantisMinsc4Area","GLOBAL",3)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",0)
+END 
+
+IF
+	AreaCheck("AR1700") //Pass
+	InParty("C#Ajantis")
+	!Dead("C#Ajantis")
+	Global("C#AjantisMinsc4Area","GLOBAL",0)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",3)
+		RealSetGlobalTimer("C#AjantisMinsc4Timer","GLOBAL",1200) //1200
+END 
+
+IF //trace if 
+	!AreaCheck("AR1900") //Druid Grove
+	Global("C#AjantisMinsc4Area","GLOBAL",4)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",0)
+END 
+
+IF
+	AreaCheck("AR1900") //Druid Grove
+	InParty("C#Ajantis")
+	!Dead("C#Ajantis")
+	Global("C#AjantisMinsc4Area","GLOBAL",0)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",4)
+		RealSetGlobalTimer("C#AjantisMinsc4Timer","GLOBAL",1200) //1200
+END 
+
+IF //trace if 
+	!AreaCheck("AR1200") //Windspear Hills
+	Global("C#AjantisMinsc4Area","GLOBAL",5)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",0)
+END 
+
+IF
+	AreaCheck("AR1200") //Windspear Hills
+	InParty("C#Ajantis")
+	!Dead("C#Ajantis")
+	Global("C#AjantisMinsc4Area","GLOBAL",0)
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",5)
+		RealSetGlobalTimer("C#AjantisMinsc4Timer","GLOBAL",1200) //1200
+END 
+
+
+IF
+	CombatCounter(0) !See([ENEMY]) InParty("C#Ajantis")
+	Detect("C#Ajantis") 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	!Dead("C#Ajantis")
+	OR(5)
+		Global("C#AjantisMinsc4Area","GLOBAL",1)
+		Global("C#AjantisMinsc4Area","GLOBAL",2)
+		Global("C#AjantisMinsc4Area","GLOBAL",3)
+		Global("C#AjantisMinsc4Area","GLOBAL",4)
+		Global("C#AjantisMinsc4Area","GLOBAL",5)
+	RealGlobalTimerExpired("C#AjantisMinsc4Timer","GLOBAL")
+THEN
+
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsc4Area","GLOBAL",6)
+		RealSetGlobalTimer("C#AjantisNPCBanterTimer","GLOBAL",2000) //2000
+		StartDialogNoSet("C#Ajantis") 
+END 

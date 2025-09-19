@@ -1,0 +1,43 @@
+//AR0903 ROM
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",0)
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisExistiert","GLOBAL",0)
+	Global("C#AjantisKNIG07Existiert","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#KNIG07",[500.410],8)
+	SetGlobal("C#AjantisKNIG07Existiert","GLOBAL",1)
+END
+
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisRomanceBriefe","GLOBAL",0)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	!Global("C#AjantisRomanceActive","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBriefe","GLOBAL",1)
+		ActionOverride("Table1",CreateItem("C#AJ0007",0,0,0)) //Briefe
+END
+
+IF
+	
+	Global("C#AjantisRomanceBriefe","GLOBAL",1)
+	OR(3)
+		Global("C#AjantisEngaged","GLOBAL",2)
+		Global("C#AjantisRomanceActive","GLOBAL",3) 
+		GlobalGT("C#AjantisIsDeadBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBriefe","GLOBAL",2)
+		ActionOverride("Table1",DestroyItem("C#AJ0007")) //Briefe
+END
+
+
+

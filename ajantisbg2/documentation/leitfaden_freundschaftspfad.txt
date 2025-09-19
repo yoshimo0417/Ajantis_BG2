@@ -1,0 +1,44 @@
+--Ajantis NPC für SvA--
+Leitfaden: Freundschaftspfad
+
+Der Freundschaftspfad ist für alle HCs, die nicht Ajantis' romantisches Interesse erwecken, oder wenn der Spieler die Option "Verlobung mit Ajantis wurde bereits an der Schwertküste beendet" gewählt hat. Er beinhaltet 11 zyklische Dialoge und eine kleine Begegnung, ebenso PIDs. 
+
+
+Konditionen des HC, damit der Freundschaftspfad gespielt wird, also kein Romance Match:
+-männlich,
+-oder: weiblich, aber reine Diebin
+-oder: weiblich, aber nicht von guter, rechtschaffen neutraler oder neutraler Gesinnung und keine Druidin
+
+
+Auflistung der zyklischen Dialoge mit Triggerbedingungen:
+
+zyklischen Dialoge vor dem Aufbruch nach Brynnlaw / dem Unterreich:
+1 - Nun reise ich in Amn an Eurer Seite, <CHARNAME>.~
+
+2 - Es war ein großes Wagnis für Euch, mich und meine Ordensbrüder aus Firkraags Gewalt zu befreien. 
+
+3 - <CHARNAME>, Ihr hattet es bereits kurz angesprochen, aber ich würde es gerne noch ausführlicher erfahren.
+
+4 - Nun ist Eure Abstammung vom Gott des Mordens also bekannt...
+
+5 - Verzeiht, wenn ich einen Moment meine Gedanken mit Euch teile...~
+
+6 - <CHARNAME>, hatten wir uns bereits an der Schwertküste über Waffen unterhalten?~
+
+
+7 - Verzeiht, wenn meine Gedanken noch immer um Firkraags Illusion kreisen...
+
+Floater:
+8 (in einer Taverne, nach dem Dialog 6, unabhängig von den anderen zyklischen Dialogen) - Ach, guckt Euch die ganzen verlotterten Gestalten an, die hier ihre Zeit vertun...
+
+9 (Stadtgebiet, Treffen mit einer Person) - Heda, wartet einen Moment!
+
+
+Zyklische Dialoge nach der Wiederkehr vom Unterreich:
+
+10 - Es ist erstaunlich, wie sich die Dinge entwickeln...
+
+11 - Nun sehen wir also Kreaturen von unglaublicher Eleganz und Macht
+
+12 - <CHARNAME>, habt Ihr letzthin, als wir durch die Straßen liefen
+

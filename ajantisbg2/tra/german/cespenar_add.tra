@@ -1,0 +1,26 @@
+@0    = ~Mmm? Was ist das? Bunter Schild?~
+@1    = ~Cespenar kann den Schild besser machen, aber dafür brauche ich einen mittleren Schild +2. Das sagt zumindest das Rezept, ja?~
+@2    = ~Ah, glänzende Dinge! Cespenar sieht alles, um bunten Schild besser zu machen, ja?~
+@3    = ~Rezept sagt, brauche mittleren Schild +2, und für 5000 Goldstücke kann Cespenar Schild mächtiger machen. Wollt Ihr das?~
+@4    = ~Es scheint, ich habe nicht so viel Gold.~
+@5    = ~Nein, ich bin nicht interessiert. Gibt es etwas anderes, das Ihr machen könnt?~
+
+@6    = ~Hm, brauche Schriftrollen mit Magie Bannen und mit Mut, und... oh, dazu ein Bastardschwert +1...~
+@7    = ~Gibt Rezept für mächtiges Bastardschwert. Braucht Schriftrolle mit Magie Bannen und ein Bastardschwert +1, oh ja.~
+@8    = ~Gibt Rezept für mächtiges Bastardschwert. Braucht Schriftrolle mit Magie Bannen und ein Bastardschwert +1, und für 5000 Goldstücke kann Cespenar Schwert mächtiger machen. Wollt Ihr das?~
+@9    = ~Hm, brauche Schriftrolle mit Magie Bannen und... oh, ein Bastardschwert +1...~
+/*
+@10   = 
+@11   = 
+*/
+@12   = ~Gibt Rezept für mächtiges Bastardschwert. Braucht Schriftrollen mit Magie Bannen und mit Mut... und ein Bastardschwert +1. Für 5000 Goldstücke kann Cespenar Schwert mächtiger machen. Wollt Ihr das?~
+@13   = ~Gibt Rezept für mächtiges Bastardschwert. Braucht dafür aber Schriftrollen mit Magie Bannen und mit Mut... und ein Bastardschwert +1, oh ja.~
+@14   = ~Fein, fein. Mache weiter mit Rucksack durchkramen...~
+@15   = ~Das ist mein Familienschild! <CHARNAME>, Ihr lasst diese... diese Kreatur doch nicht etwa meinen Schild verändern?!~
+@16   = ~Ajantis, Cespenar kann den Schild mächtiger machen, und wir brauchen eine gute Ausrüstung, um in den kommenden Kämpfen zu bestehen.~
+@17   = ~Ihr akzeptiert auch, dass wir hier rasten. Der Mephit gehört dazu.~
+@18   = ~Kennt Ihr einen anderen Waffenschmied, der das erledigen könnte?~
+@19   = ~Nun... Nein, nicht hier.~
+@20   = ~Da habt Ihr wohl Recht...~
+@21   = ~(seufzt) Ich habe übersehen, dass er nun Euch dient. Verfahrt, wie Ihr es für richtig haltet, <CHARNAME>. Aber ich werde genau beobachten, was mit meinem Schild geschieht. Vergesst das nicht, Höllenkreatur!~
+

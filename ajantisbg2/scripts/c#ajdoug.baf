@@ -1,0 +1,82 @@
+IF
+	!See("C#Ajantis")
+	InParty("C#Ajantis")
+	InMyArea("C#Ajantis")
+THEN
+	RESPONSE #100
+		MoveToObject("C#Ajantis")
+END
+
+IF
+	InParty("C#Ajantis")
+	See("C#Ajantis")
+	Global("C#AjantisLoveTalk","GLOBAL",19)	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisDouglasTalk1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		Dialogue("C#Ajantis")
+END
+
+IF
+	InParty("C#Ajantis")
+	See("C#Ajantis")	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisIlvastarrComplains","GLOBAL",4)
+THEN
+	RESPONSE #100
+		Dialogue("C#Ajantis")
+END
+
+IF
+	InParty("C#Ajantis")
+	See("C#Ajantis")	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisDisinheritage","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Dialogue("C#Ajantis")
+END
+
+IF
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+    !Global("C#AjantisRomanceActive","GLOBAL",3)
+	InParty("C#Ajantis")
+	Global("C#AjantisIlvastarrComplains","GLOBAL",4) 
+	GlobalGT("C#AjantisIlvastarrMeeting","GLOBAL",1)
+	GlobalLT("C#AjantisPCMarriage","GLOBAL",2)
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+
+/* NB Romance */
+
+IF
+	InParty("C#Ajantis")
+	See("C#Ajantis")
+	!Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisNewRomMatch","GLOBAL",1)
+	Global("C#AjantisNBMessenger","GLOBAL",1)
+THEN
+	RESPONSE #100
+		Dialogue("C#Ajantis")
+END
+
+IF
+	OR(2)
+		Global("C#AjantisRomanceActive","GLOBAL",3)
+		!InParty("C#Ajantis")
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+

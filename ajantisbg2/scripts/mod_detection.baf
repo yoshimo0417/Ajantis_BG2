@@ -1,0 +1,11 @@
+/* Tell other mods Ajantis mod is installed and active */
+
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisIsInstalled","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisIsInstalled","GLOBAL",1)
+	Continue()
+END

@@ -1,0 +1,24 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	ClearAllActions()
+	StartCutSceneMode()
+	TakePartyItem("C#AJ0004") 
+	DestroyItem("C#AJ0004")
+	SetGlobal("C#AjantisExistiert","GLOBAL",1)
+	SetGlobal("C#AjantisQuestErschaffen","GLOBAL",1)
+	Wait(1)
+	ActionOverride("C#KNIG01",Polymorph(FIGHTER_FEMALE_HUMAN))
+	ActionOverride("C#KNIG02",Polymorph(FIGHTER_FEMALE_HUMAN))
+	ActionOverride("C#KNIG03",Polymorph(FIGHTER_FEMALE_HUMAN))
+	ActionOverride("C#KNIG04",Polymorph(FIGHTER_FEMALE_HUMAN))
+	ActionOverride("C#Ajantis",Polymorph(FIGHTER_MALE_HUMAN))
+	ActionOverride("C#KNIG01",SetName(@0)) //
+	ActionOverride("C#KNIG02",SetName(@1)) //
+	ActionOverride("C#KNIG03",SetName(@2)) //
+	ActionOverride("C#KNIG04",SetName(@3)) //
+	ActionOverride("C#Ajantis",SetName(@4)) //
+	EndCutSceneMode()
+	ActionOverride("C#KNIG01",StartDialogueNoSet(Player1))
+END

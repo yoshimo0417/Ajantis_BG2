@@ -1,0 +1,30 @@
+/* spawn mod cre */
+IF
+	Clicked([ANYONE])
+	Global("C#AjantisSperreGarrens","GLOBAL",0)
+	Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@0)
+		Wait(1)
+		StartCutScene("C#AJCU01")  
+		StartCutSceneMode()
+END
+
+
+IF
+	Clicked([ANYONE])
+	Global("C#AjantisSperreGarrens","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1)
+END
+
+IF
+	Clicked([ANYONE])
+	Global("C#AjantisSperreGarrens","GLOBAL",0)
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@2)
+END

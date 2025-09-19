@@ -1,0 +1,15 @@
+
+/* This transfers the items from BG1 Ajantis into "Ajantis Chest" in AR0903 */
+IF
+	Global("%NewSoAGame%","GLOBAL",0)
+	BeenInParty("Ajantis")
+	Global("C#Ajantis_Itemtransfer","AR0903",0)
+THEN 
+	RESPONSE #100
+		MoveGlobal("AR0903","Ajantis",[540.420])
+		ActionOverride("Ajantis", DestroyItem("x#ajshld"))
+		ActionOverride("c#ajchst",TakeCreatureItems("Ajantis",ALL))
+		ActionOverride("Ajantis", DestroySelf())
+		SetGlobal("C#Ajantis_Itemtransfer","AR0903",1)
+		Continue()
+END

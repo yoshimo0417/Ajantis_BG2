@@ -1,0 +1,62 @@
+/* new beginnings romance: Anomen conflict */
+/* Inside a tavern. Triggers after timer "C#AjantisNBAnomenConflictT" run out*/
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+  InParty(Myself)
+  InMyArea(Player1)
+  InParty("anomen")
+  InMyArea("anomen")
+  !StateCheck("anomen",CD_STATE_NOTVALID)
+  !See([ENEMY])
+  CombatCounter(0)
+    !Global("C#AjantisEngaged","GLOBAL",1)
+    Global("C#AjantisRomanceActive","GLOBAL",1)
+    Global("AnomenRomanceActive","GLOBAL",1)
+ OR(12)
+    AreaCheck("AR0313") // Sea's Bounty
+    AreaCheck("AR0406") // Copper Coronet
+    AreaCheck("AR0509") // Five Flagons
+    AreaCheck("AR0522") // Five Flagons (Stronghold)
+    AreaCheck("AR0704") // Mithrest Inn
+    AreaCheck("AR1105") // Umar Inn
+    AreaCheck("AR1602") // The Vulgar Monkey
+    AreaCheck("AR2010") // Vyatri's Pub, Trademeet
+    AreaCheck("AR0709") // Den of the Seven Vales 1st Floor
+    AreaCheck("AR0513") // Calbor's Inn at Bridge District 1st Floor
+    AreaCheck("AR0021") // Crooked Crane 1st Floor
+    AreaCheck("AR1602") // Brynnlaw's Inn
+RealGlobalTimerExpired("C#AjantisNBAnomenConflictT","GLOBAL")
+Global("C#AjantisSchweigen","GLOBAL",0)
+Global("C#AjantisNBAnomenConflict","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("C#AjantisNBAnomenConflict","GLOBAL",2)
+	RealSetGlobalTimer("C#AjantisNBAnomenConflictT","GLOBAL",2600)
+		StartDialogueNoSet("anomen")
+END 
+
+/* new beginnings romance, restbanter */
+
+/* Ajantis is cooking */
+
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",1) 
+	Global("C#AjantisNewRomMatch","GLOBAL",1)
+	!Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisNBCooking","GLOBAL",0)
+	AreaType(OUTDOOR)
+	!AreaType(CITY)
+	GlobalGT("C#AjantisFriendTalk","GLOBAL",16)
+THEN  
+  RESPONSE #100
+	SetGlobal("C#AjantisNBCooking","GLOBAL",1)	
+	RealSetGlobalTimer("RE_DreamTimer","GLOBAL",200)
+    RealSetGlobalTimer("C#AjantisFriendTalkT","GLOBAL",C#AJROM_TIMER)	
+		PlaySong(0)
+		PlaySound("C#AJROM")
+	StartDialogNoSet(Player1)
+END

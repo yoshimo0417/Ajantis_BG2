@@ -1,0 +1,24 @@
+IF
+	Contains("C#AJBODY",Myself) // Ajantis' Leiche
+	Contains("MISCBP",Myself) // Bodhis Schwarzes Herz
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#AjanCleanseVampire","AR1401",2)
+		SetGlobal("C#AjantisVampire","GLOBAL",5)
+		DestroyItem("C#AJBODY") 
+		DestroyItem("MISCBP") // Bodhis Schwarzes Herz
+		CreateVisualEffect("SPMETSW2",[2592.1701])
+		CreateVisualEffect("SPMETSW2",[2645.1742])
+		Wait(1)
+		CreateVisualEffect("SPFLESHS",[2565.1677])
+		Wait(1)
+		MoveGlobal("AR1401","C#Ajantis",[2565.1677])
+		Wait(1)
+		ActionOverride("C#Ajantis",DestroyItem("C#AJCHBE"))
+		Wait(1)
+		ActionOverride("C#Ajantis",ChangeAIScript("C#Ajan",OVERRIDE))
+		ActionOverride("C#Ajantis",SetDialog("C#AjanP"))
+		DialogueInterrupt(TRUE)
+		SetInterrupt(TRUE)
+END

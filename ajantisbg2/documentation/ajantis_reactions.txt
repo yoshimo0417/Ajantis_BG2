@@ -1,0 +1,103 @@
+Ajantis turns hostile while in the party, if
+
+
+-If the PC makes a deal with Firkraag to betray Lord Windspear (Keldorn)
+-If PC gives eggs of silver dragon to the deamon (Keldorn)
+-If PC attacks Drizzt (Keldorn)
+-IF PC attacks the Snirvlebi (Keldorn)
+-If PC's reputation falls below 8
+-If PC made more than 5 bad decisions (from Ajantis' sight)
+-if PC wears or let a party member wear the finished skin armour 
+-if the PC poisons the druid grove
+-if PC denials Hendak and the other slaves in the Copper Coronet help
+-If PC wants to feed the drow slaves to the spiders, and has rep < 12
+-if PC sais he will chase the drow slaves
+-PC hands over Valygar to the hidden mages (Valygar in the group)
+
+Ajantis turns hostile after joining, if
+
+-If the PC made a deal with Firkraag to betray Lord Windspear (Ajantis will know)
+-if PC holds Lady Elgea for ransom upon Ajantis' joining
+-If PC's reputation falls / is below 8
+
+
+
+
+Ajantis leaves the group and returns to the Order, if
+
+-PC agrees to steal for Mae'Var (not for engaged romance, new beginnings romance ends)
+-if the PC steals for Mae'Var (Ajantis gave no first warning (non-romance case))
+
+
+
+Ajantis leaves forever
+
+-if the PC steals for Mae'Var and does not stop / did not leave Ajantis out of the party after Ajantis gave his first warning (non-romance case)
+-if the PC brakes Ajantis romance after the marriage
+-PC was kicked out of the Order stronghold after failing her duties
+-PC was kicked out of church of Helm after failing her duties
+-PC tells Tolgerias were he can find Valygar (Valygar not in the group) (Keldorn, Mazzy)
+-If PC sides with Bodhi (Mazzy)
+
+
+
+Ajantis interjects (meaning the bad, bad INTERJECT coding)
+
+-If PC wants to feed the drow slaves to the spiders, if Keldorn or Mazzy are not in the party or unable to speak. (Keldorn, Mazzy)
+-if PC doesn't intend to let lady Elgea free, if Keldorn or Mazzy aren't in the party or unable to speak. (Mazzy)
+-if PC doesn't intend to let Mazzy free, and Keldorn or Valygar aren't in the party or unable to speak. (Keldorn, Valygar)
+
+
+
+Ajantis thinks it's a bad decision, if
+
+-PC accepts thief stronghold
+-PC accepts Mae'Vars' quests
+-PC actually steals for Mae'Var
+-if rep falls below 10
+-PC made evil choices in hell trials
+-If PC wants to feed the drow slaves to the spiders, and has rep > 11
+-PC didn't want to set Lady Elgea free
+-if PC gave bad advice to Anomen after his sister's death
+-if PC lies to Sir Sarles
+-if PC rejects a place in the temple of Helm, if her god is Helm (Kit(Player1,GODHELM))
+-if PC accepts a place in the Church of Lathander if he/she is a believer in Helm (Kit(Player1,GODHELM))
+-if PC accepts a place in the Church of Thalos
+-if PC doesn't want to free Mazzy
+-PC spares Llynis live (murderer of little Wellin)
+-PC doesn't want to help little Wellyn
+
+
+
+
+
+Ajantis think it's a good decision, if (i.e., bad decision counting goes down again):
+-reputation goes above 17
+-repuation reaches 20
+-PC made only good choices in hell
+-PC freed the drow slaves by sending them to the surface
+-PC freed Lady Elgea
+-PC gave good advice to Anomen after his sister's death
+-PC helps little Wellyn
+-PC does not side with Bodhi
+-PC refuses to make a deal with Renal
+-PC refuses to make a deal with Bodhi
+-PC asks Drizzt for help against Bodhi
+-PC accepts Helm cleric stronghold
+-PC joins the Order of the Radiant Heart
+-PC does not tell the mages where they can find Valygar / does not hand over Valygar to Tolgerias
+
+
+Romance (both paths) will end, if
+
+-Ajantis turns hostile
+-Ajantis leaves forever
+-PC accepts thief stronghold
+-PC steals for Mae'Var (Ajantis gives warnings)
+-PC made evil choices in hell trials
+-PC sides with Bodhi
+
+Ajantis' new beginnings romance will end, if
+
+-Ajantis warns PC after 4 bad decisions
+-Ajantis leaves the group because of wrong PC decision

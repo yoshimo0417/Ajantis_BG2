@@ -1,0 +1,18 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	ClearAllActions()
+	ActionOverride("C#AJSKE1",Kill(Myself))
+	ActionOverride("C#AJSKE2",Kill(Myself))
+	StartCutSceneMode()	
+	MoveViewPoint([4085.2953],INSTANT)
+	Wait(1)
+	SetGlobal("C#AjantisKNIG06VorPortal","GLOBAL",1)
+	CreateCreature("C#AJSPY1",[4098.3030],6)
+	ActionOverride("C#KNIG06",MoveToPoint([4083.2958]))
+	Wait(2)
+	ActionOverride("C#KNIG06",Face(0))
+	EndCutSceneMode()
+	ActionOverride("C#KNIG06",StartDialogueNoSet([PC]))
+END

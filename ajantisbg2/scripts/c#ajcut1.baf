@@ -1,0 +1,21 @@
+IF
+      True()
+THEN
+RESPONSE #100
+      CutSceneId("C#AJALEX")
+	CreateCreature("C#AJSPY1",[283.649],6)
+	MoveViewPoint([283.649],INSTANT)
+      ActionOverride("C#AJKEND",MoveToPoint([352.530]))
+      ActionOverride("C#RYAN",MoveToPoint([401.540]))
+	MoveToPoint([434.589])
+	ActionOverride("C#AJKEND",FaceObject(Player1))
+	ActionOverride("C#RYAN",FaceObject(Player1))
+	FaceObject(Player1)
+      DisplayStringHead(Myself,@0)
+      Wait(2)
+	ActionOverride("C#AJSPY1",DestroySelf())
+      EndCutSceneMode()
+      SetGlobal("C#AjantisRitter","GLOBAL",1)
+     StartDialogueNoSet(Player1)
+END
+

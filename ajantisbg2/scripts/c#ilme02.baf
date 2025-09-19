@@ -1,0 +1,28 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	FadeToColor([20.0],0)
+	Wait(1)
+	ActionOverride("C#AJDOUG",LeaveAreaLUA("AR0704","",[350.690],9))
+	LeaveAreaLUAPanic("AR0704","",[280.700],9)
+	LeaveAreaLUA("AR0704","",[280.700],9)
+	ActionOverride(Player2,LeaveAreaLUA("AR0704","",[311.724],9))
+	ActionOverride(Player3,LeaveAreaLUA("AR0704","",[243.728],9))
+	ActionOverride(Player4,LeaveAreaLUA("AR0704","",[278.756],9))
+	ActionOverride(Player5,LeaveAreaLUA("AR0704","",[248.780],9))
+	ActionOverride(Player6,LeaveAreaLUA("AR0704","",[205.748],9))
+	Wait(2)
+	FadeFromColor([20.0],0)
+	Wait(2)
+	EndCutSceneMode()
+END
+	
+
+
+
+
+
+ 

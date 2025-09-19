@@ -1,0 +1,149 @@
+/* From Kulyok's Branwen tutorial mod:
+The list of conditions is simple: Global("StartEndBios","AR6200",1) means the epilogues are playing,
+then there go InParty() and O#BranwenRomanceActive variable. O#BranwenBio ensures the block runs only once.
+PlayerChoseEssence means that the player became god, so !Global("PlayerChoseEssence","GLOBAL",1) means he didn't.
+SmallWait(1) and Continue() are taken from the original game. */
+
+// There are two epilogues: one for regular Branwen, one for the romanced Branwen if PC hasn't ascended.
+// Both epilogues are available in Setup-Branwen.tp2.
+
+
+/* Non-romance ending , RA = 0 
+no evil PP choices or remain mortal */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("C#AjantisRomanceActive","GLOBAL",0)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+OR(2)
+	GlobalLT("PPEvilChoices","GLOBAL",4)
+	!Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep01")
+SmallWait(1)
+Continue()
+END
+
+
+/* Non-romance ending , RA = 0 
+raise to godhood with evil PP choices */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("C#AjantisRomanceActive","GLOBAL",0)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+GlobalGT("PPEvilChoices","GLOBAL",3)
+Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep07")
+SmallWait(1)
+Continue()
+END
+
+
+
+/* Non-romance ending , RA = 3 
+no evil PP choices */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("C#AjantisRomanceActive","GLOBAL",3)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+OR(2)
+	GlobalLT("PPEvilChoices","GLOBAL",4)
+	!Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep02")
+SmallWait(1)
+Continue()
+END
+
+/* Non-romance ending , RA = 3 
+raise to godhood with evil PP choices */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("C#AjantisRomanceActive","GLOBAL",3)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+GlobalGT("PPEvilChoices","GLOBAL",3)
+Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep08")
+SmallWait(1)
+Continue()
+END
+
+
+/* romance ending: PC remained mortal, married */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+!Global("PlayerChoseEssence","GLOBAL",1)
+Global("C#AjantisRomanceActive","GLOBAL",2)
+GlobalGT("C#AjantisPCMarriage","GLOBAL",0)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep03")
+SmallWait(1)
+Continue()
+END
+
+/* romance ending: PC remained mortal, not yet married */
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+!Global("PlayerChoseEssence","GLOBAL",1)
+Global("C#AjantisRomanceActive","GLOBAL",2)
+Global("C#AjantisPCMarriage","GLOBAL",0)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep04")
+SmallWait(1)
+Continue()
+END
+
+/* romance ending: PC raised to godhood 
+GlobalLT("PPEvilChoices","GLOBAL",4)*/
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("PlayerChoseEssence","GLOBAL",1)
+Global("C#AjantisRomanceActive","GLOBAL",2)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+GlobalLT("PPEvilChoices","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep05")
+SmallWait(1)
+Continue()
+END
+
+/* romance ending: PC raised to godhood 
+GlobalGT("PPEvilChoices","GLOBAL",3)*/
+IF
+Global("StartEndBios","AR6200",1)
+InPartyAllowDead("C#Ajantis")
+Global("PlayerChoseEssence","GLOBAL",1)
+Global("C#AjantisRomanceActive","GLOBAL",2)
+Global("C#AjanToB_Epilog","GLOBAL",0)
+GlobalGT("PPEvilChoices","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("C#AjanToB_Epilog","GLOBAL",1)
+TextScreen("c#ajep06")
+SmallWait(1)
+Continue()
+END

@@ -1,0 +1,26 @@
+@0    = ~Mmm?  What's this?  You gots shield?~
+@1    = ~I cans upgrade your shield, but I needs a medium shield +2. Or, at least, this is what the recipe says, okay?~
+@2    = ~Ah, shiny things! Cespenar sees all needed to make shield better, yes?~
+@3    = ~Recipe says needs medium shield +2, and for 5000 gold Cespenar can make shield more powerful. You wants that?~
+@4    = ~It seems I don't have that much money.~
+@5    = ~No, I'm not interested. Is there anything else you can use?~
+
+@6    = ~Hm, I needs scrolls of Resist Fear, Dispel Magic and... oh, needs a Bastard Sword +1...~
+@7    = ~Has recipe for powerful sword, I do.  Needing scroll of Dispel Magic and a Bastard Sword +1, though, oh yes.~
+@8    = ~Has recipe for more powerful Bastard Sword, I do. Is combined with scroll of Dispel Magic and a Bastard Sword +1, and for 5000 gold Cespenar can make sword better. Want you that?~
+@9    = ~Hm, I needs scroll of Dispel Magic and a Bastard Sword +1...~
+/*
+@10   = 
+@11   = 
+*/
+@12   = ~Has recipe for more powerful Bastard Sword, I do.  Is combined with scrolls of Resist Fear, Dispel Magic and a Bastard Sword +1, and for 5000 gold Cespenar can make sword better. Want you that?~
+@13   = ~Has recipe for powerful sword, I do.  Needing scrolls of Resist Fear, Dispel Magic and... oh, a Bastard Sword +1, though, oh yes.~
+@14   = ~Fine, fine. I goes back to digging through backpacks.~
+@15   = ~This is my family shield! <CHARNAME>, are you going to let this... this creature work on my shield?!~
+@16   = ~Ajantis, Cespenar can make the shield better, and we need good equipment for the upcoming fight.~
+@17   = ~You have accepted this as our resting place. The imp belongs to it.~
+@18   = ~Do you know of another weapon smithy who could do it?~
+@19   = ~Well... no, not near by.~
+@20   = ~There is truth in these words...~
+@21   = ~(sigh) I forgot that it serves you now. Do as you like, <CHARNAME>. But you, imp, be warned that I will watch very carefully what you are going to do with my shield!~
+

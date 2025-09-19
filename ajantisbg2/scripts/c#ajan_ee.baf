@@ -1,0 +1,8 @@
+IF
+	!InParty(Myself)
+	CheckSpellState(Myself,STORY_MODE)
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("OHSMODE3",Myself) // No such index
+		Continue()
+END

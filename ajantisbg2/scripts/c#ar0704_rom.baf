@@ -1,0 +1,69 @@
+//ringsmith
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisRINGSMExistiert","GLOBAL",0)
+THEN 
+  RESPONSE #100
+	CreateCreature("C#RINGSM",[458.378],0)
+	SetGlobal("C#AjantisRINGSMExistiert","GLOBAL",1)
+END
+
+IF 
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisRINGSMExistiert","GLOBAL",1)
+	Global("C#AjantisMusterbeutel","GLOBAL",6)
+	Global("C#AjantisPCChoseRing","GLOBAL",2)
+	GlobalTimerNotExpired("C#AjantisGoldsmithSchmiedet","GLOBAL")
+	Global("C#AjantisRINGSMWeg","GLOBAL",1)
+	Exists("C#RINGSM")
+THEN 
+  RESPONSE #100
+	SetGlobal("C#AjantisRINGSMWeg","GLOBAL",2)
+	ActionOverride("C#RINGSM",DestroySelf())
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	GlobalTimerExpired("C#AjantisGoldsmithSchmiedet","GLOBAL")
+	Global("C#AjantisRINGSMExistiert","GLOBAL",1)
+	!Exists("C#RINGSM")
+THEN 
+  RESPONSE #100
+	CreateCreature("C#RINGSM",[458.378],0)
+	SetGlobal("C#AjantisRINGSMExistiert","GLOBAL",2)
+END
+
+IF 
+	OR(3)
+	Global("C#AjantisRomanceActive","GLOBAL",3) 
+	!Global("C#AjantisEngagedMatch","GLOBAL",1)
+	!Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisRINGSMExistiert","GLOBAL",1)
+THEN 
+  RESPONSE #100
+	SetGlobal("C#AjantisRINGSMExistiert","GLOBAL",0)
+	ActionOverride("C#RINGSM",DestroySelf())
+END
+
+//Ilvastarrs (Ajantis' parents)
+
+IF 
+	OR(3)
+	Global("C#AjantisRomanceActive","GLOBAL",3) 
+	!Global("C#AjantisEngagedMatch","GLOBAL",1)
+	!Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisIlvastarrExistiert","GLOBAL",1)
+THEN 
+  RESPONSE #100
+	ActionOverride("C#AJLAIL",DestroySelf())
+	ActionOverride("C#AJLOIL",DestroySelf())
+	SetGlobal("C#AjantisIlvastarrExistiert","GLOBAL",2)
+END

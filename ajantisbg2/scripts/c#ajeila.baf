@@ -1,0 +1,13 @@
+IF
+Global("C#AjantisGarren","GLOBAL",1)
+Global("C#AjantisEilaSecondMeeting","GLOBAL",0)
+Global("C#AjantisEilaCityMeeting","GLOBAL",0)
+InParty("C#Ajantis") 
+InMyArea("C#Ajantis") 
+!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+RealGlobalTimerExpired("C#AjantisEilaMeetingTimer","GLOBAL")
+THEN
+	RESPONSE #100
+StartDialogNoSet("C#Ajantis")
+END
+

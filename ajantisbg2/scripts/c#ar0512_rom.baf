@@ -1,0 +1,18 @@
+IF
+	InParty("C#Ajantis")
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	InMyArea("C#Ajantis")
+	InMyArea(Player1)
+	Global("C#AjantisWeddingReady","GLOBAL",2)
+	Global("C#AjantisBrueckenTempel","GLOBAL",1)
+	Global("C#AjantisStartWedding","GLOBAL",0)
+	Global("C#AjantisPR01Exists","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("C#AJPR01",[355.412],9)
+		SetGlobal("C#AjantisPR01Exists","GLOBAL",1)
+END

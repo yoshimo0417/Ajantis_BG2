@@ -1,0 +1,198 @@
+
+@65   = ~Dies ist Ajantis' Medaillon, das Ihr ihm geschenkt habt. Er verwahrt darin die Haarlocke auf, die er von Euch erhalten hat. Ob nun wirklich Euer Haar oder ein anderer Zauber dafür verantwortlich ist, jedenfalls verleiht das Medaillon dem Träger einen Glücksbonus.
+~
+@66   = ~Dies ist Ajantis' Medaillon, das Ihr ihm geschenkt habt. Er verwahrt darin die Haarlocke auf, die er von Euch erhalten hat. Ob nun wirklich Euer Haar oder ein anderer Zauber dafür verantwortlich ist, jedenfalls verleiht das Medaillon dem Träger einen Glücksbonus.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Der Träger erhält einen Glücksbonus +1.
+~
+
+@72   = ~Ein mittelgroßer Schild wird ähnlich wie ein kleiner Schild verwendet. Da der mittelgroße Schild allerdings recht schwer ist, ist die Schildhand des Trägers durch den Schild blockiert und kann nicht für andere Zwecke eingesetzt werden. Dafür bietet dieser spezielle Schild aber dank magischer Energie verbesserten Schutz.
+
+Dieser besondere Schild trägt das Familienwappen der Edelfamilie Ilvastarr aus Tiefwasser: Ein metallener, grüner Drache mit orangenen Augen auf goldenem Hintergrund. Seit Ajantis' Zeit an der Schwertküste ist der Schutz, den der Schild bietet, verbessert worden.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Dem Träger wird ein Fähigkeitspunkt "Kampf mit Schwert und Schild" gewährt.
+
+-2 auf Rüstungsklasse
+Gewicht: 7
+~
+
+@74   = ~Familienschild der Ilvastarrs +2
+Ein mittelgroßer Schild wird ähnlich wie ein kleiner Schild verwendet. Da der mittelgroße Schild allerdings recht schwer ist, ist die Schildhand des Trägers durch den Schild blockiert und kann nicht für andere Zwecke eingesetzt werden. Dafür bietet dieser spezielle Schild aber dank magischer Energie verbesserten Schutz.
+
+Dieser besondere Schild trägt das Familienwappen der Edelfamilie Ilvastarr aus Tiefwasser: Ein metallener, grüner Drache mit orangenen Augen auf goldenem Hintergrund. Seit Ajantis' Zeit an der Schwertküste ist der Schutz, den der Schild bietet, verbessert worden. Zusätzlich wurde die Rüstungsklasse dieses Schilds noch von Cromwell verbessert.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Dem Träger wird ein Fähigkeitspunkt "Kampf mit Schwert und Schild" gewährt.
+
+-3 auf Rüstungsklasse
+Gewicht: 7
+~
+
+@77   = ~Bastardschwert +2
+Das Schwert wurde von seinem Schmied nicht nur so ausgezeichnet gefertigt, dass es besser ausbalanciert und wesentlich widerstandsfähiger als ein normales Bastardschwert ist, sondern auch noch zusätzlich stark verzaubert. Dadurch ist dieses Bastardschwert schneller. Es trifft genauer und richtet mehr Schaden an als ein gewöhnliches Schwert.
+
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: -2
+Schaden: 2W4+2 (Klingenwaffe)
+Gewicht: 7
+Initiativefaktor: 6
+Waffenfertigkeit: Bastardschwert
+Waffentyp: Einhändig
+~
+@78   = ~Der Gerechte, Bastardschwert +2
+
+Der Name dieses Bastardschwertes stammt wohl eher von seinem berühmtesten Besitzer, und weniger von den Eigenschaften des Schwertes. Sir Teuben, Paladin und Ritter aus dem hohen Norden, beendete mit der Hilfe dieser Klinge eine Räuberplage in den Wäldern um seine Heimatstadt. Unermüdlich kämpfte er sich durch die Räuberhorde, unberührt von bösen Zaubern, und es schien manchem Beobachter, als würde er an Lebenskraft gewinnen, je länger er die Klinge in Händen hielt.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Der Träger hat 5% Magieresistenz; Träger regeneriert einen Lebenspunkt alle 20 Sekunden.
+
+ETW0: -2
+Schaden: 2W4+2 (Klingenwaffe)
+Gewicht: 7
+Initiativefaktor: 6
+Waffenfertigkeit: Bastardschwert
+Waffentyp: Einhändig
+~
+
+@79   = ~Der Gerechte, Bastardschwert +2
+
+Der Name dieses Bastardschwertes stammt wohl eher von seinem berühmtesten Besitzer, und weniger von den Eigenschaften des Schwertes. Sir Teuben, Paladin und Ritter aus dem hohen Norden, beendete mit der Hilfe dieser Klinge eine Räuberplage in den Wäldern um seine Heimatstadt. Unermüdlich kämpfte er sich durch die Räuberhorde, unberührt von bösen Zaubern, und es schien manchem Beobachter, als würde er mit fortschreitendem Kampf an Lebenskraft gewinnen.
+Das Schwert wurde durch Cromwells Zauberschmieden mit dem Zauber Mut ausgestattet.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Der Träger hat 5% Magieresistenz; Träger regeneriert einen Lebenspunkt alle 20 Sekunden. Der Träger kann dreimal täglich Furcht bannen wirken.
+
+ETW0: -2
+Schaden: 2W4+2 (Klingenwaffe)
+Gewicht: 7
+Initiativefaktor: 6
+Waffenfertigkeit: Bastardschwert
+Waffentyp: Einhändig
+~
+
+/* Note that this text is *different* than for BGII/BGT! */
+
+@103  = ~Dies ist ein Stapel Briefe von Eurem Verlobten Ajantis, alle adressiert an "<CHARNAME> aus Kerzenburg". Die letzten tragen den Vermerk "Aufenthaltsort unbekannt" in der Adresszeile. Ajantis hat sie in der Zeit Eurer Abwesenheit geschrieben. Es scheint, er habe sie hier gesammelt, da er Euren Aufenthaltsort nicht bestimmen konnte. Einige der Briefe zeigen deutliche Spuren, als wären sie bereits lange unterwegs gewesen, bevor sie schließlich hier landeten. 
+Durch das Lesen der Briefe könnt Ihr die wichtigsten Vorkommnisse in Ajantis' Leben seit Eurer Trennung an der Schwertküste nachverfolgen. Alle Briefe sind unterzeichnet mit "Euer Euch liebender, Euch verehrender und Euch vermissender Ajantis." Die neueren tragen den Zusatz: "Ich hoffe und bete, dass wir uns unversehrt wiedersehen."
+
+Der erste Brief lautet:
+
+"Liebste <CHARNAME>,
+in welch' einer Situation lasse ich Euch zurück! Euch in Baldurs Tor zu wissen, fern von mir und ohne die Möglichkeit, Euch zu beschützen, zerreißt mir schier das Herz. Doch ich weiß, dass meine größte Hilfe die ist, Euren Namen beim Orden des Strahlenden Herzens rein zu waschen. Und so eile ich auf meinem Weg nach Athkatla. Alles wird gut werden, es muss!"
+
+"Nun habe ich Athkatla erreicht, und sofort um eine Unterredung mit dem Prälaten gebeten. Liebste <CHARNAME>, welch eine Freude! Sie glauben uns! Euer Name wird rein von sämtlichen unangemessenen Anschuldigungen sein, wenn Ihr nach Amn kommt. Die Nachricht über Euer Verlassen von Baldurs Tor erreichte uns kurz danach. Ich werde die Briefe an Euch weiterhin dorthin schicken, in der Hoffnung, dass Herzog Belt über Euren Verbleib informiert ist... In Baldurs Tor herrscht noch immer große Aufgeregtheit, aber nach all dem, was dort in letzter Zeit geschehen ist, ist dies nicht verwunderlich. Auch dort werden die Gemüter sich wieder beruhigen und die Wahrheit über Eure Rechtschaffenheit sich verbreiten."
+
+"Ich habe nach langer Zeit meinen Mentor Keldorn wieder gesehen. Ich bin froh wie lange nicht mehr, denn Keldorn zeigte sich erstaunlich einsichtig bezüglich unserer Bindung. Ich werde keine Repressalien des Ordens diesbezüglich fürchten müssen, solange wir gemeinsam den Pfad des Guten und Rechtschaffenen wandern, Liebste! Ich werde nun hier bleiben, in der Hoffnung, dass Ihr Euren Weg hierher findet, wie wir es vereinbart haben."
+
+Der darauf folgende ist hastig geschrieben.
+
+"Ihr seid verschwunden, Liebste, die Briefe an Euch kehren zurück... Wo seid Ihr? Ich vermute, dass Ihr Euch versteckt haltet, um nach dieser Zeit der Aufregung aus der Schusslinie zu kommen. Bitte, lasst mich wissen, wie es Euch geht. Ich sende diesen Brief in der Hoffnung, dass er Euch erreicht."
+
+Die folgenden Briefe sind gefüllt mit der häufiger geäußerten Hoffnung, dass Euch die Briefe erreichen mögen.
+
+"Liebste <CHARNAME>, 
+nur getrübt durch unsere Trennung ist mein Herz dieser Tage licht und warm, denn der Orden hat mein Anliegen erwogen und meine Taten als würdig befunden, um mich in den Stand des Ritters zu erheben! Sobald ich bereit bin, werde ich zum Ritter geschlagen. Ihr wisst, wie viel mir das bedeutet..."
+
+"Liebste <CHARNAME>, 
+ich gebe die Hoffnung nicht auf, dass ich Euch finde, damit wir diesen Tag gemeinsam feiern können. Ich möchte Euch in den ehrwürdigen Hallen wissen, wenn ich meinen Ritterschlag erhalte. Ich muss Euch finden... Mein Herz ist wie zerfressen von Sorge. Wo seid Ihr? Wie geht es Euch? Wenn ich nur die Antworten auf diese Fragen wüsste!"
+
+"Liebste <CHARNAME>, 
+ich kann nicht länger warten. Ich erreiche als Knappe nichts. Ich fühle mich stumpf und nutzlos... Ich kann es nicht länger aufschieben. Mein Ritterschlag wird kommende Woche stattfinden. Ich hoffe, als Ritter mehr Befugnisse zu haben, um weiträumiger nach Euch suchen zu können..."
+
+"Heute wurde ich zum Ritter geschlagen. Es war der stolzeste und gleichzeitig der traurigste Tag meines Lebens, Liebste, denn Eure Abwesenheit überschattete alles.
+Meine Eltern waren da, ich konnte den Stolz in ihren Augen sehen. Nach den Feierlichkeiten hatten wir noch einen privaten Moment. Aus Sorge, es könnte der letzte für eine lange Zeit sein, legte ich ihnen dort den Umstand Eurer göttlichen Abstammung dar. Liebste, ich weiß nicht, ob es gut war... ihr Ausdruck verdüsterte sich schlagartig. Ich habe meine Eltern noch nie so bedrückt, ängstlich... so ablehnend erlebt, <CHARNAME>. Sie erbaten sich Bedenkzeit und reisten ab, ohne mir eine Antwort zu geben. Sie legen ihre Geschäftsreise durch Amn so, dass sie vor ihrer Abreise zurück nach Tiefwasser noch einmal hier vorbeischauen werden. Ich hoffe, dass sie sich dann mit dem Umstand abgefunden haben und mir in der Wahl meiner Braut vertrauen, und mir ihre Zustimmung erteilen."
+
+"Liebste <CHARNAME>,
+soll ich womöglich die Hoffnung aufgeben, Euch jemals wieder zu sehen? Kein Suchen, kein Zauber, kein Gelehrter kann mir einen Hinweis geben, wo ich Euch finden kann. Meine Pflichten als Paladin und Ritter des Ordens bedrängen mich immer mehr, und ich kann sie nicht länger vernachlässigen. Mein Herz ist schwer ob Euer Fehlen. Ich bete zu Helm, dass ich Euch wieder sehe. Ich werde nun in die Windspeerhügel ziehen, um Lord Jierdan gegen ein Monstertreiben beizustehen. Mein erster Einsatz als Ritter! Ich bete, dass sich mir vielleicht nach diesem Einsatz ein Hinweis auf Euren Verbleib erschließt.
+Vielleicht seid Ihr schon auf dem Weg nach Amn... Ihr wisst, dass ich hier zu finden bin. Vielleicht ist mir das Glück auch hold und wir treffen uns in den Windspeerhügeln? Wer weiß. Ich werde die Hoffnung nie aufgeben."
+
+Damit endet der letzte Brief.
+~
+
+
+@110  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen um einen gefassten hellblauen Edelstein. Der Ring sieht genauso aus wie der vorherige.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+@111  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen. Eurem Wunsch entsprechend ziert den Ring ein grüner Edelstein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+@112  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen. Eurem Wunsch entsprechend ziert den Ring ein farbloser Edelstein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+@113  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen. Eurem Wunsch entsprechend ziert den Ring ein roter Edelstein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+
+@114  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen. Eurem Wunsch entsprechend ziert den Ring ein gelber Edelstein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+
+@115  = ~Dies ist Euer "neuer" Verlobungsring, den Ajantis für Euch schmieden ließ. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen. Eurem Wunsch entsprechend ziert den Ring kein Edelstein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+
+
+@130  = ~Dies ist Euer Verlobungsring, den Ajantis Euch überreicht hat. Er ist eher schlicht gehalten, mit wenigen, jedoch kunstvoll gearbeiteten Verzierungen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Auf den Träger wirkt Schutz vor Bösem.
+~
+
+
+@904  = ~Der Gerechte, Bastardschwert +3
+
+Der Name dieses Bastardschwertes stammt wohl eher von seinem berühmtesten Besitzer, und weniger von den Eigenschaften des Schwertes. Sir Teuben, Paladin und Ritter aus dem hohen Norden, beendete mit der Hilfe dieser Klinge eine Räuberplage in den Wäldern um seine Heimatstadt. Unermüdlich kämpfte er sich durch die Räuberhorde, unberührt von bösen Zaubern, und es schien manchem Beobachter, als würde er mit fortschreitendem Kampf an Lebenskraft gewinnen.
+Das Schwert wurde durch Cromwells Zauberschmieden mit dem Zauber Mut ausgestattet. Euer Teufelchen Cespenar hat die bestehenden Effekte des Schwertes weiter verstärkt.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Der Träger hat 10% Magieresistenz; Träger regeneriert einen Lebenspunkt alle 15 Sekunden. Der Träger kann dreimal täglich Furcht bannen wirken.
+
+ETW0: -2
+Schaden: 2W4+3 (Klingenwaffe)
+Gewicht: 7
+Initiativefaktor: 5
+Waffenfertigkeit: Bastardschwert
+Waffentyp: Einhändig
+~
+
+@905  = ~Familienschild der Ilvastarrs +4
+Ein mittelgroßer Schild wird ähnlich wie ein kleiner Schild verwendet. Da der mittelgroße Schild allerdings recht schwer ist, ist die Schildhand des Trägers durch den Schild blockiert und kann nicht für andere Zwecke eingesetzt werden. Dafür bietet dieser spezielle Schild aber dank magischer Energie verbesserten Schutz.
+
+Dieser besondere Schild trägt das Familienwappen der Edelfamilie Ilvastarr aus Tiefwasser: Ein metallener, grüner Drache mit orangenen Augen auf goldenem Hintergrund. Seit Ajantis' Zeit an der Schwertküste ist der Schutz, den der Schild bietet, verbessert worden. Zusätzlich wurde die Rüstungsklasse dieses Schilds von Cromwell, aber auch von Eurem Höllendienerchen Cespenar verbessert.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Dem Träger wird ein Fähigkeitspunkt "Kampf mit Schwert und Schild" gewährt.
+
+-5 auf Rüstungsklasse
+Gewicht: 7
+~

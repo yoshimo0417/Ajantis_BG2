@@ -1,0 +1,18 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	Wait(1)
+	ActionOverride("C#AJPR01",MoveToPoint([663.595]))
+	MoveToPoint([649.639])
+	ActionOverride("C#Ajantis",MoveToPoint([616.621]))
+	Wait(1)
+	FaceObject("C#AJPR01")
+	ActionOverride("C#Ajantis",FaceObject("C#AJPR01"))
+	ActionOverride("C#AJPR01",FaceObject(Player1))
+	Wait(2)
+	ActionOverride("C#AJPR01",StartDialogNoSet(Player1))
+	EndCutSceneMode()
+END

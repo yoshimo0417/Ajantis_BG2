@@ -1,0 +1,240 @@
+
+
+IF
+	Global("C#_JOINXP","LOCALS",0)
+THEN
+  RESPONSE #100
+		SetGlobalTimer("C#_JoinXPTimer","LOCALS",180)
+		SetGlobal("C#_JOINXP","LOCALS",1)
+END
+
+
+IF
+	GlobalTimerExpired("C#_JoinXPTimer","GLOBAL")
+	Global("C#_JOINXP","LOCALS",1)
+THEN
+  RESPONSE #100
+		SetGlobal("C#_JOINXP","LOCALS",2)
+END
+
+
+/* Level 18 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",18)
+	XPGT(Player1,2499999)
+	XPLT(Myself,2500000)
+	XPGT(Myself,2249999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",18)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 17 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",17)
+	XPGT(Player1,2249999)
+	XPLT(Myself,2250000)
+	XPGT(Myself,1999999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",17)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 16 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",16)
+	XPGT(Player1,1999999)
+	XPLT(Myself,2000000)
+	XPGT(Myself,1749999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",16)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 15 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",15)
+	XPGT(Player1,1749999)
+	XPLT(Myself,1750000)
+	XPGT(Myself,1499999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",15)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+/* Level 14 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",14)
+	XPGT(Player1,1499999)
+	XPLT(Myself,1500000)
+	XPGT(Myself,1249999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",14)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 13 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",13)
+	XPGT(Player1,1249999)
+	XPLT(Myself,1250000)
+	XPGT(Myself,999999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",13)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 12 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",12)
+	XPGT(Player1,999999)
+	XPLT(Myself,1000000)
+	XPGT(Myself,749999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",12)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 11 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",11)
+	XPGT(Player1,749999)
+	XPLT(Myself,750000)
+	XPGT(Myself,499999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",11)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 10 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",10)
+	XPGT(Player1,499999)
+	XPLT(Myself,500000)
+	XPGT(Myself,249999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",10)	
+		AddXPObject(Myself,250000)
+		SetInterrupt(TRUE)
+END
+
+
+
+/* Level 9 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",9)
+	XPGT(Player1,249999)
+	XPLT(Myself,250000)
+	XPGT(Myself,124999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",9)	
+		AddXPObject(Myself,125000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 8 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",8)
+	XPGT(Player1,124999)
+	XPLT(Myself,125000)
+	XPGT(Myself,63999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",8)	
+		AddXPObject(Myself,61000)
+		SetInterrupt(TRUE)
+END
+
+/* Level 7 */
+
+IF
+	Global("BD_JOINXP","LOCALS",1)
+	InParty(Myself)
+	GlobalLT("C#_LevelUp","LOCALS",7)
+	XPGT(Player1,63999)
+	XPLT(Myself,64000)
+	XPGT(Myself,31999)
+	CheckStat(Player1, 0, LEVELDRAIN)
+THEN
+  RESPONSE #100
+		SetInterrupt(FALSE)
+		SetGlobal("C#_LevelUp","LOCALS",7)	
+		AddXPObject(Myself,32000)
+		SetInterrupt(TRUE)
+END

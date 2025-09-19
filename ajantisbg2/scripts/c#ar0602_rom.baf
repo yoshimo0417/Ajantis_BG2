@@ -1,0 +1,16 @@
+//AR0602
+
+/* BG1NPC project romance ring, item check  */
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisRomanceBG1Items","GLOBAL",0)
+		PartyHasItem("X#AJRORI") // Ajantis' BG1NPC engagement ring
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRomanceBG1Items","GLOBAL",1)
+	Continue()
+END
+
+
+

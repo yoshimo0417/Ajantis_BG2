@@ -1,0 +1,22 @@
+IF
+	Global("C#AjantisVampire","GLOBAL",1)
+	Global("C#AjanRomanceVampire","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanRomanceVampire","GLOBAL",1)
+		Continue()
+END
+
+IF
+	Global("C#AjantisVampire","GLOBAL",1)
+	Global("C#AjanRomanceVampire","GLOBAL",1)
+	Global("C#AjanRomVampireTeleport","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanRomVampireTeleport","GLOBAL",1)
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		Wait(2)
+		DestroySelf()
+END
+
+

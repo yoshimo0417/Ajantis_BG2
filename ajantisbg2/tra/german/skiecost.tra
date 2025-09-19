@@ -1,0 +1,34 @@
+/* @0 - @3 */
+@4    = ~<CHARNAME>, dieser Irenicus war der verhüllt Mann, der Euch in Dragonspear so bedrängt hat? Welch' glückliche Fügung, dass Ihr seinen Seelenfängerdolch gefunden habt, ob dieser nun beschädigt ist, oder nicht.~
+@5    = ~Ihr solltet den Dolch so schnell wie möglich Herzog Silberschild zukommen lassen. Ihr könntet nicht nur Eure Unschuld beweisen und Euch den Zugang zu Bladurs Tor wieder eröffnen, sondern auch Familie Silberschild ermöglichen, die Seele ihrer Tochter zur Ruhe zu setzen.~
+@6    = ~Eine Seele für eine Seele... <CHARNAME>, das ist böse, das können wir nicht tun... Bei Helm, ist das eine schwierige Situation!~
+@7    = ~Es ist meine Pflicht, Skies Seele wieder herzustellen, Ajantis. Auch wenn ich es nicht war, der sie genommen hat.~
+@8    = ~Es war eine gute Etscheidung, den Seelenfängerdolch zurück nach Baldurs Tor zu schicken, <CHARNAME>. Es ist das mindeste, was wir tun können. Herzog Silberschild hat viele Möglichkeiten, und ich bin überzeugt, dass er Skies Seele befreien kann, wenn die Herzogin und er es so wünschen. Wir haben viele andere Dinge, um die wir uns ebenfalls kümmern müssen - und sie sind nicht minder dringend.~
+@9    = ~Mich macht das ganze auch nicht gerade glücklich.~
+@10   = ~Böse? Es geht darum, Skies Seele wieder herzustellen, das ist wohl kaum böse.~
+@11   = ~Es ist nicht Eure Entscheidung, Ajantis. Ihr wart nicht mal da, als es passiert ist.~
+@12   = ~Keine Sorge, ich habe nicht vor, das zu tun.~
+@13   = ~Warum glaubt Ihr das?~
+@14   = ~Meine göttliche Essenz ist nötig, damit das ganze klappt. In Baldurs Tor gäbe es niemanden, der das könnte!~
+@15   = ~Weil ich mich verpflichtet fühle, es zu tun.~
+@16   = ~Weil ich davon ausgehe, dass Herzog Silberschild erwartet, dass ich es tue, und sonst die Stadt für immer vor mir verschlossen halten wird.~
+@17   = ~Nun, wenn ich den Dolch im beschädigten Zustand und mit dem Bedarf nach einer weiteren Seele nach Baldurs Tor schicke, werden die Herzöge nicht sehr begeistert sein - manche werden mich eventuell sogar verdächtigen, den Dolch selbst beschädigt zu haben.~
+@18   = ~Was soll ich sonst machen?~
+@19   = ~Wenn es schon nicht die Götter entscheiden, dann sollten es zumindest die Eltern sein, die bestimmen, was mit der Seele ihrer Tochter geschieht. Unsere Entscheidung sollte es jedenfalls nicht sein.~
+@20   = ~Jedoch... Eine solche Entscheidung den Eltern zu überlassen wäre gleichzeitig unsagbar grausam... Und die Magierin sagte, dass Euer Bhaalerbe nötig ist... Bei Helm, das *ist* eine schwierige Situation.~
+@21   = ~(seufz) Wir sollten das den Göttern überlassen, <CHARNAME>... Aber falls Ihr es doch selbst tun wollt, so werde ich Euch nicht davon abhalten. Ich bestehe dann jedoch darauf, dass wir äußerste Vorsicht walten lassen, wenn wir eine andere Seele wählen, die für dieses Opfer bereit wäre. Nicht jeder, der sich auf so etwas einlässt, weiß wirklich, was es bedeutet.~
+@22   = ~Das... habe ich in der Tat gehört.~
+@23   = ~Eine andere dabei zu nehmen, ist böse, <CHARNAME>.~
+@24   = ~Aber nun bin ich hier, <CHARNAME>, und werde meine Zweifel zum Ausdruck bringen.~
+@25   = ~Es ist also vollbracht - Skies Seele und der Dolch sind wieder hergestellt. (atmet hörbar aus) Es war sicherlich für das Gute, dies zu tun. Ich hoffe, die Götter teilen diese Meinung...~
+@26   = ~Eine Seele für eine Seele... <CHARNAME>, Skies Seele wieder herzustellen war eine schwierige Entscheidung. So sehr ich mich auch darüber freue, dass die Vorwürfe gegen Euch nun fallen gelassen werden und Herzog Silberschilds Tochter wieder zum Leben erweckt werden kann, so bin ich doch der Meinung, dass es nicht Eure Entscheidung war, eine andere Seele für diesen Vorgang zu verwenden.~
+@27   = ~Ich musste das tun, Ajantis. Egal, ob ich mich nun verpflichtet fühlte, meine göttliche Essenz für den Vorgang nötig war, oder ich einfach nur die Vorwürfe gegen mich entkräften wollte.~
+@28   = ~Es war meine Pflicht, Skies Seele wieder herzustellen, Ajantis. Auch wenn ich es nicht war, der sie genommen hat.~
+@29   = ~Eure Entscheidung war es aber auch nicht.~
+@30   = ~Was hättet Ihr getan?~
+@31   = ~Es ist eine schwierige Situation - und was geschehen ist, ist geschehen. Aber es sollte den Göttern belassen werden, Seelen zu nehmen... nicht uns. Vielleicht hättet Ihr den beschädigten Dolch nach Baldurs Tor schicken können, und die Entscheidung den Eltern überlassen. Wenn es Sterbliche sein sollen, die hierüber entscheiden, dann hätten es sie sein sollen, die bestimmen , wie weit sie gehen, um ihre Tochter wieder herzustellen.~
+@32   = ~Andererseits... Eine solche Entscheidung den Eltern aufzubürden wäre gleichsam unendlich grausam gewesen. Und für das Ritual war Eure göttliche Essenz nötig... Bei Helm, was bin ich froh, dass ich diese Entscheidung nicht treffen musste!~
+@33   = ~Es beruhigt mich, dass Ihr im wahrsten Sinne des Wortes eine willige Seele gefunden habt, die bereit war, Skies Platz einzunehmen. Versteht mich nicht falsch. Es war schlussendlich gut, Skies Seele wieder herzustellen, und ich honoriere die Pein, die es Euch gekostet hat. 
+Trotzdem sollten wir Sterbliche die Entsscheidung über die Verwendung von Seelen den Göttern überlassen.~
+@34   = ~Eure... Eure göttliche Essenz wäre dafür vonnöten?~
+@35   = ~Es ist... eine schlimme Sache, dass Ihr Skies Seele nicht zu retten vermochtet, <CHARNAME>. Mein Mitgefühl gilt der Familie Silberschild. Wir Sterbliche sollten die Entsscheidung über die Verwendung von Seelen den Göttern überlassen... Trotzdem wird Eure Unschuld in Skies Mord irgendwann auch in Baldurs Tor bekannt werden - es muss!~

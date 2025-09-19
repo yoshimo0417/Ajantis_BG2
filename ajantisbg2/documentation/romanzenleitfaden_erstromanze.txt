@@ -1,0 +1,99 @@
+--Ajantis NPC für SvA--
+Leitfaden: BGII - Erstromanze
+
+Die Erstromanze unterstellt, dass Ajantis in BG1 bereits mit der HC gereist ist, und damals die Romanze vor bzw. durch das Aufdecken des Bhaalerbes zum Erliegen gekommen ist. Im Falle einer Halbork-HC fand in BG1 keine Romanze statt. 
+Durch seine Erfahrungen ist Ajantis' Vorstellung, wie seine zukünftige Frau zu sein hat, sehr viel flexibler geworden und er ist nun bereit sich (erneut) in die HC zu verlieben.
+
+
+Konditionen der HC, damit die Erstromanze in Frage kommt:
+-weiblich,
+-keine reine Diebin
+-von guter Gesinnung, rechtschaffen neutral oder neutraler Gesinnung
+-Druidinnen jeder Gesinnung
+-alle Rassen, also einschließlich Halbork.
+
+Der Spieler hat mehrere Möglichkeiten, den Status der Romanze zu definieren. 
+Die Auswahlmöglichkeiten sind folgende:
+
+-Verlobungspfad: die Romanze aus BG1 (BG1NPC Projekt (G3) oder Ajantis BG1 Expansion (Kerzenburgforum)) wird fortgeführt.
+-Erstromanze: Ajantis hat in BG1 der HC keinen Antrag gemacht, kennt sie aber schon von damals.
+-Verlobung zerbrach an der Schwertküste: Diese Option existiert nur der Vollständigkeit halber. Sie bietet einen kleinen zusätzlichen Dialog, in dem Ajantis die HC begrüßt, ansonsten führt sie zum normalen Freundschaftspfad (ohne Romanze, d.h. auch die BGII-Erstromanze ist dann nicht mehr möglich.).
+
+Um die Erstromanze zu spielen, muss die mittlere Option gewählt werden ("Ajantis war ein Kampfgefährte an der Schwertküste" bzw. "Ich hatte keine engere Beziehung zu ihm" (letzteres nur im Dialog mit Imoen in Irenicus' Dungeon)).
+
+Auswahl des Romanzenstatus: 
+Die Auswahl erfolgt über Dialogoptionen im Spiel. Es gibt mehrere Möglichkeiten, abhängig davon, wann im Spiel das Mod installiert wird, den Status der Romanze (Verlobungspfad, Erstromanze oder beendete Beziehung) zu wählen. Davon wird natürlich nur eine in jedem Spiel zu sehen sein; sobald der Grad der Romanze gewählt wurde, ist das Spiel entsprechend eingerichtet und diese Auswahlmöglichkeit erscheint nicht noch einmal.
+
+Die Auswahlmöglichkeiten bieten sich:
+-In Irenicus' Dungeon im Gespräch mit Imoen (wenn Imoen in der Gruppe ist).
+-Falls Imoen nicht in der Gruppe ist: In Irenicus' Dungeon, wenn die HC einen Gegenstand der BG1-Romanze findet.
+-In den Windspeerhügeln, kurz nach dem Kampf mit den Rittern vor dem Gespräch mit Garren.
+-In Athkatla, falls die Windspeerhügel bei der Installation bereits betreten wurden und die Ritter tot sind: Durch Sprechen mit dem Knappen Roman im Hauptquartier des Ordens.
+-Vor Betreten des Portals, das den Ajantisquest startet; bzw. bevor der Priester des Oghma das Portal umkehrt, falls der Quest nicht gespielt werden möchte. 
+
+Die Erstromanze beinhaltet folgendes (Auszug aus der Readme):
+-die 11 Freundschaftspfaddialoge in leicht abgewandelter Form
+-mindestens 7 weitere eventabhängige Dialoge
+-mehrere Dialoge, die über das PID-Menü gestartet werden können.
+-Ajantis-initiierte Flirts, abhängig dem Entwicklungsgrad der Romanze
+-PID mit orts- und kapitelabhängigen Flirts.
+
+
+Auflistung der Dialoge und Lovetalks mit Triggerbedingungen :
+
+zyklischen Dialoge vor dem Aufbruch nach Brynnlaw / dem Unterreich (parallel zum Freundschaftspfad):
+1 - Nun reise ich in Amn an Eurer Seite, <CHARNAME>.
+
+2 - Es war ein großes Wagnis für Euch, mich und meine Ordensbrüder aus Firkraags Gewalt zu befreien. 
+
+3 - <CHARNAME>, Ihr hattet es bereits kurz angesprochen, aber ich würde es gerne noch ausführlicher erfahren.
+
+4 - Nun ist Eure Abstammung vom Gott des Mordens also bekannt...
+
+5 - Verzeiht, wenn ich einen Moment meine Gedanken mit Euch teile...
+
+6 - <CHARNAME>, hatten wir uns bereits an der Schwertküste über Waffen unterhalten?~
+
+
+7 - Verzeiht, wenn meine Gedanken noch immer um Firkraags Illusion kreisen...
+
+Floater:
+8 (in einer Taverne, nach dem Dialog 6, unabhängig von den anderen zyklischen Dialogen) - Seht Euch nur die ganzen verlotterten Gestalten an, die hier ihre Zeit vertun...
+
+9 (Stadtgebiet, Treffen mit einer Person) - Heda, wartet einen Moment!
+
+
+Nach der Wiederkehr vom Unterreich:
+
+zyklische Dialoge, parallel zum Freundschaftspfad:
+10 - Es ist erstaunlich, wie sich die Dinge entwickeln...
+
+11 - Nun sehen wir also Kreaturen von unglaublicher Eleganz und Macht
+
+12 - <CHARNAME>, habt Ihr letzthin, als wir durch die Straßen liefen
+
+
+Romanzenspezifische Begegnung nach dem Unterreich:
+13 (Bote) - Sir Ajantis Ilvastarr? Ich habe eine Nachricht für Euch, mein Herr.
+
+Nr. 13 startet einen Zyklus an kurzen Dialogen, während dessen alle anderen Dialoge pausieren:
+14 - (seufz) Verzeiht, <CHARNAME>, ich bin in Gedanken versunken.
+
+15 - <CHARNAME>, wenn Ihr etwas gefunden hättet, dass Euch für Euer Leben wichtig wäre
+
+16 - <CHARNAME>, wenn Ihr einen Menschen kennen würdet, der sich preist, nur dem Verstand nach zu handeln...
+
+17 - Verzeiht meine Verschlossenheit der letzten Stunden, meine Dame.
+
+
+Romanzenspezifische Floater:
+18 (nach Dialog 5, OUTDOOR, Ruf > 11) - Verzeiht, meine Dame, Ihr habt da etwas in Eurem Haar...
+
+19 (nach Dialog 6,  OUTDOOR, Ruf > 15) - Was für ein netter Anblick...
+
+20a-d (Schlächterverwandlung in Bhodis Labyinth): (mehrere kurze Dialoge über das Thema)
+
+21 (in hell) - <CHARNAME>, darf ich mit Euch für einen kurzen Augenblick etwas abseits von den anderen sprechen?
+
+
+

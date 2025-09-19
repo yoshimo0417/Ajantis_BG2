@@ -1,0 +1,9 @@
+IF 
+	Exists("firkra01")
+	Global("firkra01removed","AR0406",0)
+	GlobalGT("C#AjantisPCInWindspeerHills","GLOBAL",0)
+THEN
+ RESPONSE #100
+	ActionOverride("firkra01",DestroySelf())
+	SetGlobal("firkra01removed","AR0406",1)
+END

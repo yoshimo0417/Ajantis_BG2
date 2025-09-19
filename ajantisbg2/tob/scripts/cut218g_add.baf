@@ -1,0 +1,10 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("C#AJ25MW")
+		CreateVisualEffectObject("SPFLESHS",Myself)
+		Wait(1)
+		ActionOverride("C#AJ25MW",Enemy())
+		ChangeAnimation("HGWRA02") // Devil Shade
+END

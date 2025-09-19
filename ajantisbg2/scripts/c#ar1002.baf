@@ -1,0 +1,25 @@
+//AR1002 Councel Building
+
+IF
+	!Dead("C#AJEILA")
+	!Dead("GARREN")
+	GlobalGT("C#AjanEnderoldQuest","GLOBAL",0) 
+	GlobalLT("C#AjanEnderoldQuest","GLOBAL",6) 
+	Global("C#AjanEQEilaSpawn","GLOBAL",0)
+	!Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanEQEilaSpawn","GLOBAL",1)
+		CreateCreature("C#AJEILA",[1154.609],0)
+		Continue()
+END
+
+IF 
+	GlobalGT("C#AjanEnderoldQuest","GLOBAL",5)
+	Exists("C#AJEILA")
+THEN
+	RESPONSE #100
+		ActionOverride("C#AJEILA",DestroySelf())
+		Continue()
+END
+

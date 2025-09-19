@@ -1,0 +1,29 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	CreateCreature("C#AJLAIL",[750.639],0) //Lady Ilvastarr
+	CreateCreature("C#AJLOIL",[707.667],0) //Lord Ilvastarr
+	SetGlobal("C#AjantisIlvastarrExistiert","GLOBAL",1)
+	MoveViewPoint([162.705],INSTANT)
+	ActionOverride("C#Ajantis",MoveToPoint([666.627]))
+	Wait(1)
+	MoveToPoint([634.660])
+	FaceObject("C#AJLOIL")
+	ActionOverride("C#Ajantis",FaceObject("C#AJLOIL"))
+	ActionOverride("C#AJLOIL",FaceObject(Player1))
+	ActionOverride("C#AJLAIL",FaceObject(Player1))
+	Wait(3)
+	SetGlobal("C#AjantisIlvastarrMeeting","GLOBAL",4)
+	ActionOverride("C#Ajantis",StartDialogNoSet("C#AJLOIL"))
+	EndCutSceneMode()
+END
+	
+
+
+
+
+
+ 

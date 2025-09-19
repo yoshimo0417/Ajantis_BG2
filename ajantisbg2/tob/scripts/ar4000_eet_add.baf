@@ -1,0 +1,25 @@
+/* Ajantis was never in Party - he won't be available for summoning
+This is eet only */
+IF
+  %IsContiGameToB% //only for conti game
+  Global("%AjantisSummoned_Variable%","GLOBAL",0)
+  !BeenInParty("C#Ajantis")
+  !BeenInParty("Ajantis")
+THEN
+  RESPONSE #100
+    SetGlobal("%AjantisSummoned_Variable%","GLOBAL",4)
+    Continue()
+END
+
+/* original EET-Ajantis entry at fatesp.dlg. Has to be deactivated if mod triggers. Has to remain untouched if mod didn't trigger. */
+
+
+/* deactivate Ajantis-BG1 summoning if Ajantis BGII was present (i.e. the mod content triggered) */
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3)  //mod content will trigger -> will use my own fatesp.dlg entry
+	Global("AjantisSummoned","GLOBAL",0) //original eet summon-variable
+THEN
+  RESPONSE #100
+	SetGlobal("AjantisSummoned","GLOBAL",2)
+    Continue()
+END

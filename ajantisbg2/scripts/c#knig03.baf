@@ -1,0 +1,29 @@
+//C#KNIG03.baf
+
+IF
+	Global("C#AjantisPortalBewachen","GLOBAL",1)
+	OR(2)
+		Dead("C#KNIG02")
+		Dead("C#KNIG04")
+	OR(2)
+		See("C#AJSKE1")
+		See("C#AJSKE2")
+THEN
+	RESPONSE #100
+		Attack("C#AJSKE1")
+		Attack("C#AJSKE2")
+END
+
+IF 
+	Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+	Global("C#AjantisRitterZumPortal3","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRitterZumPortal3","LOCALS",1)
+		MoveBetweenAreas("C#AJ00",[3919.3128],10) 
+END 
+
+
+
+
+		

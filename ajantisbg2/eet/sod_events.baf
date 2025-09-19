@@ -1,0 +1,56 @@
+/* EET, continuous game: Ajantis ponders about the SoD events at the beginning of BGII */
+
+IF
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Ajantis_TalkAboutSoD","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",500)
+	OR(2)
+		GlobalGT("C#AjantisFriendTalk","GLOBAL",2)
+		GlobalGT("C#AjantisLoveTalk","GLOBAL",4)
+	RealGlobalTimerExpired("C#AjantisDialogPausenTimer","GLOBAL")
+	Global("L#2SkieDagger","GLOBAL",0) //Skie Cost of One Soul Mod not active
+	Global("L#2SDToldImoenNo","GLOBAL",1) //Skie Cost Soul Mod active but dagger was not taken out of ID
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_TalkAboutSoD","GLOBAL",1)
+END
+
+IF
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Ajantis_TalkAboutSoD","GLOBAL",0)
+	GlobalGT("bd_plot","GLOBAL",500)
+	GlobalGT("C#AjantisLoveTalk","GLOBAL",4)
+	RealGlobalTimerExpired("C#AjantisDialogPausenTimer","GLOBAL")
+	GlobalGT("L#2SkieDagger","GLOBAL",0) //Skie Cost of One Soul Mod active
+	!Global("C#AjantisRomanceActive","GLOBAL",3)
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_TalkAboutSoD","GLOBAL",2)
+END
+
+/* dialogue triggering */
+IF	
+	InParty(Myself)
+	CombatCounter(0) !See([ENEMY])
+	Detect(Player1) 
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	Global("C#Ajantis_TalkAboutSoD","GLOBAL",2)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisDialogPausenTimer","GLOBAL",600)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		StartDialogNoSet(Player1)
+END
+

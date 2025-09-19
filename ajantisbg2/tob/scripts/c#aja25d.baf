@@ -1,0 +1,120 @@
+//dream script Ajantis
+
+// all for romance case
+
+
+
+
+
+/* Master wraith - after the encounter */
+
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	Global("C#AjantisMasterWraith","GLOBAL",2)
+THEN  
+  RESPONSE #100
+	SetGlobal("C#AjantisMasterWraith","GLOBAL",3)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		RealSetGlobalTimer("RE_DreamTimer","GLOBAL",300)
+		RealSetGlobalTimer("C#AjantisNighttalkTimer","GLOBAL",%NIGHTTALKTIMER%)
+	StartDialogNoSet(Player1)
+END
+
+
+
+/* first rest dialogue  */
+
+
+
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	OR(2)
+		Global("C#AjantisLT","GLOBAL",2) //after dialogue at the stone heads
+		GlobalGT("C#AjToB_Talk","GLOBAL",1) //after dialogue in pocket plane
+	Global("C#Ajantis_RestdialoguesToB","GLOBAL",0)	
+THEN  
+  RESPONSE #100
+		SetGlobal("C#Ajantis_RestdialoguesToB","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisNighttalkTimer","GLOBAL",%NIGHTTALKTIMER%)
+		RealSetGlobalTimer("RE_DreamTimer","GLOBAL",300)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		StartDialogNoSet(Player1)
+END
+
+/* nightmare, after LT "vigilant" "I am a burden to you!" */
+
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	Global("C#Ajantis_RestdialoguesToB","GLOBAL",2)	
+	GlobalGT("C#AjToB_LT","GLOBAL",6)
+THEN  
+  RESPONSE #100
+		SetGlobal("C#Ajantis_RestdialoguesToB","GLOBAL",3)
+		RealSetGlobalTimer("C#AjantisNighttalkTimer","GLOBAL",%NIGHTTALKTIMER%)
+		RealSetGlobalTimer("RE_DreamTimer","GLOBAL",300)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		StartDialogNoSet(Player1)
+END
+
+
+/* after rest dialogue nightmare: rest for dialogue "vigilant". Comes directly after the one before */
+
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+	Global("C#Ajantis_RestdialoguesToB","GLOBAL",4)	
+THEN  
+  RESPONSE #100
+		SetGlobal("C#Ajantis_RestdialoguesToB","GLOBAL",5)
+		RealSetGlobalTimer("C#AjantisNighttalkTimer","GLOBAL",%NIGHTTALKTIMER%)
+		RealSetGlobalTimer("RE_DreamTimer","GLOBAL",300)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		StartDialogNoSet(Player1)
+END
+
+
+
+/* rest dialogue cycles in pocketplane - only for less than 4 evil PP choices */
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+        InParty(Myself)
+	CombatCounter(0) 
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisRomanceActive","GLOBAL",2) 
+//	RealGlobalTimerExpired("C#AjantisNighttalkTimer","GLOBAL")
+	GlobalLT("PPEvilChoices","GLOBAL",4)
+	OR(4)
+		Global("C#Ajantis_RestdialoguesToB_PP","GLOBAL",0)
+		Global("C#Ajantis_RestdialoguesToB_PP","GLOBAL",2)	
+		Global("C#Ajantis_RestdialoguesToB_PP","GLOBAL",4)
+		Global("C#Ajantis_RestdialoguesToB_PP","GLOBAL",6)	
+	AreaCheck("AR4500")		
+THEN  
+  RESPONSE #100
+		IncrementGlobal("C#Ajantis_RestdialoguesToB_PP","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisNighttalkTimer","GLOBAL",%NIGHTTALKTIMER%)
+		PlaySong(0)
+		PlaySound("C#AJROM")
+		StartDialogNoSet(Player1)
+END
+
+

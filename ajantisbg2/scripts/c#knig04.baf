@@ -1,0 +1,20 @@
+IF
+	Global("C#AjantisPortalBewachen","GLOBAL",1)
+	OR(2)
+		See("C#AJSKE1")
+		See("C#AJSKE2")
+THEN
+	RESPONSE #100
+		Attack("C#AJSKE1")
+		Attack("C#AJSKE2")
+END
+
+
+IF 
+	Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+	Global("C#AjantisRitterZumPortal4","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRitterZumPortal4","LOCALS",1)
+		MoveBetweenAreas("C#AJ00",[4019.3092],10) 
+END 

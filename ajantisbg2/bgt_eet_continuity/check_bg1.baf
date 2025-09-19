@@ -1,0 +1,15 @@
+/* this comes into the BG1 script, only for bgt */
+
+
+/* checks for "Ajantis was in party" */
+
+IF 
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+	InPartyAllowDead(Myself)
+	Global("C#Ajantis_IWasInParty","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_IWasInParty","GLOBAL",1)
+END
+
+

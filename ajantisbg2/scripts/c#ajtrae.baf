@@ -1,0 +1,31 @@
+IF
+	AreaCheck("C#AJ01")
+	Global("C#AjantisKeineKugel","LOCALS",0)
+THEN
+	RESPONSE #100
+	  setGlobal("C#AjantisKeineKugel","LOCALS",1)
+          DestroyItem("C#AJGK")
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	Global("C#TalkedToTraeger","GLOBAL",0)
+THEN
+	RESPONSE #100
+	  setGlobal("C#TalkedToTraeger","GLOBAL",1)
+          StartDialogueNoSet([PC])
+END
+
+IF
+	Detect([PC])
+	Range([PC],15)
+	AreaCheck("C#AJ01")
+	Global("C#AjantisMalmaeSpeaks","GLOBAL",0)
+THEN
+	RESPONSE #100
+	  setGlobal("C#AjantisMalmaeSpeaks","GLOBAL",1)
+          StartDialogueNoSet([PC])
+END
+
+

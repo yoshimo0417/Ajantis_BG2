@@ -1,0 +1,29 @@
+IF
+	Global("C#AjKu","GLOBAL",1)
+	
+THEN
+	RESPONSE #100
+	StartCutScene("C#AJCUT2")
+	StartCutSceneMode()
+	SetGlobal("C#AjKu","GLOBAL",2)
+END
+
+IF 
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisPCInWindspeerHills","GLOBAL",0)
+	GlobalGT("Kidnap","GLOBAL",2)
+	Global("C#AjantisSpaetInstallation","GLOBAL",0)
+THEN
+  RESPONSE #100
+	SetGlobal("C#AjantisSpaetInstallation","GLOBAL",1)	
+END
+
+
+
+
+
+
+
+
+
+

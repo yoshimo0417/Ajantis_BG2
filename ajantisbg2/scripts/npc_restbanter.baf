@@ -1,0 +1,72 @@
+/* ---------NPC banter ----------------------*/
+
+//Haer'Dalis banter 
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+	InParty(Myself)
+	InParty("haerdalis")
+	Detect("haerdalis")
+	InMyArea(Player1)
+	!StateCheck("haerdalis",CD_STATE_NOTVALID)
+	!Dead("haerdalis")
+	Global("C#AjantisHaerDalis2","GLOBAL",0)
+	RealGlobalTimerExpired("C#AjantisNPCBanterTimer","GLOBAL")
+	 OR(12)
+		AreaCheck("AR0313") // Sea's Bounty
+		AreaCheck("AR0406") // Copper Coronet
+		AreaCheck("AR0509") // Five Flagons
+		AreaCheck("AR0522") // Five Flagons (Stronghold)
+		AreaCheck("AR0704") // Mithrest Inn
+		AreaCheck("AR1105") // Umar Inn
+		AreaCheck("AR1602") // The Vulgar Monkey
+		AreaCheck("AR2010") // Vyatri's Pub, Trademeet
+		AreaCheck("AR0709") // Den of the Seven Vales 1st Floor
+		AreaCheck("AR0513") // Calbor's Inn at Bridge District 1st Floor
+		AreaCheck("AR0021") // Crooked Crane 1st Floor
+		AreaCheck("AR1602") // Brynnlaw's Inn
+THEN 
+	RESPONSE #100
+		SetGlobal("C#AjantisHaerDalis2","GLOBAL",2)
+		RealSetGlobalTimer("C#AjantisNPCBanterTimer","GLOBAL",2000) //2000
+		StartDialogNoSet("haerdalis")
+END
+
+//Minsc's "dinner"
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+	InParty(Myself)
+	InParty("minsc")
+	Detect("minsc")
+	InMyArea(Player1)
+	!StateCheck("minsc",CD_STATE_NOTVALID)
+	CombatCounter(0) 
+	Global("C#AjantisMinsk3","GLOBAL",0)
+	RealGlobalTimerExpired("C#AjantisNPCBanterTimer","GLOBAL")
+	OR(2)
+		AreaType(OUTDOOR)
+		AreaType(FOREST)
+THEN 
+	RESPONSE #100
+		SetGlobal("C#AjantisMinsk3","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisNPCBanterTimer","GLOBAL",2000) //2000
+		StartDialogNoSet("minsc")
+END
+
+//Edwin
+IF
+	!StateCheck(Myself,CD_STATE_NOTVALID)	
+	InParty(Myself)
+	InParty("edwin")
+	Detect("edwin")
+	InMyArea(Player1)
+	!StateCheck("edwin",CD_STATE_NOTVALID)
+	CombatCounter(0) 
+	Global("C#AjantisEdwinRest","GLOBAL",0)
+	RealGlobalTimerExpired("C#AjantisNPCBanterTimer","GLOBAL")
+THEN 
+	RESPONSE #100
+		SetGlobal("C#AjantisEdwinRest","GLOBAL",1)
+		RealSetGlobalTimer("C#AjantisNPCBanterTimer","GLOBAL",2000) //2000
+		StartDialogNoSet("edwin")
+END
+

@@ -1,0 +1,236 @@
+//"I know your name from Ajantis"... PC can ask Anomen about her fiance
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	InParty(Myself)
+	Global("C#AjantisExistiert","GLOBAL",0)	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("DomainPaladinBattle","GLOBAL",0) //before Windspeer
+	Global("C#AjantisAnomenBG1","GLOBAL",0)
+	GlobalLT("LoveTalk","LOCALS",15)
+	Global("C#AjantisInfo","GLOBAL",0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisAnomenBG1Timer","GLOBAL",150) //150
+		SetGlobal("C#AjantisAnomenBG1","GLOBAL",1)
+END
+
+/* Dialoge activation */
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisExistiert","GLOBAL",0)
+	RealGlobalTimerExpired("C#AjantisAnomenBG1Timer","GLOBAL")	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	Global("DomainPaladinBattle","GLOBAL",0) //before Windspeer
+	Global("C#AjantisAnomenBG1","GLOBAL",1)
+	Global("C#AjantisInfo","GLOBAL",0)
+	!AreaCheck("AR0903")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisAnomenBG1","GLOBAL",2)
+END 
+
+/* dialogue triggering */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)	
+	Global("C#AjantisAnomenBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END 
+
+//--------
+
+//variables Ajantis - Anomen conflict and reactions for Anomen romance
+
+/*gives Anomen's local LoveTalk variable of "sleep with me" night talk, to "fix" mixed-up action triggers of Anomen romance!*/
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	GlobalGT("LoveTalk","LOCALS",27)
+	Global("C#CheckAnomenLTGT27","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#CheckAnomenLTGT27","GLOBAL",1)
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	GlobalGT("LoveTalk","LOCALS",34)
+	Global("C#CheckAnomenLTGT34","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#CheckAnomenLTGT32","GLOBAL",2)
+		SetGlobal("C#CheckAnomenLTGT34","GLOBAL",1)
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	GlobalGT("LoveTalk","LOCALS",32)
+	Global("C#CheckAnomenLTGT32","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#CheckAnomenLTGT32","GLOBAL",1)
+END
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	GlobalGT("LoveTalk","LOCALS",35)
+	Global("C#CheckAnomenLTGT36","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#CheckAnomenLTGT36","GLOBAL",1)
+END
+
+//deactivation if Anomen romance breaks before Anomen love night
+IF
+	OR(2)
+		Global("AnomenRomanceActive","GLOBAL",3)
+		Global("C#AjantisPCMarriage","GLOBAL",1)
+	Global("C#AjanDeactivateAnoConflict","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanDeactivateAnoConflict","GLOBAL",1)
+		SetGlobal("C#AjantisAnomenConflict1","GLOBAL",5) //deactivated
+		SetGlobal("C#AjantisAnomenConflict2","GLOBAL",5) //deactivated
+		SetGlobal("C#AjantisAnomenConflict3","GLOBAL",5) //deactivated		
+END 
+
+//LG Anomen -> for late Ajantis joining
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Global("AnomenRomanceActive","GLOBAL",3)
+	Global("AnomenMatch","GLOBAL",1)
+	Global("AnomenIsKnight","GLOBAL",1)
+	GlobalGT("Lovetalk","LOCALS",26)
+	GlobalLT("Lovetalk","LOCALS",32)
+	Global("C#AjantisAnomenConflict2","GLOBAL",0)
+	Global("C#AjanAnomenConflictSquire","GLOBAL",0) //no squire banter
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisAnomenConflict1","GLOBAL",5) //deactivated
+		SetGlobal("C#AjantisAnomenConflict2","GLOBAL",1) //for C#Ajan.bcs		
+END
+
+//CN Anomen -> for late Ajantis joining
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!Global("AnomenRomanceActive","GLOBAL",3)
+	Global("AnomenMatch","GLOBAL",1)
+	Global("AnomenIsNotKnight","GLOBAL",1)
+	GlobalGT("Lovetalk","LOCALS",26)
+	GlobalLT("Lovetalk","LOCALS",30)
+	Global("C#AjantisAnomenConflict3","GLOBAL",0)
+	Global("C#AjanAnomenConflictSquire","GLOBAL",0) //no squire banter
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisAnomenConflict1","GLOBAL",5) //deactivated
+		SetGlobal("C#AjantisAnomenConflict3","GLOBAL",1) //for C#Ajan.bcs	
+END
+
+//squire Anomen
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("AnomenRomanceActive","GLOBAL",1)
+	!Global("AnomenIsKnight","GLOBAL",1)
+	!Global("AnomenIsNotKnight","GLOBAL",1)
+	GlobalGT("Lovetalk","LOCALS",4)
+	GlobalLT("Lovetalk","LOCALS",28)
+	Global("C#AjantisAnomenConflict1","GLOBAL",0)
+
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisAnomenConflict1","GLOBAL",1)		
+END
+
+//LG Anomen -> for second Anomen - Ajantis conflict banter 
+
+/* conflict dialogue activation */
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	InParty(Myself)
+	InParty("C#Ajantis")
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	!Global("AnomenRomanceActive","GLOBAL",3) 
+	Global("AnomenMatch","GLOBAL",1)
+	Global("AnomenIsKnight","GLOBAL",1)
+	Global("LoveTalk","LOCALS",31) //after "flower" dialogue
+	GlobalGT("C#AjanAnomenConflictSquire","GLOBAL",0) //squire banter fired
+	Global("C#AjanAnomenConflictKnight","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanAnomenConflictKnight","GLOBAL",1)
+END
+
+/* conflict dialogue triggering */
+IF
+	InParty(Myself)
+	InParty("C#Ajantis")
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	Global("C#AjanAnomenConflictKnight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet("C#Ajantis")	
+END
+
+
+/* Ajantis Anomen new beginnings romance conflict */
+
+/* second dialogue and fourth dialogue: activation */
+IF
+	InParty(Myself)
+	!AreaType(DUNGEON)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	InParty("C#Ajantis")
+	Detect("C#Ajantis")
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	!See([ENEMY])
+	!Range([NEUTRAL],10)
+	CombatCounter(0)
+	!Global("C#AjantisEngaged","GLOBAL",1)
+	Global("C#AjantisRomanceActive","GLOBAL",1)
+	Global("AnomenRomanceActive","GLOBAL",1)
+	RealGlobalTimerExpired("C#AjantisNBAnomenConflictT","GLOBAL")
+	Global("C#AjantisSchweigen","GLOBAL",0)
+	OR(2)
+		Global("C#AjantisNBAnomenConflict","GLOBAL",3)
+		Global("C#AjantisNBAnomenConflict","GLOBAL",7)
+THEN
+	RESPONSE #100
+		IncrementGlobal("C#AjantisNBAnomenConflict","GLOBAL",1)
+END
+
+/* initiation */
+IF
+	InParty(Myself)
+	!Range([NEUTRAL],10)
+	InParty("C#Ajantis")
+	Detect("C#Ajantis")
+	!StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+	OR(2)
+		Global("C#AjantisNBAnomenConflict","GLOBAL",4)
+		Global("C#AjantisNBAnomenConflict","GLOBAL",8)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("C#AjantisNBAnomenConflictT","GLOBAL",2600)
+		StartDialogNoSet("C#Ajantis")
+END
+
+
+

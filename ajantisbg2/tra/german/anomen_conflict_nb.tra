@@ -1,0 +1,42 @@
+@0   = ~Ah, ich sehe Ihr lasst die Belastungen des Tages hinter Euch... sucht Entspannung.~
+@1   = ~Falls Ihr auf das Glas Met anspricht, Sir Ajantis, so teile ich Eure Meinung nicht, dass es einem Diener Helms nicht erlaubt sei, etwas davon zu trinken.~
+@2   = ~Auch ich denke das nicht, Sir Anomen.~
+@3   = ~Auch ich denke das nicht, Anomen.~
+@4   = ~Es ist das Zuviel-Trinken, das ich verurteile. Das davon berauscht werden und seine Wachsamkeit verlieren. Nicht nur am betreffenden Abend, sondern auch noch am folgenden Tag.~
+@5   = ~Aber selbstverständlich weiß ich, dass Ihr nicht vorhattet, zu viel zu trinken. Es würde nämlich schwierig werden, den glänzenden Ritter vor <CHARNAME> zu markieren, wenn Ihr es tätet.~
+@6   = ~Interessant. Das ist genau das, was ich zu Euch sagen wollte, Sir Ajantis.~
+
+@7   = ~Es ist interessant, Euch dabei zu beobachten, Eure eigenen Regeln zu verletzen, Sir Ajantis.~
+@8   = ~Verzeihung?~
+@9   = ~Ich beziehe mich auf unsere letzte Unterhaltung. Ich dachte, den Dienern Helms wäre es nicht gestattet, sich zu berauschen.~
+@10   = ~Wovon redet Ihr? Ich habe nicht einen Tropfen getrunken!~
+@11   = ~Ich meinte nicht Alkohol, Sir Ajantis. Stimmt Ihr nicht zu, dass man auch auf andere Weise berauscht werden kann? Ein betörender Duft, ein wunderschöner Anblick? Habt Ihr je den Ausdruck "ein berauschender Anblick" gehört?~
+@12   = ~Vielleicht habe ich das, aber ich verstehe nicht, wieso Ihr diese Worte auf mich bezieht.~
+@13   = ~Vielleicht solltet Ihr Euren kleinen Taschenspiegel hervornehmen und darin die Blicke betrachten, mit denen Ihr <CHARNAME> bedenkt, wenn Ihr Euch unbeobachtet fühlt. Dann werdet Ihr verstehen.~
+
+@14   = ~Anomen, Eure Wachsamkeit wird leiden, wenn Ihr dauernd <CHARNAME> anstarrt.~
+@15   = ~Ha, lustig, dass gerade Ihr das sagt, Sir Ajantis.~
+@16   = ~Bei Eurem dauernden Starren auf <CHARNAME> fing ich mich langsam schon an zu sorgen, es sei etwas im Argen.~
+
+@17   = ~Ihr denkt also, meine Wachsamkeit sei ungenügend?~
+@18   = ~Ich wollte nur darauf hinweisen, dass Ihr Euch nicht auf die Art und Weise ablenken lassen solltet, wie Ihr es tut.~
+@19   = ~Redet Ihr wieder einmal mit Euch selbst?~
+@20   = ~Hört auf damit! Das ist lächerlich.~
+@21   = ~Ich sage Euch was, Sir Ajantis. Ihr mögt schon ein Ritter gewesen sein, als ich noch ein unerfahrener Knappe war, doch <CHARNAME> wollte mich in ihrer Gruppe haben. Sie weiß also, was ich Wert bin. Ihr solltet ihrem Urteil vertrauen.~
+@22   = ~Ich vertraue <CHARNAME>s Urteil mehr denn meinem eigenen, Anomen.~
+@23   = ~Sie sieht das Potential in allen von uns. Es erstaunt mich nicht, dass sie einen weiteren Knappen in ihre Gruppe aufgenommen hat.~
+@24   = ~Ich hatte fast vergessen, dass Ihr bereits früher miteinander gereist seid. Ihr musstet mir das wohl unbedingt unter die Nase reiben, nehme ich an.~
+@25   = ~Ich verstehe nicht, was Ihr meint.~
+@26   = ~(seufz) Sicher.~
+
+@27   = ~Anomen, ich möchte mich für meine harschen Worte von letzthin entschuldigen.~
+@28   = ~Aber Ihr beschuldigt mich zu Unrecht. Ich überwache und kümmere mich um <CHARNAME> lediglich als ihr Mitstreiter... und nichts weiter.~
+@29   = ~Nichts weiter, ja? Ein Ritter muss die Wahrheit sagen. Ich nehme daher an, Ihr glaubt wirklich, was Ihr da sagt.~
+@30   = ~Nun, wenn das Euer letztes Wort ist, haben wir nichts mehr zu besprechen.~
+@31   = ~Mir ist nicht aufgefallen, dass wir etwas besprechen.~
+@32   = ~(seufz)~
+@33   = ~Falls Ihr, zufälligerweise, über <CHARNAME>s überlegene Führungsfähigkeiten und ihre (räusper) Schönheit sprecht...~
+@34   = ~Dann gibt es wirklich nichts zu besprechen, denn das sind Fakten.~
+@35   = ~Sir Ajantis, ich weiß bereits, dass wir uns in dieser Frage einig sind.~
+@36   = ~Was ich hingegen nicht verstehe, ist Eure ständige Behauptung, Ihr verstündet nicht, was ich meine.~
+@37   = ~Nun, ich werde dem nicht weiter nachgehen. Glaubt, was Ihr wollt. Vielleicht ist es besser, wenn nicht alle Männer ihren Gefühlen nachgeben. Der Verlust des einen ist der Gewinn des anderen.~

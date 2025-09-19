@@ -1,0 +1,8 @@
+IF 
+	Global("C#AjantisRitterBeimPortal","GLOBAL",1)
+	Global("C#AjantisRitterZumPortal1","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisRitterZumPortal1","LOCALS",1)
+		MoveBetweenAreas("C#AJ00",[4006.3159],10)
+END 

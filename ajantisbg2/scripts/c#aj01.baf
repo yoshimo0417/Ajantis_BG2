@@ -1,0 +1,12 @@
+IF
+	Global("C#AjantisMalmaeAJ01","GLOBAL",0)
+	!Dead("c#ajtrae")
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisMalmaeAJ01","GLOBAL",1)
+		SetGlobal("C#AjantisKugelUebergabe","GLOBAL",1)
+		CreateCreature("c#ajtrae",[1768.1671],0)	
+END
+
+
+

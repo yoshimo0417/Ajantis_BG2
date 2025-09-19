@@ -1,0 +1,139 @@
+/* BGT - recognition of Ajantis' status general and romance */
+
+/* for BGT, the original Ajantis cameo will play always. Question is, whether my mod starts or not.
+
+Mod will NOT start, if
+-Ajantis died in BG1 and was left for dead (unless he was in transition party)
+-Ajantis left hostile during BG1
+-Ajantis never joined during BG1 (this might change if I feel like adapting the mod)
+*/
+
+/* Prevention of invalid content goes by Global("C#AjantisIsDeadBG1","GLOBAL",X)
+1: Ajantis was dead but in party upon BG1-> BGII transition (call it a player oversight who expects to be transferred to BGII): Mod happens + original BGII cameo
+2: is set if golden globe was given: Mod happens + original BGII cameo
+3: Ajantis was truly dead in BGT -> original BGII cameo happens, but nothing mod related (if it doesn't refer to the BGII cameo appearance)
+4: Ajantis was truly dead in EET -> no Ajantis appearance in BGII (not the original cameo, not the mod)
+
+Thus:
+Trigger to prevent mod related content:
+GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3)
+
+Trigger to prevent BGII cameo (EET only):
+GlobalLT("C#AjantisIsDeadBG1","GLOBAL",4)
+*/
+
+/* if Ajantis was dead upon transition, he was revived by the Order:
+Global("C#AjantisIsDeadBG1","GLOBAL",1), set in "bgt_deadtransition.d" */
+
+
+/* 1A. Ajantis was truly dead and left for dead in BG1 */
+IF
+	Dead("Ajantis")
+	Global("C#AjantisIsDeadBG1","GLOBAL",0) //Ajantis was not in party during transition to BGII (for BGT) 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisIsDeadBG1","GLOBAL",3) //prevents anything mod related that does not refer to the BGII cameo alone
+		Continue()
+END
+
+
+/* 1B. Ajantis wasn't in the party at all. */
+IF
+	!%AjantisWasInPartyBG1%
+	Global("C#AjantisIsDeadBG1","GLOBAL",0) //Ajantis was not in party during transition to BGII (for BGT) 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisIsDeadBG1","GLOBAL",3) //prevents anything mod related that does not refer to the BGII cameo alone
+		Continue()
+END
+
+/* 1C. Ajantis left hostile in BG1 */
+
+IF
+	Allegiance("Ajantis",ENEMY)
+	Global("C#AjantisIsDeadBG1","GLOBAL",0) //Ajantis was not in party during transition to BGII (for BGT) 
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisIsDeadBG1","GLOBAL",3) //prevents anything mod related that does not refer to the BGII cameo alone
+		Continue()
+END
+
+
+
+
+
+/* 2. if BGT conti game, detect romance status (BG1NPC romance) */
+
+
+/* Note: detection of engagement ring on PC cre happens elsehwere and independent of the following checks for spawn of broken ring ONLY: still, romance / mod is prevented, if according variables are set */ 
+
+/* only for continuous game: Global("%NewSoAGame%","GLOBAL",0) */
+
+
+/////////////////////////////////////////////////////
+/* RomanceActive - engaged path 
+note: Global("C#AjantisRomanceActive","GLOBAL",2) will be set in joining  dialogue */
+
+IF 
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisEngaged","GLOBAL",0)
+	Global("X#AjantisRomanceActive","GLOBAL",2) //from BG1NPC romance
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisEngaged","GLOBAL",1) //engagement
+		Continue()
+END
+
+/////////////////////////////////////////////////////
+/* NewBeginningsRomance - triggert nur, wenn
+
+-Global("X#AjantisRomanceActive","GLOBAL",3): Romanze war noch nicht committed
+-Global("X#AjantisRomanceActive","GLOBAL",0): BG1 NPC romance was not installed or non-existent (new BGII game)
+
+New beginnings romance will not start if:
+
+		Global("X#AjantisRomanceInsult","GLOBAL",1)
+		Global("X#AjantisRomanceShutUp","GLOBAL",1)
+
+*/
+///////////////
+ 
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisEngaged","GLOBAL",0)
+	OR(2)
+		Global("X#AjantisRomanceActive","GLOBAL",3)
+		Global("X#AjantisRomanceActive","GLOBAL",0) //in case BG1NPC wasn't installed at all
+
+	GlobalLT("X#AjantisLoveTalk","GLOBAL",32) //romance was not committed
+
+	!Global("X#AjantisRomanceInsult","GLOBAL",1)
+	!Global("X#AjantisRomanceShutUp","GLOBAL",1)
+
+	Global("C#AjantisNewRomMatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisEngaged","GLOBAL",2)
+		Continue()
+END
+
+
+//////////////////////////////////////////////////////////
+/* romance in BG1 broken for good: sets Global("C#AjanEngagementBrokenBG1","GLOBAL",1). This trigger is used in several instances during the mod */
+
+
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjantisEngaged","GLOBAL",0)
+	Global("X#AjantisRomanceActive","GLOBAL",3)
+
+	GlobalGT("X#AjantisLoveTalk","GLOBAL",31) //romance was committed
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisEngaged","GLOBAL",2)
+		SetGlobal("C#AjantisRomanceActive","GLOBAL",0)
+		SetGlobal("C#AjanEngagementBrokenBG1","GLOBAL",1)
+		Continue()
+END
+

@@ -1,0 +1,14 @@
+IF
+      True()
+THEN
+    RESPONSE #100
+	CutSceneId(Player1)
+	ClearAllActions()
+	Wait(1)
+	ActionOverride("C#Ajantis",CreateCreatureDoor("C#AJUDZO",[-1.-1],0))
+	Wait(3)	
+	ActionOverride("C#AJUDZO",FaceObject("C#Ajantis"))
+	Wait(2)	
+	EndCutSceneMode()
+	ActionOverride("C#AJUDZO",StartDialogNoSet("C#Ajantis"))
+END

@@ -1,0 +1,7 @@
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	Global("C#AjanRomAdultContent","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjanRomAdultContent","GLOBAL",1)
+END

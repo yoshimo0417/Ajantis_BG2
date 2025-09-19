@@ -1,0 +1,11 @@
+/* Ajantis was in party upon transition: he is no longer available for summoning */
+
+IF
+	InPartyAllowDead("C#Ajantis")
+	Global("%AjantisSummoned_Variable%","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ActionOverride("C#Ajantis",ChangeAIScript("C#AJAN25",OVERRIDE))
+		SetGlobal("%AjantisSummoned_Variable%","GLOBAL",3)
+		Continue()
+END

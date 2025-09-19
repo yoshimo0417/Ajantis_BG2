@@ -1,0 +1,33 @@
+IF
+	Detect(Player1)
+	NumTimesTalkedTo(0)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C#AjantisPCInWindspeerHills","GLOBAL",3)
+	!Allegiance("C#KNIG01",ENEMY)
+	!Allegiance("C#KNIG02",ENEMY)
+	!Allegiance("C#KNIG03",ENEMY)
+	!Allegiance("C#KNIG04",ENEMY)
+	!Allegiance("C#Ajantis",ENEMY)
+	Global("TempleShout0903","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisPCInWindspeerHills","GLOBAL",4)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	Detect(Player1)
+	NumTimesTalkedTo(0)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C#AjantisSpaetInstallation","GLOBAL",2)
+	!Allegiance("C#KNIG01",ENEMY)
+	!Allegiance("C#KNIG02",ENEMY)
+	!Allegiance("C#KNIG03",ENEMY)
+	!Allegiance("C#KNIG04",ENEMY)
+	!Allegiance("C#Ajantis",ENEMY)
+	Global("TempleShout0903","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisSpaetInstallation","GLOBAL",3)
+		StartDialogueNoSet(Player1)
+END

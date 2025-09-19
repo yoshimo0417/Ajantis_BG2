@@ -1,0 +1,41 @@
+IF
+ Global("C#AjanForgeShieldRing","GLOBAL",1)
+ Global("ForgeStuff","GLOBAL",1)
+THEN
+ RESPONSE #100
+     SetGlobal("C#AjanForgeShieldRing","GLOBAL",0)
+     TakePartyItem("C#AJSHLD")
+     TakePartyItem("RING06")
+     DestroyItem("C#AJSHLD")
+     DestroyItem("RING06")
+     GiveItemCreate("C#AJSHL2",PLAYER1,0,0,0) // completed item
+     ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
+
+IF
+ Global("C#AjanForgeShieldAmulet","GLOBAL",1)
+ Global("ForgeStuff","GLOBAL",1)
+THEN
+ RESPONSE #100
+     SetGlobal("C#AjanForgeShieldAmulet","GLOBAL",0)
+     TakePartyItem("C#AJSHLD")
+     TakePartyItem("AMUL14")
+     DestroyItem("C#AJSHLD")
+     DestroyItem("AMUL14")
+     GiveItemCreate("C#AJSHL2",PLAYER1,0,0,0) // completed item
+     ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END
+
+IF
+ Global("C#AjanForgeSword","GLOBAL",1)
+ Global("ForgeStuff","GLOBAL",1)
+THEN
+ RESPONSE #100
+     SetGlobal("C#AjanForgeSword","GLOBAL",0)
+     TakePartyItem("C#AJ0012")
+     TakePartyItem("SCRL94")
+     DestroyItem("C#AJ0012")
+     DestroyItem("SCRL94")
+     GiveItemCreate("C#AJ012A",PLAYER1,1,3,0) // completed item
+     ActionOverride("wsmith01",StartDialogueNoSet([PC]))
+END

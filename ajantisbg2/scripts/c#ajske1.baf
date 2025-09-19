@@ -1,0 +1,24 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	GlobalGT("C#AjantisPortalSkelett","GLOBAL",0)
+	Detect("C#KNIG06")
+THEN
+	RESPONSE #100
+		Attack("C#KNIG06")
+END
+
+
+

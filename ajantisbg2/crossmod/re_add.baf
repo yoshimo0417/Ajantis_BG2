@@ -1,0 +1,55 @@
+
+
+/* RE reactions. Have to make sure Ajantis doesn't react if he wasn't in the party */
+
+/* Bjornin */
+
+
+IF
+	!InParty("C#Ajantis")
+	Global("RE_BjorninFlirt","GLOBAL",1)
+	Global("C#Ajantis_REBjornin","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_REBjornin","GLOBAL",2)
+		Continue()
+END
+
+
+/* Solaufein */
+IF
+	!InParty("C#Ajantis")
+	Global("RE_SolaufeinMoves","GLOBAL",5)
+	Global("RE_SolaufeinFlirt","GLOBAL",1)
+	Global("C#Ajantis_RESolaufein","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_RESolaufein","GLOBAL",2)
+		Continue()
+END
+
+
+/* Talak */
+IF
+	!InParty("C#Ajantis")
+	Global("RE_TalakFlirt","GLOBAL",1)
+	Global("C#Ajantis_RETalak","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_RETalak","GLOBAL",2)
+		Continue()
+END
+
+
+/* Laran */
+IF
+	!InParty("C#Ajantis")
+	Global("RE_LaranFlirt","GLOBAL",1)
+	Global("C#Ajantis_RELaran","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#Ajantis_RELaran","GLOBAL",2)
+		Continue()
+END
+
+

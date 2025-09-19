@@ -1,0 +1,114 @@
+/* Keldorn talks about Ajantis - always, if Ajantis was in party in BG1 (or new game) */
+
+/* Global("C#AjantisKeldornBG1","GLOBAL",x): 
+0: did not mention Ajantis upon first meeting, and was not in Headquarters
+1: did not mention Ajantis upon first meeting, but was in Headquarters (i.e. knows about Ajantis)
+2: triggers first dialogue about Ajantis
+3: triggers first dialogue, Keldorn was in the headquarters and knows about Ajantis' mission.
+
+4: first dialogue about Ajantis ended - no incident in the Windspear Hills yet
+
+
+5: mentioned Ajantis upon first meeting (only romance case)
+6: triggers dialogue after Windspear incident, second dialogue (only romance case) for 4 or 5
+7: all dialogues about Ajantis ended - incident in the Windspear Hills known
+*/
+
+
+
+/* Keldorn was in the Order - heard about Ajantis */
+IF
+	GlobalLT("C#AjantisIsDeadBG1","GLOBAL",3) //only if mod will trigger
+	!InParty(Myself)
+	AreaCheck("AR0903")
+	Global("C#AjantisKeldornBG1","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKeldornBG1","GLOBAL",1)
+END
+
+
+/* let's talk about Ajantis - Keldorn wasn't at the headquarters yet */
+/* this triggers for all instances */
+IF
+	InParty(Myself)
+	Global("C#AjantisExistiert","GLOBAL",0)
+	Global("C#AjantisKeldornBG1","GLOBAL",0)
+		Global("C#AjantisKeldornBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKeldornBG1","GLOBAL",2)
+		RealSetGlobalTimer("C#AjantisKeldornBG1Timer","GLOBAL",200)
+END
+
+
+/* let's talk about Ajantis - Keldorn was at the headquarters */
+
+IF
+	InParty(Myself)
+	Global("C#AjantisExistiert","GLOBAL",0)
+	Global("C#AjantisKeldornBG1","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKeldornBG1","GLOBAL",3)
+		RealSetGlobalTimer("C#AjantisKeldornBG1Timer","GLOBAL",200)
+END
+
+
+/* additional dialogue in romance case, if !GlobalGT("DomainPaladinBattle","GLOBAL",0) if not dealt with in the first dialogue */
+
+IF
+	InParty(Myself)
+	Global("C#AjantisExistiert","GLOBAL",0)
+	OR(2)
+		Global("C#AjantisKeldornBG1","GLOBAL",4)
+		Global("C#AjantisKeldornBG1","GLOBAL",5)	
+	!Global("C#AjantisRomanceActive","GLOBAL",3) 
+	Global("C#AjantisEngagedMatch","GLOBAL",1)
+	Global("C#AjantisEngaged","GLOBAL",1)
+	GlobalGT("DomainPaladinBattle","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("C#AjantisKeldornBG1","GLOBAL",6)
+		RealSetGlobalTimer("C#AjantisKeldornBG1Timer","GLOBAL",200)
+END
+
+
+/* initiation */
+IF
+	InParty(Myself)
+	Detect(Player1)
+	CombatCounter(0) !See([ENEMY])
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	Global("C#AjantisExistiert","GLOBAL",0)
+	RealGlobalTimerExpired("C#AjantisKeldornBG1Timer","GLOBAL")
+	OR(2)
+		Global("C#AjantisKeldornBG1","GLOBAL",2)
+		Global("C#AjantisKeldornBG1","GLOBAL",3)
+		Global("C#AjantisKeldornBG1","GLOBAL",6)
+	!AreaCheck("AR0903")
+THEN
+	RESPONSE #100
+		StartDialogNoSet(Player1)
+END
+
+
+
+
+
+//Keldorn - Ajantis interaction at the city gates.
+IF
+  InParty("C#Ajantis")
+  See("C#Ajantis")
+  CombatCounter(0)
+  !See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+  !StateCheck("C#Ajantis",CD_STATE_NOTVALID)
+  AreaCheck("AR0020") //City gates
+  Global("C#AjantisKeldorn01","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("C#AjantisKeldorn01","GLOBAL",1)
+    StartDialogNoSet("C#Ajantis")
+END
