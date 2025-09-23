@@ -235,6 +235,7 @@ Annalena: alpha testing, help with documentation and a lot of good ideas.
 Artemis Entreri: Ajantis-NPC dialogues.
 berelinde: official NPC-banter-writer; support for dialogue writing, translation to English and proof reading, general support and motivation.
 Bosper von Hohenbrunn: Dialogue about weapons
+Cahir: proof reading (English, EE item description)
 Caillean: ideas and translation English -> German
 CamDawg: without your tutorial this mod wouldn't be BGII:EE compatible yet.
 Catseye: proof reading (English)
