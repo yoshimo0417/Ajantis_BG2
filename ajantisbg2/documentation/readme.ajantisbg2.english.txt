@@ -15,7 +15,7 @@ ToB: Ajantis will not travel with an evil aligned PC in ToB.
 
 For the EE games (BGII:EE and EET) the second optional component will install the BeamDog inventory BAM for Ajantis' family shield (green dragon on golden ground). If not installed, the BG1NPC Project shield graphic will be used.
 
-From v19, the crossmod component is no longer part of tis mod, but moved into the Crossmod Banter Pack. (Note to modders: the DESIGNATED 2 of this former component is no longer used in teh mod.)
+From v19, the crossmod component is no longer part of tis mod, but moved into the Crossmod Banter Pack. (Note to modders: the DESIGNATED 2 of this former component is no longer used in the mod.)
 
 The now third optional component gives the choice to install the mature romance content (not teen rated). Please note that deinstalling this component midgame will not revert the mature romance level. Do not install this component if you want the romance to be teen rated.
 
@@ -235,6 +235,7 @@ Annalena: alpha testing, help with documentation and a lot of good ideas.
 Artemis Entreri: Ajantis-NPC dialogues.
 berelinde: official NPC-banter-writer; support for dialogue writing, translation to English and proof reading, general support and motivation.
 Bosper von Hohenbrunn: Dialogue about weapons
+Cahir: proof reading (English, EE item description)
 Caillean: ideas and translation English -> German
 CamDawg: without your tutorial this mod wouldn't be BGII:EE compatible yet.
 Catseye: proof reading (English)
