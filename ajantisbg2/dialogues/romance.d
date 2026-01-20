@@ -210,9 +210,9 @@ END
 
 IF ~~ THEN hc_gefangenschaft_17a
 SAY @82
-++ @79 + hc_gefangenschaft_19
+++ @79 + hc_gefangenschaft_18
 ++ @80 + hc_gefangenschaft_18
-++ @81 + hc_gefangenschaft_18
+++ @81 + hc_gefangenschaft_19
 END
 
 IF ~~ THEN hc_gefangenschaft_18
