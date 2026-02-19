@@ -457,7 +457,7 @@ SAY @168
 END
 
 IF ~~ THEN nach_abduction1_07
-SAY ~I thank you.~
+SAY @153
 IF ~~ THEN + nach_abduction1_03
 END
 
@@ -560,7 +560,7 @@ SAY @112
 END
 
 IF ~~ THEN nach_abduction_07
-SAY ~Did it seem like that to you? I am so sorry, love.~
+SAY @116
 ++ @117 + nach_abduction_09
 ++ @118 + nach_abduction_08 
 END

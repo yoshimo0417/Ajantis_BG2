@@ -1921,8 +1921,8 @@ END
 
 IF ~~ THEN keldorns_turmoil_LadyMaria4
 SAY @1087
-IF ~Global("C#AjantisKeldornMaria4","GLOBAL",2)~ THEN + keldorns_turmoil_LadyMaria5_01
-IF ~!Global("C#AjantisKeldornMaria4","GLOBAL",2)~ THEN + keldorns_turmoil_LadyMaria5_02
+IF ~Global("C#AjantisKeldornMaria4","GLOBAL",2)~ THEN + keldorns_turmoil_LadyMaria4_01
+IF ~!Global("C#AjantisKeldornMaria4","GLOBAL",2)~ THEN + keldorns_turmoil_LadyMaria4_02
 END
 
 IF ~~ THEN keldorns_turmoil_LadyMaria4_01
