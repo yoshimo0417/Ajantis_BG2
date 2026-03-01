@@ -451,7 +451,7 @@ SAY @1164
 ++ @1165 + saradush_fallen_06
 ++ @1166 + saradush_fallen_06
 ++ @1167 + saradush_fallen_07
-++ @1168 + saradush_fallen_06
+++ @1168 + saradush_fallen_08
 END
 
 IF ~~ THEN saradush_fallen_02

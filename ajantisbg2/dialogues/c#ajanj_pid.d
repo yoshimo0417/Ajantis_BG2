@@ -3821,7 +3821,7 @@ Kit(Player1,GODHELM)
 
 + ~Global("C#AjantisIniFlirts","GLOBAL",1)~ + @919 DO ~SetGlobal("C#AjantisIniFlirts","GLOBAL",3)~ + flirt_stop
 
-+ ~Global("C#AjantisIniFlirts","GLOBAL",3)~ + @1094 DO ~SetGlobal("C#AjantisIniFlirts","GLOBAL",1) RealSetGlobalTimer("C#AjantisIniFlirtsTimer","GLOBAL",10)~ + flirt_stop
++ ~Global("C#AjantisIniFlirts","GLOBAL",3)~ + @1094 DO ~SetGlobal("C#AjantisIniFlirts","GLOBAL",1) RealSetGlobalTimer("C#AjantisIniFlirtsTimer","GLOBAL",10)~ + flirt_start
 
 + ~Global("C#AjantisNoIntimacy","GLOBAL",1) Global("C#AjantisNoIntim","GLOBAL",0)~ + @546 DO ~SetGlobal("C#AjantisNoIntim","GLOBAL",1)~ + int_PID_01
 
