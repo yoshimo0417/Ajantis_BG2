@@ -190,7 +190,11 @@ LANGUAGE ~English~
          ~english~  
          ~AjantisBG2/tra/english/Setup-AjantisBG2.tra~
          ~AjantisBG2/tra/english/game-AjantisBG2.tra~
- 
+
+LANGUAGE ~Simplified Chinese~
+         ~schinese~  
+         ~AjantisBG2/tra/schinese/Setup-AjantisBG2.tra~ 
+         ~AjantisBG2/tra/schinese/game-AjantisBG2.tra~
 
 BEGIN @0 DESIGNATED 0
 LABEL c#ajantisbg2-main
